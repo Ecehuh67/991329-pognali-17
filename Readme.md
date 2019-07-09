@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Тертунов](https://up.htmlacademy.ru/adaptive/17/user/991329).
-* Наставник: [Олег Зубов] (https://htmlacademy.ru/profile/id42701)
+* Наставник: [Олег Зубов](https://up.htmlacademy.ru/adaptive/17/user/42701)
 
 ---
 
