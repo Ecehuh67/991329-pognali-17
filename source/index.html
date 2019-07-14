@@ -7,14 +7,14 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo logo">
+  <header class="header">
+    <a class="header__logo logo">
       <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
     </a>
-    <a class="page-header__show-menu" href="#">Показать меню</a>
+    <button class="header__show-menu" type="button">Показать меню</button>
     <nav class="main-nav main-nav--hidden">
       <a class="logo logo--white">
-        <img class="logo__image logo__image--black" src="#" width="100" height="19" alt="Логотип Погнали">
+        <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
       </a>
       <button class="main-nav__toggle" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
@@ -27,7 +27,7 @@
       <div class="main-nav__identification-wrapper">
         <ul class="main-nav__login user-identification-list">
           <li class="user-identification-list__item">
-            <a class="user-identification-list__login" href="#">Авторизация</a>
+            <a class="user-identification-list__login login-link" href="#">Авторизация</a>
           </li>
         </ul>
       </div>
@@ -44,125 +44,120 @@
       <div class="main-nav__social-wrapper">
         <ul class="main-nav__social social-list">
           <li class="social-list__item">
-            <a href="#">
+            <a class="social-list__item-link social-list__item-link--fb" href="#">
               <span class="visually-hidden">Facebook</span>
-              <img class="social-list__image social-list__image--fb" src="#" width="20" height="10" alt="Мы в Фейсбуке">
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#">
-              <span class="visually-hidden">VK</span>
-              <img class="social-list__image social-list__image--vk" src="#" width="20" height="10" alt="Мы во Вконтакте">
+            <a class="social-list__item-link social-list__item-link--vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#">
+            <a class="social-list__item-link social-list__item-link--inst" href="#">
               <span class="visually-hidden">Instagram</span>
-              <img class="social-list__image social-list__image--inst" src="#" width="20" height="10" alt="Мы в Инстаграме">
             </a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="main">
     <h1 class="visually-hidden">Погнали - лучший сервис для путешествий</h1>
-    <section class="page-main__contact">
-      <h2 class="page-main__caption">В путешествиес крутыми попутчиками!</h2>
-      <ul class="page-main__contact contact-list">
-        <!--Вероятно придется каждый ли сделать элементом  page-main-->
+    <section class="main__contact feedback">
+      <h2 class="feedback__caption">В путешествиес крутыми попутчиками!</h2>
+      <ul class="feedback__contact contact-list">
         <li class="contact-list__item">
-          <a href="#">Телефон</a>
+          <a class="contact-list__item-link contact-list__item-link--phone" href="tel:+78005558628">Телефон</a>
         </li>
         <li class="contact-list__item">
-          <a href="#">Емаил</a>
+          <a class="contact-list__item-link contact-list__item-link--email" href="mailto:mail@htmlacademy.ru">Емаил</a>
         </li>
         <li class="contact-list__item">
-          <a class="contact-list__item-link" href="#">Авторизация</a>
+          <a class="login-link login-link--fewer" href="#">Авторизация</a>
         </li>
       </ul>
     </section>
-    <div class="main-review">
+    <section class="main-review">
       <blockquote class="main-review__quote">
         <p class="main-review__text">«Лучшее приложение, что я видел в жизни!»</p>
         <cite class="main-review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
       </blockquote>
-    </div>
-    <section class="page-guess">
+    </section>
+    <section class="guess">
       <h2 class="visually-hidden">Советы для путешествинников от Погнали</h2>
-      <ul class="page-guess__list">
-        <li class="page-guess__item"><span>Выберите направление</span></li>
-        <li class="page-guess__item"><span>Изучите идеи путешественников</span></li>
-        <li class="page-guess__item"><span>Находите тех, кто похож на вас</span></li>
-        <li class="page-guess__item"><span>Путешествуйте вместе!</span></li>
+      <ul class="guess__list">
+        <li class="guess__item">Выберите направление</li>
+        <li class="guess__item">Изучите идеи путешественников</li>
+        <li class="guess__item">Находите тех, кто похож на вас</li>
+        <li class="guess__item">Путешествуйте вместе!</li>
       </ul>
     </section>
-    <section class="page-info">
-      <h2 class="page-info__caption">О сервисе</h2>
-      <p class="page-info__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-      <p class="page-info__text1">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+    <section class="info">
+      <h2 class="info__caption">О сервисе</h2>
+      <p class="info__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+      <p class="info__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
     </section>
-    <section class="page-destinations">
-      <h2 class="page-destinations__caption">Направления</h2>
-      <p class="page-destinations__advert">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-      <ul class="page-destinations__list countries-list">
-        <li class="countries-list__item">
-          <a href="#"><span class="visually-hidden">Тайланд</span>
-            <div class="countries-list__description">
-              <span class="countries-list__title">Тайланд</span>
-              <span class="countries-list__slogan">Джугли зовут!</span>
-              <span class="countries-list__users">18321</span>
+    <section class="destinations">
+      <h2 class="destinations__caption">Направления</h2>
+      <p class="destinations__advert">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+      <ul class="destinations__list">
+        <li class="destinations__list-item country-card">
+          <a class="country-card__wrapper" href="#">
+            <div class="country-card__description">
+              <span class="country-card__title">Тайланд</span>
+              <img class="country-card__flag country-card__flag--tai" src="#" width="20" height="20" alt="Флаг Тайланда">
+              <span class="country-card__slogan">Джугли зовут!</span>
+              <span class="country-card__users">18321</span>
             </div>
           </a>
         </li>
-        <li class="countries-list__item">
-          <a href="#"><span class="visually-hidden">Франция</span>
-            <div class="countries-list__description">
-              <span class="countries-list__title">Франция</span>
-              <span class="countries-list__slogan">Трэ бьен, манифик!</span>
-              <span class="countries-list__users">12518</span>
+        <li class="destinations__list-item country-card">
+          <a class="country-card__wrapper" href="#">
+            <div class="country-card__description">
+              <span class="country-card__title">Франция</span>
+              <img class="country-card__flag country-card__flag--tai" src="#" width="20" height="20" alt="Флаг Франции">
+              <span class="country-card__slogan">Трэ бьен, манифик!</span>
+              <span class="country-card__users">12518</span>
             </div>
           </a>
         </li>
-        <li class="countries-list__item">
-          <a href="#"><span class="visually-hidden">Чехия</span>
-            <div class="countries-list__description">
-              <span class="countries-list__title">Чехия</span>
-              <span class="countries-list__slogan">Закоулки старой Европы</span>
-              <span class="countries-list__users">5326</span>
+        <li class="destinations__list-item country-card">
+          <a class="country-card__wrapper" href="#">
+            <div class="country-card__description">
+              <span class="country-card__title">Чехия</span>
+              <img class="country-card__flag country-card__flag--tai" src="#" width="20" height="20" alt="Флаг Франции">
+              <span class="country-card__slogan">Закоулки старой Европы</span>
+              <span class="country-card__users">5326</span>
             </div>
           </a>
         </li>
       </ul>
-      <a class="page-destinations__link" href="#">Показать все</a>
+      <a class="destinations__link" href="#">Показать все</a>
     </section>
-    <section class="page-traveller">
-      <h2 class="page-traveller__caption">Попутчики</h2>
-      <p class="page-traveller__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <p class="page-traveller__text1">Теперь можно легко найти единомышленников!</p>
-      <ul class="page-traveller__list traveller-list">
-        <li class="traveller-list__item">
-          <a class="page-traveller__note" href="#">
-            <span class="<visually-hidden">Таня Фирсова</span>
-            <div class="page-traveller__note-caption">
+    <section class="travellers">
+      <h2 class="travellers__caption">Попутчики</h2>
+      <p class="travellers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+      <p class="travellers__text">Теперь можно легко найти единомышленников!</p>
+      <ul class="travellers__list">
+        <li class="traveller-card">
+          <a class="traveller-card__note" href="#">
+            <div class="traveller-card__note-caption">
               <h3 class="visually-hidden">Посетила следующие страны</h3>
-              <ul class="page-traveller__visited visited-countries">
-                <li class="visited-countries__item">
-                  <span class="visited-countries__name">Шри-Ланка</span>
-                  <img class="visited-countries__image visited-countries__image--shri" src="#" alt="Была на Шри-Ланка" width="20" height="20">
+              <ul class="traveller-card__visited visited-countries">
+                <li class="visited-countries__item visited-countries__item--shri">
+                  <span class="visually-hidden">Шри-Ланка</span>
                 </li>
-                <li class="visited-countries__item">
-                  <span class="visited-countries__name">Тайланд</span>
-                  <img class="visited-countries__image visited-countries__image--tai" src="#" alt="Была в Тайланде" width="20" height="20">
+                <li class="visited-countries__item visited-countries__item--tai">
+                  <span class="visually-hidden">Тайланд</span>
                 </li>
-                <li class="visited-countries__item">
-                  <span class="visited-countries__name">Сейшельские острова</span>
-                  <img class="visited-countries__image visited-countries__image--seych" src="#" alt="Была на Сейшельских островах" width="20" height="20">
+                <li class="visited-countries__item visited-countries__item--seych">
+                  <span class="visually-hidden">Сейшельские острова</span>
                 </li>
               </ul>
-              <span class="page-traveller__name">Таня Фирсова</span>
+              <span class="traveller-card__name">Таня Фирсова</span>
               <h3 class="visually-hidden">Интересы</h3>
-              <ul class="page-traveller__hobbies hobbies-list">
+              <ul class="traveller-card__hobbies hobbies-list">
                 <li class="hobbies-list__item">#ЗОЖ</li>
                 <li class="hobbies-list__item">#ПП</li>
                 <li class="hobbies-list__item">#Фитнес</li>
@@ -171,7 +166,7 @@
                 <li class="hobbies-list__item">#смузи</li>
               </ul>
               <h3 class="visually-hidden">Предпочитает передвигаться</h3>
-              <ul class="page-traveller__moving moving-list">
+              <ul class="traveller-card__moving moving-list">
                 <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
                 <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
                 <li class="moving-list__item moving-list__item--cycle"><span class="visually-hidden">На велосипеде</span></li>
@@ -180,12 +175,11 @@
             </div>
           </a>
         </li>
-        <li class="traveller-list__item">
-          <a class="page-traveller__note" href="">
-            <span class="<visually-hidden">Петя Демин</span>
-            <div class="page-traveller__note-caption">
+        <li class="traveller-card">
+          <a class="traveller-card__note" href="">
+            <div class="traveller-card__note-caption">
               <h3 class="visually-hidden">Посетил следующие страны</h3>
-              <ul class="page-traveller__visited visited-countries">
+              <ul class="traveller-card__visited visited-countries">
                 <li class="visited-countries__item">
                   <span class="visited-countries__name">Германия</span>
                   <img class="visited-countries__image visited-countries__image--germ" src="#" alt="Был в Германии" width="20" height="20">
@@ -195,17 +189,17 @@
                   <img class="visited-countries__image visited-countries__image--cze" src="#" alt="Был в Чехии" width="20" height="20">
                 </li>
               </ul>
-              <span class="page-traveller__name">Петя Демин</span>
+              <span class="traveller-card__name">Петя Демин</span>
               <h3 class="visually-hidden">Интересы</h3>
-              <ul class="page-traveller__hobbies">
-                <li class="page-traveller__hobbies-item">#бургер</li>
-                <li class="page-traveller__hobbies-item">#бар</li>
-                <li class="page-traveller__hobbies-item">#Футбол</li>
-                <li class="page-traveller__hobbies-item">#концерт</li>
-                <li class="page-traveller__hobbies-item">#крафт</li>
+              <ul class="traveller-card__hobbies hobbies-list">
+                <li class="hobbies-list__item">#бургер</li>
+                <li class="hobbies-list__item">#бар</li>
+                <li class="hobbies-list__item">#Футбол</li>
+                <li class="hobbies-list__item">#концерт</li>
+                <li class="hobbies-list__item">#крафт</li>
               </ul>
               <h3 class="visually-hidden">Предпочитает передвигаться</h3>
-              <ul class="page-traveller__moving moving-list">
+              <ul class="traveller-card__moving moving-list">
                 <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
                 <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
                 <li class="moving-list__item moving-list__item--cycle"><span class="visually-hidden">На велосипеде</span></li>
@@ -215,77 +209,73 @@
           </a>
         </li>
       </ul>
-      <a class="page-traveller__link" href="catalog.html">Показать всех</a>
+      <a class="traveller-card__link" href="catalog.html">Показать всех</a>
     </section>
-    <section class="page-payment">
-      <h2 class="page-payment__caption">Хотите стать попутчиком? Регистрируйтесь и выбирайте тарифный план</h2>
-      <a class="page-payment__create-profile" href="#">Добавтьте свой профиль</a>
-      <ul class="page-payment__list">
-        <li class="page-payment__list-item">Базовое размещение<br>Бесплатно</li>
-        <li class="page-payment__list-item">Вывод на первых позициях<br>99 руб./мес</li>
-        <li class="page-payment__list-item">Кастомный цвет карточки<br>59 руб./мес</li>
+    <section class="payment">
+      <h2 class="payment__caption">Хотите стать попутчиком? Регистрируйтесь и выбирайте тарифный план</h2>
+      <a class="payment__create-profile" href="#">Добавтьте свой профиль</a>
+      <ul class="payment__list">
+        <li class="payment__list-item">Базовое размещение Бесплатно</li>
+        <li class="payment__list-item">Вывод на первых позициях 99 руб./мес</li>
+        <li class="payment__list-item">Кастомный цвет карточки 59 руб./мес</li>
       </ul>
-      <a class="page-payment__link" href="#">Показать тарифы для бизнеса</a>
+      <a class="payment__link" href="#">Показать тарифы для бизнеса</a>
     </section>
-    <section class="page-help">
-      <h2 class="page-help__caption">Заинтересовались?</h2>
-      <p class="page-help__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="page-help__link" href="#">авторизуйтесь</a>.</p>
-      <form class="page-help__form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="login-field" class="visually-hidden"></label>
-        <input class="page-help__form-email" type="text" placeholder="E-mail" id="login-field" name="email">
-        <button class="page-help__form-button" type="submit">Отправить</button>
-        <p class="page-help__text1">Остались вопросы? Мы с радостью на них ответим!</p>
-        <ul class="page-help__contact contact-list">
-          <li class="contact-list__item contact-list__item--call">
-            <a href="#">8 800 555-86-28</a>
-          </li>
-          <li class="contact-list__item contact-list__item--email">
-            <a href="#">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
+    <section class="help">
+      <h2 class="help__caption">Заинтересовались?</h2>
+      <p class="help__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="help__link" href="#">авторизуйтесь</a>.</p>
+      <form class="help__form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="help__form-email" type="text" placeholder="E-mail" name="email">
+        <button class="help__form-button" type="submit">Отправить</button>
       </form>
+      <p class="help__text">Остались вопросы? Мы с радостью на них ответим!</p>
+      <ul class="help__contact contact-list">
+        <li class="contact-list__item contact-list__item--call">
+          <a href="#">8 800 555-86-28</a>
+        </li>
+        <li class="contact-list__item contact-list__item--email">
+          <a href="#">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
     </section>
-    <section class="page-adress">
+    <section class="adress">
       <h2 class="visually-hidden">Офис находится по адресу</h2>
-      <p class="page-adress__street">ул. Большая<br>Конюшенная, 19/8</p>
-      <a class="page-adress__route" href="#">Проложить маршрут</a>
+      <p class="adress__street">ул. Большая<br>Конюшенная, 19/8</p>
+      <a class="adress__route" href="#">Проложить маршрут</a>
     </section>
-    <div class="page-map">
-      <div class="page-map__wrapper" id="map">
-        <img class="page-map__image" src="#" width="300" height="300" alt="Схема проезда">
+    <div class="map">
+      <div class="map__wrapper" id="map">
+        <img class="map__image" src="#" width="300" height="300" alt="Схема проезда">
       </div>
     </div>
   </main>
-  <footer class="page-footer">
-    <a class="page-footer__logo logo">
+  <footer class="footer">
+    <a class="footer__logo logo">
       <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
     </a>
-    <div class="page-footer__social-wrapper">
-      <ul class="page-footer__social social-list">
+    <div class="footer__social-wrapper">
+      <ul class="footer__social social-list">
         <li class="social-list__item">
-          <a href="#">
+          <a class="social-list__item-link social-list__item-link--fb" href="#">
             <span class="visually-hidden">Facebook</span>
-            <img class="social-list__image social-list__image--fb" src="#" width="20" height="10" alt="Мы в Фейсбуке">
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#">
-            <span class="visually-hidden">VK</span>
-            <img class="social-list__image social-list__image--vk" src="#" width="20" height="10" alt="Мы во Вконтакте">
+          <a class="social-list__item-link social-list__item-link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#">
+          <a class="social-list__item-link social-list__item-link--inst" href="#">
             <span class="visually-hidden">Instagram</span>
-            <img class="social-list__image social-list__image--inst" src="#" width="20" height="10" alt="Мы в Инстаграме">
           </a>
         </li>
       </ul>
     </div>
-    <div class="page-footer__wrapper-developer">
-      <span class="page-footer__developer-text">Разработано</span>
-      <a class="page-footer__developer-link">
-        <img class="page-footer__developer-logo" src="#" width="100" height="19" alt="Логотип разработчика - htmlacademy">
+    <div class="footer__wrapper-developer">
+      <span class="footer__developer-text">Разработано</span>
+      <a class="footer__developer-link">
+        <img class="footer__developer-logo" src="#" width="100" height="19" alt="Логотип разработчика - htmlacademy">
       </a>
     </div>
   </footer>

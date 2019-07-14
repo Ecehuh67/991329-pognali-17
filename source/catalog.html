@@ -7,14 +7,14 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo logo">
+  <header class="header">
+    <a class="header__logo logo">
       <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
     </a>
-    <a class="page-header__show-menu" href="#">Показать меню</a>
+    <button class="header__show-menu" type="button">Показать меню</button>
     <nav class="main-nav main-nav--hidden">
       <a class="logo logo--white">
-        <img class="logo__image logo__image--black" src="#" width="100" height="19" alt="Логотип Погнали">
+        <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
       </a>
       <button class="main-nav__toggle" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
@@ -25,11 +25,7 @@
         </ul>
       </div>
       <div class="main-nav__identification-wrapper">
-        <ul class="main-nav__login user-identification-list">
-          <li class="user-identification-list__item">
-            <a class="user-identification-list__login" href="#">Авторизация</a>
-          </li>
-        </ul>
+        <a class="main-nav__login user-identification-login" href="#">Авторизация</a>
       </div>
       <div class="main-nav__contact-wrapper">
         <ul class="main-nav__contact contact-list">
@@ -44,74 +40,87 @@
       <div class="main-nav__social-wrapper">
         <ul class="main-nav__social social-list">
           <li class="social-list__item">
-            <a href="#">
+            <a class="social-list__item-link social-list__item-link--fb" href="#">
               <span class="visually-hidden">Facebook</span>
-              <img class="social-list__image social-list__image--fb" src="#" width="20" height="10" alt="Мы в Фейсбуке">
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#">
-              <span class="visually-hidden">VK</span>
-              <img class="social-list__image social-list__image--vk" src="#" width="20" height="10" alt="Мы во Вконтакте">
+            <a class="social-list__item-link social-list__item-link--vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#">
+            <a class="social-list__item-link social-list__item-link--inst" href="#">
               <span class="visually-hidden">Instagram</span>
-              <img class="social-list__image social-list__image--inst" src="#" width="20" height="10" alt="Мы в Инстаграме">
             </a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="page-catalog">
-    <h1 class="page-catalog__caption">Попутчики</h1>
-    <span class="page-catalog__filter">фильтрация по странам</span>
-    <form class="page-catalog__form travellers-form" action=" https://echo.htmlacademy.ru." method="post">
-      <h2 class="travellers-form__caption">Подберите идеального попутчика</h2>
+  <main class="catalog">
+    <h1 class="catalog__caption">Попутчики</h1>
+    <h2 class="catalog__filter">фильтрация по странам</h2>
+    <form class="catalog__form travellers-form" action=" https://echo.htmlacademy.ru." method="post">
+      <h3 class="travellers-form__caption">Подберите идеального попутчика</h3>
       <ul class="travellers-form__list">
-        <li class="travellers-form__list-item">Хобби
-          <ul class="travellers-form__list-hobbies hobbies-list">
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#ЗОЖ</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#ПП</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#Фитнес</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#пляж</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#авокадо</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#смузи</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#бургер</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#бар</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#Футбол</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#концерт</li>
-            <li class="hobbies-list__item">
-              <input class="hobbies-list__item-input" type="checkbox">#крафт</li>
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Хобби</h4>
+          <ul class="travellers-form__list-hobbies checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#ЗОЖ</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#ПП</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#Фитнес</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#пляж</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#авокадо</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#смузи</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#бургер</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#бар</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#Футбол</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#концерт</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#крафт</li>
           </ul>
         </li>
-        <li class="travellers-form__list-item">Музыка
-          <ul class="music-preferences">
-            <li class="music-preferences__item">
-              <input class="music-preferences__item-input" type="checkbox">Тяжелый рок
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Музыка</h4>
+          <ul class="checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">Тяжелый рок
             </li>
-            <li class="music-preferences__item">
-              <input class="music-preferences__item-input" type="checkbox">Русский рэр
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">Русский рэр
             </li>
-            <li class="music-preferences__item">
-              <input class="music-preferences__item-input" type="checkbox">Евроденс
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">Евроденс
             </li>
           </ul>
         </li>
-        <li class="travellers-form__list-item">Еда</li>
-        <li class="travellers-form__list-item">Транспорт
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Еда</h4>
+        <ul class="checkbox-list">
+          <li class="checkbox-list__item">
+            <input class="checkbox-list__item-input" type="checkbox">
+          </li>
+          <li class="checkbox-list__item">
+            <input class="checkbox-list__item-input" type="checkbox">
+          </li>
+          <li class="checkbox-list__item">
+            <input class="checkbox-list__item-input" type="checkbox">
+          </li>
+        </ul>
+      </li>
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Транспорт</h4>
           <ul class="moving-list">
             <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
             <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
@@ -119,7 +128,8 @@
             <li class="moving-list__item moving-list__item--walking"><span class="visually-hidden">Пешком</span></li>
           </ul>
         </li>
-        <li class="travellers-form__list-item">Левел
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Левел</h4>
           <div class="filter-level-range-container">
             <div class="range-controls">
               <div class="scale">
@@ -131,78 +141,76 @@
           </div>
         </li>
       </ul>
-      <button class="travellers-form__button" type+="submit">Показать</button>
+      <button class="travellers-form__button" type="submit">Показать</button>
     </form>
-    <section class="page-catalog__travellers">
-      <ul class="page-catalog__travellers-list card-travellers-list">
-        <li class="card-travellers-list__item">
-          <span>Таня Фирсова</span>
-          <span>1,5 M</span>
-          <ul class="page-catalog__travellers-hobbies hobbies-list">
-            <li class="hobbies-list__item">#ЗОЖ</li>
-            <li class="hobbies-list__item">#ПП</li>
-            <li class="hobbies-list__item">#Фитнес</li>
-            <li class="hobbies-list__item">#пляж</li>
-            <li class="hobbies-list__item">#авокадо</li>
-            <li class="hobbies-list__item">#смузи</li>
+    <section class="catalog__travellers">
+      <ul class="catalog__travellers-list">
+        <li class="card-travellers">
+          <h3 class="card-travellers__name">Таня Фирсова</h3>
+          <img class="card-travellers__photo" src="#" width="30" height="30" alt="аватарка попутчика">
+          <span class="card-travellers__like">1,5 M</span>
+          <ul class="card-travellers__hobbies hashtag-list">
+            <li class="hashtag-list__item">#ЗОЖ</li>
+            <li class="hashtag-list__item">#ПП</li>
+            <li class="hashtag-list__item">#Фитнес</li>
+            <li class="hashtag-list__item">#пляж</li>
+            <li class="hashtag-list__item">#авокадо</li>
+            <li class="hashtag-list__item">#смузи</li>
           </ul>
-          <span class="page-catalog__travellers-wanna">хочет посетить:</span>
-          <ul class="page-catalog__travellers-wanna visited-contries-list">
+          <h4 class="card-travellers__wanna">хочет посетить:</h4>
+          <ul class="card-travellers__wanna-list visited-contries-list">
             <li class="visited-contries-list__item visited-contries-list__item--shri">Шри ланка</li>
             <li class="visited-contries-list__item visited-contries-list__item--tai">Тайланд</li>
             <li class="visited-contries-list__item visited-contries-list__item--seych">Сейшелы</li>
           </ul>
-          <span>транспорт:</span>
-          <ul class="page-catalog__travellers-transport moving-list">
-            <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
-            <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
-            <li class="moving-list__item moving-list__item--cycle"><span class="visually-hidden">На велосипеде</span></li>
-            <li class="moving-list__item moving-list__item--walking"><span class="visually-hidden">Пешком</span></li>
+          <h4 class="card-travellers__transport">транспорт:</h4>
+          <ul class="card-travellers__transport-list moving-list">
+            <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На самолете</span></li>
+            <li class="moving-list__item moving-list__item--bus moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
+            <li class="moving-list__item moving-list__item--cycle moving-list__item--active"><span class="visually-hidden">На велосипеде</span></li>
+            <li class="moving-list__item moving-list__item--walking moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
           </ul>
-          <span>левел:</span>
-          <ul class="page-catalog__travellers-level level-list">
+          <h4 class="card-travellers__level">левел:</h4>
+          <ul class="card-travellers__level-list level-list">
             <li class="level-list__item">99</li>
           </ul>
+          <a class="card-travellers__invite" href="#">Позвать</a>
         </li>
-        <a class="page-catalog__invite" href="#">Позвать</a>
       </ul>
-      <a class="page-catalog__show-all-travellers" href="#">показать еще</a>
-      <div class="page-catalog__switcher">
+      <a class="catalog__show-all-travellers" href="#">показать еще</a>
+      <div class="catalog__switcher">
         <span class="visually-hidden">Назад</span>
         <span class="visually-hidden">Вперед</span>
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <a class="page-footer__logo logo">
+  <footer class="footer">
+    <a class="footer__logo logo">
       <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
     </a>
-    <div class="page-footer__social-wrapper">
-      <ul class="page-footer__social social-list">
+    <div class="footer__social-wrapper">
+      <ul class="footer__social social-list">
         <li class="social-list__item">
-          <a href="#">
+          <a class="social-list__item-link social-list__item-link--fb" href="#">
             <span class="visually-hidden">Facebook</span>
-            <img class="social-list__image social-list__image--fb" src="#" width="20" height="10" alt="Мы в Фейсбуке">
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#">
-            <span class="visually-hidden">VK</span>
-            <img class="social-list__image social-list__image--vk" src="#" width="20" height="10" alt="Мы во Вконтакте">
+          <a class="social-list__item-link social-list__item-link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#">
+          <a class="social-list__item-link social-list__item-link--inst" href="#">
             <span class="visually-hidden">Instagram</span>
-            <img class="social-list__image social-list__image--inst" src="#" width="20" height="10" alt="Мы в Инстаграме">
           </a>
         </li>
       </ul>
     </div>
-    <div class="page-footer__wrapper-developer">
-      <span class="page-footer__developer-text">Разработано</span>
-      <a class="page-footer__developer-link">
-        <img class="page-footer__developer-logo" src="#" width="100" height="19" alt="Логотип разработчика - htmlacademy">
+    <div class="footer__wrapper-developer">
+      <span class="footer__developer-text">Разработано</span>
+      <a class="footer__developer-link">
+        <img class="footer__developer-logo" src="#" width="100" height="19" alt="Логотип разработчика - htmlacademy">
       </a>
     </div>
   </footer>
