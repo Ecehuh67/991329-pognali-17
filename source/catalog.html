@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo logo">
+      <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
+    </a>
+    <button class="header__show-menu" type="button">Показать меню</button>
+    <nav class="main-nav main-nav--hidden">
+      <a class="logo logo--white">
+        <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
+      </a>
+      <button class="main-nav__toggle" type="button">Закрыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list nav-list">
+          <li><a class="nav-list__item" href="#">О сервисе</a></li>
+          <li><a class="nav-list__item" href="catalog.html">Направления</a></li>
+          <li><a class="nav-list__item" href="form.html">Попутчики</a></li>
+        </ul>
+      </div>
+      <div class="main-nav__identification-wrapper">
+        <a class="main-nav__login user-identification-login" href="#">Авторизация</a>
+      </div>
+      <div class="main-nav__contact-wrapper">
+        <ul class="main-nav__contact contact-list">
+          <li class="contact-list__item contact-list__item--call">
+            <a href="#">8 800 555-86-28</a>
+          </li>
+          <li class="contact-list__item contact-list__item--email">
+            <a href="#">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__social-wrapper">
+        <ul class="main-nav__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__item-link social-list__item-link--fb" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__item-link social-list__item-link--vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__item-link social-list__item-link--inst" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="catalog">
+    <h1 class="catalog__caption">Попутчики</h1>
+    <h2 class="catalog__filter">фильтрация по странам</h2>
+    <form class="catalog__form travellers-form" action=" https://echo.htmlacademy.ru." method="post">
+      <h3 class="travellers-form__caption">Подберите идеального попутчика</h3>
+      <ul class="travellers-form__list">
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Хобби</h4>
+          <ul class="travellers-form__list-hobbies checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#ЗОЖ</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#ПП</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#Фитнес</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#пляж</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#авокадо</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#смузи</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#бургер</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#бар</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#Футбол</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#концерт</li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">#крафт</li>
+          </ul>
+        </li>
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Музыка</h4>
+          <ul class="checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">Тяжелый рок
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">Русский рэр
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">Евроденс
+            </li>
+          </ul>
+        </li>
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Еда</h4>
+        <ul class="checkbox-list">
+          <li class="checkbox-list__item">
+            <input class="checkbox-list__item-input" type="checkbox">
+          </li>
+          <li class="checkbox-list__item">
+            <input class="checkbox-list__item-input" type="checkbox">
+          </li>
+          <li class="checkbox-list__item">
+            <input class="checkbox-list__item-input" type="checkbox">
+          </li>
+        </ul>
+      </li>
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Транспорт</h4>
+          <ul class="moving-list">
+            <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
+            <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
+            <li class="moving-list__item moving-list__item--cycle"><span class="visually-hidden">На велосипеде</span></li>
+            <li class="moving-list__item moving-list__item--walking"><span class="visually-hidden">Пешком</span></li>
+          </ul>
+        </li>
+        <li class="travellers-form__list-item">
+          <h4 class="filter-caption">Левел</h4>
+          <div class="filter-level-range-container">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle--min"></div>
+              <div class="range-toggle range-toggle--max"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button class="travellers-form__button" type="submit">Показать</button>
+    </form>
+    <section class="catalog__travellers">
+      <ul class="catalog__travellers-list">
+        <li class="card-travellers">
+          <h3 class="card-travellers__name">Таня Фирсова</h3>
+          <img class="card-travellers__photo" src="#" width="30" height="30" alt="аватарка попутчика">
+          <span class="card-travellers__like">1,5 M</span>
+          <ul class="card-travellers__hobbies hashtag-list">
+            <li class="hashtag-list__item">#ЗОЖ</li>
+            <li class="hashtag-list__item">#ПП</li>
+            <li class="hashtag-list__item">#Фитнес</li>
+            <li class="hashtag-list__item">#пляж</li>
+            <li class="hashtag-list__item">#авокадо</li>
+            <li class="hashtag-list__item">#смузи</li>
+          </ul>
+          <h4 class="card-travellers__wanna">хочет посетить:</h4>
+          <ul class="card-travellers__wanna-list visited-contries-list">
+            <li class="visited-contries-list__item visited-contries-list__item--shri">Шри ланка</li>
+            <li class="visited-contries-list__item visited-contries-list__item--tai">Тайланд</li>
+            <li class="visited-contries-list__item visited-contries-list__item--seych">Сейшелы</li>
+          </ul>
+          <h4 class="card-travellers__transport">транспорт:</h4>
+          <ul class="card-travellers__transport-list moving-list">
+            <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На самолете</span></li>
+            <li class="moving-list__item moving-list__item--bus moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
+            <li class="moving-list__item moving-list__item--cycle moving-list__item--active"><span class="visually-hidden">На велосипеде</span></li>
+            <li class="moving-list__item moving-list__item--walking moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
+          </ul>
+          <h4 class="card-travellers__level">левел:</h4>
+          <ul class="card-travellers__level-list level-list">
+            <li class="level-list__item">99</li>
+          </ul>
+          <a class="card-travellers__invite" href="#">Позвать</a>
+        </li>
+      </ul>
+      <a class="catalog__show-all-travellers" href="#">показать еще</a>
+      <div class="catalog__switcher">
+        <span class="visually-hidden">Назад</span>
+        <span class="visually-hidden">Вперед</span>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__logo logo">
+      <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
+    </a>
+    <div class="footer__social-wrapper">
+      <ul class="footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__item-link social-list__item-link--fb" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__item-link social-list__item-link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__item-link social-list__item-link--inst" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__wrapper-developer">
+      <span class="footer__developer-text">Разработано</span>
+      <a class="footer__developer-link">
+        <img class="footer__developer-logo" src="#" width="100" height="19" alt="Логотип разработчика - htmlacademy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
