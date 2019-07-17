@@ -8,12 +8,12 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header html-wrapper">
     <a class="header__logo logo">
       <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
     </a>
     <button class="header__show-menu" type="button">Показать меню</button>
-    <nav class="main-nav main-nav--hidden">
+    <nav class="main-nav main-nav--hidden html-wrapper">
       <a class="logo logo--white">
         <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
       </a>
@@ -65,7 +65,7 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Погнали - лучший сервис для путешествий</h1>
-    <section class="main__contact feedback">
+    <section class="main__contact feedback html-wrapper">
       <h2 class="feedback__caption">В путешествиес крутыми попутчиками!</h2>
       <ul class="feedback__contact contact-panel">
         <li class="contact-panel__item">
@@ -79,7 +79,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-review">
+    <section class="main-review html-wrapper">
       <blockquote class="main-review__quote">
         <p class="main-review__text">«Лучшее приложение, что я видел в жизни!»</p>
         <cite class="main-review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
@@ -134,7 +134,7 @@
           </a>
         </li>
       </ul>
-      <a class="destinations__link" href="#">Показать все</a>
+      <a class="destinations__link button-show-all" href="#">Показать все</a>
     </section>
     <section class="travellers">
       <h2 class="travellers__caption">Попутчики</h2>
@@ -156,7 +156,10 @@
                   <span class="visually-hidden">Сейшельские острова</span>
                 </li>
               </ul>
-              <span class="traveller-card__name">Таня Фирсова</span>
+              <div class="online-status">
+                <div class="online-status__item"></div>
+                <span class="traveller-card__name">Таня Фирсова</span>
+              </div>
               <h3 class="visually-hidden">Интересы</h3>
               <ul class="traveller-card__hobbies hobbies-list">
                 <li class="hobbies-list__item">#ЗОЖ</li>
@@ -168,10 +171,10 @@
               </ul>
               <h3 class="visually-hidden">Предпочитает передвигаться</h3>
               <ul class="traveller-card__moving moving-list">
-                <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
+                <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На самолете</span></li>
                 <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
                 <li class="moving-list__item moving-list__item--cycle"><span class="visually-hidden">На велосипеде</span></li>
-                <li class="moving-list__item moving-list__item--walking"><span class="visually-hidden">Пешком</span></li>
+                <li class="moving-list__item moving-list__item--running"><span class="visually-hidden">Пешком</span></li>
               </ul>
             </div>
           </a>
@@ -181,16 +184,17 @@
             <div class="traveller-card__note-caption">
               <h3 class="visually-hidden">Посетил следующие страны</h3>
               <ul class="traveller-card__visited visited-countries">
-                <li class="visited-countries__item">
-                  <span class="visited-countries__name">Германия</span>
-                  <img class="visited-countries__image visited-countries__image--germ" src="#" alt="Был в Германии" width="20" height="20">
+                <li class="visited-countries__item visited-countries__item--germ flag">
+                  <span class="visually-hidden">Германия</span>
                 </li>
-                <li class="visited-countries__item">
-                  <span class="visited-countries__name">Чехия</span>
-                  <img class="visited-countries__image visited-countries__image--cze" src="#" alt="Был в Чехии" width="20" height="20">
+                <li class="visited-countries__item visited-countries__item--cze">
+                  <span class="visually-hidden">Чехия</span>
                 </li>
               </ul>
-              <span class="traveller-card__name">Петя Демин</span>
+              <div class="online-status">
+                <div class="online-status__item online-status__item--active"></div>
+                <span class="traveller-card__name">Петя Демин</span>
+              </div>
               <h3 class="visually-hidden">Интересы</h3>
               <ul class="traveller-card__hobbies hobbies-list">
                 <li class="hobbies-list__item">#бургер</li>
@@ -201,16 +205,16 @@
               </ul>
               <h3 class="visually-hidden">Предпочитает передвигаться</h3>
               <ul class="traveller-card__moving moving-list">
-                <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
-                <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
+                <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На самолете</span></li>
+                <li class="moving-list__item moving-list__item--bus moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
                 <li class="moving-list__item moving-list__item--cycle"><span class="visually-hidden">На велосипеде</span></li>
-                <li class="moving-list__item moving-list__item--walking"><span class="visually-hidden">Пешком</span></li>
+                <li class="moving-list__item moving-list__item--running moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
               </ul>
             </div>
           </a>
         </li>
       </ul>
-      <a class="traveller-card__link" href="catalog.html">Показать всех</a>
+      <a class="travellers__link button-show-all" href="catalog.html">Показать всех</a>
     </section>
     <section class="payment">
       <h2 class="payment__caption">Хотите стать попутчиком? Регистрируйтесь и выбирайте тарифный план</h2>
