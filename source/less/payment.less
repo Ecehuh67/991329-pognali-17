@@ -1,3 +1,136 @@
 .payment {
-  width: 270px;
+  display: flex;
+  flex-direction: column;
+  .border-radius(20px);
+}
+
+.payment__create-profile {
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 25px;
+  padding-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 245px;
+  .fonts(24px,24px,700);
+
+  text-decoration: none;
+  color: @caption-font-color;
+}
+
+.payment__create-profile::after {
+  position: absolute;
+  content: " ";
+  right: -50px;
+  top: -65px;
+
+  width: 198px;
+  height: 198px;
+
+  transform: scale(0.5);
+
+  background-image: url("../img/rates@1x.png");
+}
+
+.payment__list {
+  .discard;
+  margin-left: 25px;
+  margin-bottom: 20px;
+
+  list-style: none;
+}
+
+.payment__list-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 10px;
+  width: 200px;
+  min-height: 66px;
+  border-top: 1px solid #e1e3e9;
+}
+
+.payment__list-item:nth-of-type(1)::before {
+  position: absolute;
+  content: " ";
+  right: -40px;
+  top: 10px;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: #ffa530;
+}
+
+.payment__list-item:nth-of-type(1)::after {
+  position: absolute;
+  content: "1";
+  right: -23px;
+  top: 20px;
+
+  width: 5px;
+  height: 5px;
+
+  color: #ffffff;
+}
+
+.payment__list-item:nth-of-type(2)::before {
+  position: absolute;
+  content: " ";
+  right: -40px;
+  top: 10px;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: #ffbd30;
+}
+
+.payment__list-item:nth-of-type(2)::after {
+  position: absolute;
+  content: "2";
+  right: -23px;
+  top: 20px;
+
+  width: 5px;
+  height: 5px;
+
+  color: #ffffff;
+}
+
+.payment__list-item:nth-of-type(3)::before {
+  position: absolute;
+  content: " ";
+  right: -40px;
+  top: 10px;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: #ffd74b;
+}
+
+.payment__list-item:nth-of-type(3)::after {
+  position: absolute;
+  content: "3";
+  right: -23px;
+  top: 20px;
+
+  width: 5px;
+  height: 5px;
+
+  color: #ffffff;
+}
+
+.payment__link {
+  display: block;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  .fonts(16px,16px,700);
+  text-decoration: none;
+  color: @base-color;
 }
