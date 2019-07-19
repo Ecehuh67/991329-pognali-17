@@ -3,9 +3,7 @@
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
-
   width: 320px;
-
   background-color: @base-color;
 }
 
@@ -14,7 +12,37 @@
   padding-left: 25px;
   padding-right: 25px;
   margin: auto;
-
   width: 320px;
   background-color: #edeff6;
+}
+@media (min-width: @tablet-width) {
+  .html-wrapper {
+    width: 688px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .html-wrapper--light {
+    width: 688px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .html-wrapper {
+    width: 1440px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .html-wrapper--light {
+    width: 1440px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }

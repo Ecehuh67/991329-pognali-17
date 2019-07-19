@@ -1,4 +1,5 @@
 .main-nav {
+  order: 3;
   min-height: 570px;
   background-color: #ffffff;
 }
@@ -47,4 +48,36 @@
 
 .main-nav__social {
   margin-left: 80px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 550px;
+    min-height: 50px;
+    background-color: transparent;
+  }
+
+  .main-nav--hidden {
+    display: block;
+    position: inherit;
+  }
+  .main-nav__list  {
+    display: flex;
+  }
+
+  .main-nav__logo {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__identification-wrapper {
+    display: none;
+  }
+
+  .main-nav__contact-wrapper {
+    margin: 0;
+  }
 }

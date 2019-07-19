@@ -36,3 +36,18 @@
   background-image: url("../img/topmenu-mail.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+  .contact-panel {
+    margin: 0;
+  }
+  .contact-panel__item:not(:last-of-type) {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-panel__item:not(:last-of-type) {
+    display: flex;
+  }
+}

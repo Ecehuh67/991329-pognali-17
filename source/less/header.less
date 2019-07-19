@@ -2,19 +2,25 @@
   display: flex;
   position: relative;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
   padding-top: 10px;
   min-height: 60px;
   background-color: #161c36;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-position: 100px 200px, 0 0;
+  background-repeat: no-repeat;
 }
 
 .header__logo {
   display: block;
+  order: 1;
 }
 
 .header__show-menu {
   position: relative;
+  order: 2;
   width: 40px;
   height: 25px;
   font-size: 0;
@@ -38,4 +44,61 @@
 
 .header__show-menu::before {
   bottom: 7px;
+}
+
+.header__caption {
+  order: 4;
+  .discard;
+  margin-top: 20px;
+  padding-left: 25px;
+  .fonts(36px,40px,700);
+  color: #ffffff;
+}
+
+.header__contact {
+  order: 5;
+  margin-left: 0px;
+}
+.header-review {
+  order: 6;
+}
+
+.header__guess {
+  order: 7;
+}
+
+@media (min-width: @tablet-width) {
+  .header__contact {
+    order: 4;
+  }
+  .header__caption {
+    order: 5;
+    box-sizing: border-box;
+    padding-left: 175px;
+    padding-right: 175px;
+    min-height: 300px;
+  }
+  .header-review  {
+    box-sizing: border-box;
+    padding-right: 300px;
+    min-height: 300px;
+  }
+  .header__guess {
+    width: 680px;
+    min-height: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__show-menu {
+    display: none;
+  }
+  .header__caption {
+    .discard;
+    width: 630px;
+  }
+  .header-review  {
+    .discard;
+    width: 630px;
+  }
 }

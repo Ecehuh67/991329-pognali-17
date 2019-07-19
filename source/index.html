@@ -14,7 +14,7 @@
     </a>
     <button class="header__show-menu" type="button">Показать меню</button>
     <nav class="main-nav main-nav--hidden html-wrapper">
-      <a class="logo logo--white">
+      <a class="main-nav__logo logo logo--white">
         <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
       </a>
       <button class="main-nav__toggle" type="button">Закрыть меню</button>
@@ -62,12 +62,9 @@
         </ul>
       </div>
     </nav>
-  </header>
-  <main class="main">
-    <h1 class="visually-hidden">Погнали - лучший сервис для путешествий</h1>
-    <section class="main__contact feedback html-wrapper">
-      <h2 class="feedback__caption">В путешествиес крутыми попутчиками!</h2>
-      <ul class="feedback__contact contact-panel">
+    <h2 class="header__caption">В путешествие с крутыми попутчиками!</h2>
+    <section class="header__contact">
+      <ul class="header__list feedback__contact contact-panel">
         <li class="contact-panel__item">
           <a class="contact-panel__item-link contact-panel__item-link--phone" href="tel:+78005558628"><span class="visually-hidden">Телефон</span></a>
         </li>
@@ -79,7 +76,25 @@
         </li>
       </ul>
     </section>
-    <section class="main-review html-wrapper">
+    <section class="header-review">
+      <blockquote class="review__quote">
+        <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
+        <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      </blockquote>
+    </section>
+    <section class="header__guess guess">
+      <h2 class="visually-hidden">Советы для путешествинников от Погнали</h2>
+      <ul class="guess__list">
+        <li class="guess__item">Выберите направление</li>
+        <li class="guess__item">Изучите идеи путешественников</li>
+        <li class="guess__item">Находите тех, кто похож на вас</li>
+        <li class="guess__item">Путешествуйте вместе!</li>
+      </ul>
+    </section>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Погнали - лучший сервис для путешествий</h1>
+    <!--<section class="main-review html-wrapper">
       <blockquote class="main-review__quote">
         <p class="main-review__text">«Лучшее приложение, что я видел в жизни!»</p>
         <cite class="main-review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
@@ -93,7 +108,7 @@
         <li class="guess__item">Находите тех, кто похож на вас</li>
         <li class="guess__item">Путешествуйте вместе!</li>
       </ul>
-    </section>
+    </section>-->
     <section class="info html-wrapper">
       <h2 class="info__caption">О сервисе</h2>
       <p class="info__slogan">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
