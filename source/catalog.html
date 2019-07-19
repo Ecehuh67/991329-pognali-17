@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header html-wrapper">
     <a class="header__logo logo">
-      <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
+      <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
     </a>
     <button class="header__show-menu" type="button">Показать меню</button>
-    <nav class="main-nav main-nav--hidden">
+    <nav class="main-nav main-nav--hidden html-wrapper">
       <a class="logo logo--white">
-        <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
+        <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
       </a>
       <button class="main-nav__toggle" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
@@ -25,15 +26,19 @@
         </ul>
       </div>
       <div class="main-nav__identification-wrapper">
-        <a class="main-nav__login user-identification-login" href="#">Авторизация</a>
+        <ul class="main-nav__login user-identification-list">
+          <li class="user-identification-list__item">
+            <a class="user-identification-list__login login-link" href="#">Авторизация</a>
+          </li>
+        </ul>
       </div>
       <div class="main-nav__contact-wrapper">
         <ul class="main-nav__contact contact-list">
           <li class="contact-list__item contact-list__item--call">
-            <a href="#">8 800 555-86-28</a>
+            <a class="contact-list__item-link" href="#">8 800 555-86-28</a>
           </li>
           <li class="contact-list__item contact-list__item--email">
-            <a href="#">mail@htmlacademy.ru</a>
+            <a class="contact-list__item-link" href="#">mail@htmlacademy.ru</a>
           </li>
         </ul>
       </div>
@@ -58,7 +63,7 @@
       </div>
     </nav>
   </header>
-  <main class="catalog">
+  <main class="catalog html-wrapper--light">
     <h1 class="catalog__caption">Попутчики</h1>
     <h2 class="catalog__filter">фильтрация по странам</h2>
     <form class="catalog__form travellers-form" action=" https://echo.htmlacademy.ru." method="post">
@@ -107,18 +112,18 @@
         </li>
         <li class="travellers-form__list-item">
           <h4 class="filter-caption">Еда</h4>
-        <ul class="checkbox-list">
-          <li class="checkbox-list__item">
-            <input class="checkbox-list__item-input" type="checkbox">
-          </li>
-          <li class="checkbox-list__item">
-            <input class="checkbox-list__item-input" type="checkbox">
-          </li>
-          <li class="checkbox-list__item">
-            <input class="checkbox-list__item-input" type="checkbox">
-          </li>
-        </ul>
-      </li>
+          <ul class="checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__item-input" type="checkbox">
+            </li>
+          </ul>
+        </li>
         <li class="travellers-form__list-item">
           <h4 class="filter-caption">Транспорт</h4>
           <ul class="moving-list">
@@ -143,11 +148,13 @@
       </ul>
       <button class="travellers-form__button" type="submit">Показать</button>
     </form>
-    <section class="catalog__travellers">
+    <section class="catalog__travellers html-wrapper--light">
       <ul class="catalog__travellers-list">
         <li class="card-travellers">
           <h3 class="card-travellers__name">Таня Фирсова</h3>
-          <img class="card-travellers__photo" src="#" width="30" height="30" alt="аватарка попутчика">
+          <div class="card-travellers__wrapper-photo">
+            <img class="card-travellers__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
+          </div>
           <span class="card-travellers__like">1,5 M</span>
           <ul class="card-travellers__hobbies hashtag-list">
             <li class="hashtag-list__item">#ЗОЖ</li>
@@ -160,21 +167,25 @@
           <h4 class="card-travellers__wanna">хочет посетить:</h4>
           <ul class="card-travellers__wanna-list visited-contries-list">
             <li class="visited-contries-list__item visited-contries-list__item--shri">Шри ланка</li>
-            <li class="visited-contries-list__item visited-contries-list__item--tai">Тайланд</li>
-            <li class="visited-contries-list__item visited-contries-list__item--seych">Сейшелы</li>
+            <li class="visited-contries-list__item visited-contries-list__item--tai"><span>Тайланд</span></li>
+            <li class="visited-contries-list__item visited-contries-list__item--seych"><span>Сейшелы</span></li>
           </ul>
+          <div class="card-travellers__wrapper-transport">
           <h4 class="card-travellers__transport">транспорт:</h4>
           <ul class="card-travellers__transport-list moving-list">
-            <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На самолете</span></li>
+            <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
             <li class="moving-list__item moving-list__item--bus moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
             <li class="moving-list__item moving-list__item--cycle moving-list__item--active"><span class="visually-hidden">На велосипеде</span></li>
-            <li class="moving-list__item moving-list__item--walking moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
+            <li class="moving-list__item moving-list__item--running moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
           </ul>
+        </div>
+        <div class="card-travellers__wrapper-level">
           <h4 class="card-travellers__level">левел:</h4>
           <ul class="card-travellers__level-list level-list">
             <li class="level-list__item">99</li>
           </ul>
-          <a class="card-travellers__invite" href="#">Позвать</a>
+        </div>
+          <a class="card-travellers__invite" href="#">Позвать!</a>
         </li>
       </ul>
       <a class="catalog__show-all-travellers" href="#">показать еще</a>
@@ -184,23 +195,23 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer html-wrapper--light">
     <a class="footer__logo logo">
-      <img class="logo__image" src="#" width="100" height="19" alt="Логотип Погнали">
+      <img class="logo__image" src="/img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
     </a>
     <div class="footer__social-wrapper">
       <ul class="footer__social social-list">
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--footer">
           <a class="social-list__item-link social-list__item-link--fb" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--footer">
           <a class="social-list__item-link social-list__item-link--vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--footer">
           <a class="social-list__item-link social-list__item-link--inst" href="#">
             <span class="visually-hidden">Instagram</span>
           </a>
@@ -210,7 +221,7 @@
     <div class="footer__wrapper-developer">
       <span class="footer__developer-text">Разработано</span>
       <a class="footer__developer-link">
-        <img class="footer__developer-logo" src="#" width="100" height="19" alt="Логотип разработчика - htmlacademy">
+        <img class="footer__developer-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика - htmlacademy">
       </a>
     </div>
   </footer>

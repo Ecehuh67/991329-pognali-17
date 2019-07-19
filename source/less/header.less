@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  min-height: 60px;
+  background-color: #161c36;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__show-menu {
+  position: relative;
+  width: 40px;
+  height: 25px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.header__show-menu::after,
+.header__show-menu::before {
+  position: absolute;
+  left: 5px;
+  content: " ";
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.header__show-menu::after {
+  top: 7px;
+}
+
+.header__show-menu::before {
+  bottom: 7px;
+}

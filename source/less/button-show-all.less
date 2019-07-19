@@ -1,0 +1,26 @@
+.button-show-all {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  .fonts(18px,18px,700);
+  width: 270px;
+  height: 62px;
+  text-decoration: none;
+  background-color: #ffd74b;
+  color: #1d2e5b;
+  border-radius: 10px;
+}
+
+.button-show-all::before {
+  content: " ";
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+}
