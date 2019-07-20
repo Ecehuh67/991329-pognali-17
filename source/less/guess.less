@@ -14,9 +14,7 @@
   position: relative;
   padding-left: 20px;
   padding-top: 35px;
-
   min-height: 100px;
-
   background-color: #ff8d30;
   border-radius: 20px;
 }
@@ -25,10 +23,8 @@
   position: absolute;
   content: "1";
   right: 0;
-
   width: 30px;
   height: 30px;
-
   color: #ffffff;
 }
 
@@ -38,9 +34,7 @@
   margin-top: -30px;
   padding-left: 20px;
   padding-top: 35px;
-
   min-height: 130px;
-
   background-color: #ffa530;
   border-radius: 20px;
 }
@@ -49,10 +43,8 @@
   position: absolute;
   content: "2";
   right: 0;
-
   width: 30px;
   height: 30px;
-
   color: #ffffff;
 }
 
@@ -63,9 +55,7 @@
   padding-left: 20px;
   padding-top: 35px;
   padding-right: 30px;
-
   min-height: 150px;
-
   background-color: #ffbd30;
   border-radius: 20px;
 }
@@ -74,10 +64,8 @@
   position: absolute;
   content: "3";
   right: 0;
-
   width: 30px;
   height: 30px;
-
   color: #ffffff;
 }
 
@@ -88,9 +76,7 @@
   padding-left: 20px;
   padding-top: 35px;
   padding-right: 30px;
-
   min-height: 90px;
-
   background-color: #ffd74b;
   border-radius: 20px;
 }
@@ -99,33 +85,35 @@
   position: absolute;
   content: "4";
   right: 0;
-
   width: 30px;
   height: 30px;
-
   color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
-  .guess__list  {
+  .guess__list {
     display: block;
   }
+
   .guess__list .guess__item {
-    margin-top: 0px;
+    margin-top: 0;
     box-sizing: border-box;
     padding-right: 200px;
     min-height: 140px;
   }
+
   .guess__item:nth-of-type(1),
   .guess__item:nth-of-type(3) {
     width: 360px;
   }
-  .guess__item:nth-of-type(2){
+
+  .guess__item:nth-of-type(2) {
     margin-left: 290px;
     margin-top: -140px;
     width: 300px;
   }
-  .guess__item:nth-of-type(4){
+
+  .guess__item:nth-of-type(4) {
     margin-left: 290px;
     margin-top: -140px;
     width: 300px;
@@ -133,10 +121,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .guess__list  {
+  .guess__list {
     display: flex;
     width: 1320px;
   }
+
   .guess__list .guess__item {
     .discard;
     margin-top: 100px;
