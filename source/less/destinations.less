@@ -1,5 +1,4 @@
 .destinations {
-  min-height: 760px;
   background-color: #edeff6;
   .border-radius(20px);
 }
@@ -22,21 +21,19 @@
 
 @media (min-width: @tablet-width) {
   .destinations {
-    min-height: 920px;
     .border-radius(20px);
   }
 
   .destinations__caption {
     box-sizing: border-box;
     padding-top: 40px;
-    min-height: 100px;
   }
 
   .destinations__advert {
     box-sizing: border-box;
+    margin-bottom: 50px;
     padding-top: 60px;
     padding-right: 300px;
-    min-height: 200px;
   }
 
   .destinations__link {
@@ -46,35 +43,30 @@
 }
 
 @media (min-width: @desktop-width) {
-  .destinations {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 500px;
-  }
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .destinations__caption {
-    margin-left: 450px;
-    margin-top: 100px;
-    width: 200px;
-    height: 120px;
-  }
+    .destinations__caption {
+      .discard;
+      height: 100px;
+    }
 
-  .destinations__advert {
-    .discard;
-    margin-top: 250px;
-    margin-left: -200px;
-    width: 250px;
-    height: 120px;
-  }
+    .destinations__advert {
+      .discard;
+      margin-left: -145px;
+      margin-top: 150px;
+      width: 370px;
+      height: 160px;
+    }
 
-  .destinations__list {
-    margin-top: 100px;
-    order: -1;
-  }
-
-  .destinations__link {
-    margin-top: 500px;
-    margin-left: -260px;
-    width: 284px;
-  }
+    .destinations__list {
+      order: -1;
+    }
+    .destinations__link {
+      width: 275px;
+      margin-top: -80px;
+      margin-right: 355px;
+    }
 }

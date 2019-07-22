@@ -1,7 +1,12 @@
 .travellers {
-  min-height: 1230px;
   background-color: @base-color;
   .border-radius(20px);
+}
+
+.travellers__top-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .travellers ul {
@@ -9,7 +14,6 @@
 }
 
 .travellers__caption {
-  margin-bottom: 25px;
   .fonts(24px,24px,700);
   .discard;
   color: @caption-font-color;
@@ -17,38 +21,55 @@
 
 .travellers__slogan {
   .fonts(16px,22px,400);
-  margin-bottom: 25px;
   color: #ffffff;
 }
 
 .travellers__text {
   .discard;
-  margin-bottom: 60px;
   .fonts(16px,22px,700);
   color: #ffffff;
 }
 
 .travellers__list {
+  display: flex;
+  flex-direction: column;
   .discard;
 }
 
-@media (min-width: @tablet-width) {
-  .travellers {
-    min-height: 800px;
-  }
+.travellers__list>li:first-child  {
+  margin-bottom: 20px;
+}
 
+@media (min-width: @tablet-width) {
+  .travellers__list {
+    flex-direction: row;
+  }
+  .travellers__list>li:first-child {
+    margin-right: 20px;
+  }
   .travellers__link {
     width: 618px;
     margin: 0 auto;
   }
-
-  .travellers__list {
-    margin-bottom: 30px;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .travellers__text {
+  .travellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .travellers__top-wrapper {
+    width: 630px;
+  }
+  .travellers__link {
+    .discard;
+    margin-top: -100px;
+    width: 280px;
+    border: 1px solid red;
+  }
+
+  /*.travellers__text {
     width: 100px;
   }
 
@@ -73,5 +94,5 @@
   .travellers__link {
     width: 280px;
     margin: 0;
-  }
+  }*/
 }

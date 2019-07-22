@@ -100,12 +100,24 @@
       <p class="info__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
       <a class="info__link button-show-all" href="#">Подробнее</a>
     </section>
-    <section class="destinations html-wrapper--light">
+    <section class="destinations html-wrapper-light">
       <h2 class="destinations__caption">Направления</h2>
       <p class="destinations__advert">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
       <ul class="destinations__list">
         <li class="destinations__list-item country-card">
           <a class="country-card__wrapper country-card__wrapper--tai" href="#">
+            <img class="country-card__image" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Живописная морская панарома Тайланда">
+            <div class="country-card__description">
+              <span class="country-card__title">Тайланд</span>
+              <div class="country-card__flag country-card__flag--tai"></div>
+              <span class="country-card__slogan">Джугли зовут!</span>
+              <span class="country-card__users">18321</span>
+            </div>
+          </a>
+        </li>
+        <li class="destinations__list-item country-card">
+          <a class="country-card__wrapper country-card__wrapper--tai" href="#">
+            <img class="country-card__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Живописная городская панарома Франции">
             <div class="country-card__description">
               <span class="country-card__title">Тайланд</span>
               <div class="country-card__flag country-card__flag--tai"></div>
@@ -116,6 +128,7 @@
         </li>
         <li class="destinations__list-item country-card">
           <a class="country-card__wrapper country-card__wrapper--france" href="#">
+            <img class="country-card__image" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Живописная городская панарома Чехии">
             <div class="country-card__description">
               <span class="country-card__title">Франция</span>
               <div class="country-card__flag country-card__flag--france"></div>
@@ -124,26 +137,19 @@
             </div>
           </a>
         </li>
-        <li class="destinations__list-item country-card">
-          <a class="country-card__wrapper country-card__wrapper--czech" href="#">
-            <div class="country-card__description">
-              <span class="country-card__title">Чехия</span>
-              <div class="country-card__flag country-card__flag--czech"></div>
-              <span class="country-card__slogan">Закоулки старой Европы</span>
-              <span class="country-card__users">5326</span>
-            </div>
-          </a>
-        </li>
       </ul>
       <a class="destinations__link button-show-all" href="#">Показать все</a>
     </section>
     <section class="travellers html-wrapper">
-      <h2 class="travellers__caption">Попутчики</h2>
-      <p class="travellers__slogan">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <p class="travellers__text">Теперь можно легко найти единомышленников!</p>
+      <div class="travellers__top-wrapper">
+        <h2 class="travellers__caption">Попутчики</h2>
+        <p class="travellers__slogan">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p class="travellers__text">Теперь можно легко найти единомышленников!</p>
+      </div>
       <ul class="travellers__list">
         <li class="traveller-card">
           <a class="traveller-card__note traveller-card__note--firsova" href="#">
+            <img src="img/firsova-desktop@1x.jpg" width="270" height="270" alt=" Аватар попутчика">
             <div class="traveller-card__note-caption">
               <h3 class="visually-hidden">Посетила следующие страны</h3>
               <ul class="traveller-card__visited visited-countries">
@@ -182,6 +188,7 @@
         </li>
         <li class="traveller-card">
           <a class="traveller-card__note traveller-card__note--demin" href="">
+            <img src="img/demin-desktop@1x.jpg" width="270" height="270" alt=" Аватар попутчика">
             <div class="traveller-card__note-caption">
               <h3 class="visually-hidden">Посетил следующие страны</h3>
               <ul class="traveller-card__visited visited-countries">
@@ -217,12 +224,11 @@
       </ul>
       <a class="travellers__link button-show-all" href="catalog.html">Показать всех</a>
     </section>
-    <section class="payment html-wrapper--light">
+    <section class="payment html-wrapper-light">
       <h2 class="visually-hidden">Хотите стать попутчиком? Регистрируйтесь и выбирайте тарифный план</h2>
       <a class="payment__create-profile" href="#">Добавтьте свой профиль</a>
       <ul class="payment__list">
-        <li class="payment__list-item"><span>Базовое размещение</span><span>Бесплатно</span</li>
-        <li class="payment__list-item"><span>Вывод на первых позициях</span><span>99 руб./мес</span></li>
+        <li class="payment__list-item"><span>Базовое размещение</span><span>Бесплатно</span</li> <li class="payment__list-item"><span>Вывод на первых позициях</span><span>99 руб./мес</span></li>
         <li class="payment__list-item"><span>Кастомный цвет карточки</span><span>59 руб./мес</span></li>
       </ul>
       <a class="payment__link" href="#">Показать тарифы для бизнеса</a>
@@ -256,7 +262,7 @@
       </div>
     </div>
   </main>
-  <footer class="footer html-wrapper--light">
+  <footer class="footer html-wrapper-light">
     <a class="footer__logo logo">
       <img class="logo__image" src="/img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
     </a>

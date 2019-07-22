@@ -33,6 +33,7 @@
   margin-left: 25px;
   margin-bottom: 20px;
   list-style: none;
+  counter-reset: section;
 }
 
 .payment__list-item {
@@ -51,47 +52,19 @@
   margin-top: -30px;
 }
 
-.payment__list-item:nth-of-type(1)::before,
-.payment__list-item:nth-of-type(2)::before,
-.payment__list-item:nth-of-type(3)::before {
+.payment__list-item::before {
   position: absolute;
-  content: " ";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  counter-increment: section;
+  content: counter(section);
   right: -40px;
   top: 10px;
   width: 34px;
   height: 34px;
   border-radius: 50%;
   background-color: #ffa530;
-}
-
-.payment__list-item:nth-of-type(1)::after {
-  position: absolute;
-  content: "1";
-  right: -23px;
-  top: 20px;
-  width: 5px;
-  height: 5px;
-  color: #ffffff;
-}
-
-.payment__list-item:nth-of-type(2)::after {
-  position: absolute;
-  content: "2";
-  right: -23px;
-  top: 20px;
-  width: 5px;
-  height: 5px;
-  color: #ffffff;
-}
-
-.payment__list-item:nth-of-type(3)::after {
-  position: absolute;
-  content: "3";
-  right: -23px;
-  top: 20px;
-  width: 5px;
-  height: 5px;
-  color: #ffffff;
 }
 
 .payment__link {
@@ -127,22 +100,11 @@
     background-color: #e2e5f2;
   }
 
-  .payment__list-item:nth-of-type(1)::before,
-  .payment__list-item:nth-of-type(2)::before,
-  .payment__list-item:nth-of-type(3)::before {
+  .payment__list-item::before {
     left: -30px;
     top: 0;
     width: 67px;
     height: 67px;
-  }
-
-  .payment__list-item:nth-of-type(1)::after,
-  .payment__list-item:nth-of-type(2)::after,
-  .payment__list-item:nth-of-type(3)::after {
-    left: -5px;
-    top: 20px;
-    width: 12px;
-    height: 21px;
     .fonts(28px,28px,500);
     color: #ffffff;
   }

@@ -7,87 +7,46 @@
 .guess__list {
   .discard;
   list-style: none;
+  counter-reset: section;
+}
+
+.guess__item {
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-right: 97px;
+  min-height: 100px;
+  border-radius: 20px;
+}
+
+.guess__item::before {
+  position: absolute;
+  counter-increment: section;
+  content: counter(section);
+  right: 0;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
 }
 
 .guess__item:nth-of-type(1) {
-  box-sizing: border-box;
-  position: relative;
-  padding-left: 20px;
-  padding-top: 35px;
-  min-height: 100px;
   background-color: #ff8d30;
-  border-radius: 20px;
-}
-
-.guess__item:nth-of-type(1)::before {
-  position: absolute;
-  content: "1";
-  right: 0;
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
 }
 
 .guess__item:nth-of-type(2) {
-  box-sizing: border-box;
-  position: relative;
   margin-top: -30px;
-  padding-left: 20px;
-  padding-top: 35px;
-  min-height: 130px;
   background-color: #ffa530;
-  border-radius: 20px;
-}
-
-.guess__item:nth-of-type(2)::before {
-  position: absolute;
-  content: "2";
-  right: 0;
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
 }
 
 .guess__item:nth-of-type(3) {
-  box-sizing: border-box;
-  position: relative;
-  margin-top: -50px;
-  padding-left: 20px;
-  padding-top: 35px;
-  padding-right: 30px;
-  min-height: 150px;
+  margin-top: -30px;
   background-color: #ffbd30;
-  border-radius: 20px;
-}
-
-.guess__item:nth-of-type(3)::before {
-  position: absolute;
-  content: "3";
-  right: 0;
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
 }
 
 .guess__item:nth-of-type(4) {
-  box-sizing: border-box;
-  position: relative;
-  margin-top: -65px;
-  padding-left: 20px;
-  padding-top: 35px;
-  padding-right: 30px;
-  min-height: 90px;
+  margin-top: -30px;
   background-color: #ffd74b;
-  border-radius: 20px;
-}
-
-.guess__item:nth-of-type(4)::before {
-  position: absolute;
-  content: "4";
-  right: 0;
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
