@@ -1,6 +1,5 @@
 .info {
-  height: 350px;
-
+  padding-bottom: 65px;
   background-image: url("../img/about-mobile@1x.png");
   background-color: #141b3b;
   background-repeat: no-repeat;
@@ -9,34 +8,30 @@
 
 .info__caption {
   .discard;
-
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-
+  padding-left: 25px;
+  .fonts(24px,24px,700);
   color: #ff8d30;
 }
 
 .info__slogan {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-
+  padding-left: 25px;
+  padding-right: 30px;
+  padding-top: 3px;
+  .fonts(16px,22px,400);
   color: #ffffff;
 }
 
 .info__text {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
-
+  padding-left: 25px;
+  padding-top: 3px;
+  padding-right: 30px;
+  .fonts(16px,22px,700);
   color: #ffffff;
 }
 
 .info__link {
   display: none;
 }
-
 @media (min-width: @tablet-width) {
   .info__link {
     display: flex;

@@ -1,22 +1,39 @@
 .destinations {
+  padding-top: 72px;
+  padding-bottom: 30px;
   background-color: #edeff6;
   .border-radius(20px);
 }
 
 .destinations__caption {
-  .fonts(24px,24px,700);
   .discard;
+  padding-left: 25px;
+  margin-bottom: 19px;
+  .fonts(24px,24px,700);
   color: @caption-font-color;
 }
 
 .destinations__advert {
-  .fonts(16px,22px,400);
   .discard;
+  padding-left: 25px;
+  padding-right: 30px;
+  margin-bottom: 60px;
+  .fonts(16px,22px,400);
 }
 
 .destinations__list {
   .discard;
+  margin-bottom: 26px;
   list-style: none;
+}
+
+.destinations__list-item {
+  margin-bottom: 10px;
+}
+
+.country-card__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 @media (min-width: @tablet-width) {

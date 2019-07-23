@@ -1,6 +1,5 @@
 .country-card {
   display: flex;
-  margin-bottom: 35px;
 }
 
 .country-card__wrapper {
@@ -17,38 +16,38 @@
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: -30px;
+  margin-top: -16px;
   z-index: 10;
   width: 270px;
   height: 90px;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .country-card__title {
   display: block;
-  .fonts(21px,21px,700);
   .discard;
-  margin-top: 25px;
-  margin-left: 20px;
+  margin-top: 27px;
+  margin-left: 24px;
+  .fonts(21px,21px,700);
   width: 100px;
 }
 
 .country-card__slogan {
   display: block;
-  .fonts(16px,16px,500);
   .discard;
-  margin-left: 20px;
-  margin-top: 5px;
+  margin-left: 25px;
+  margin-top: 3px;
   margin-bottom: 10px;
+  .fonts(16px,16px,500);
   color: #c7c7c7;
 }
 
 .country-card__users {
   display: block;
   position: relative;
-  margin-top: 27px;
-  padding-right: 20px;
+  margin-top: 31px;
+  padding-right: 25px;
   margin-left: auto;
   width: 40px;
   text-align: right;
@@ -59,7 +58,18 @@
   position: absolute;
   content: " ";
   top: 2px;
-  left: -12px;
+  left: -18px;
+  width: 20px;
+  height: 10px;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+}
+
+.destinations__list-item:last-of-type .country-card__users::before {
+  position: absolute;
+  content: " ";
+  top: 2px;
+  left: -10px;
   width: 20px;
   height: 10px;
   background-image: url("../img/user.svg");
@@ -68,10 +78,11 @@
 
 .country-card__flag {
   position: absolute;
-  top: -10px;
-  left: 30px;
+  top: -11px;
+  left: 25px;
   width: 35px;
   height: 24px;
+  border-radius: 3px;
 }
 
 .country-card__flag--tai {
