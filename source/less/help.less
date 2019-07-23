@@ -1,12 +1,17 @@
 .help {
+  position: relative;
+  z-index: 6;
   box-sizing: border-box;
-  padding-top: 80px;
-  padding-bottom: 30px;
-  .border-radius(20px);
+  margin-top: -30px;
+  padding-top: 102px;
+  padding-bottom: 35px;
+  .border-radius(30px);
 }
 
 .help__caption {
   .discard;
+  margin-left: 31px;
+  margin-bottom: 20px;
   .fonts(24px,24px,700);
   color: @caption-font-color;
 }
@@ -17,7 +22,7 @@
   box-sizing: border-box;
   padding-left: 35px;
   padding-right: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   .fonts(16px,22px,400);
   text-align: center;
   color: #ffffff;
@@ -30,7 +35,7 @@
 
 .help__form {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 .help__form-email {
@@ -38,7 +43,7 @@
   padding-right: 60px;
   padding-left: 20px;
   width: 270px;
-  min-height: 62px;
+  height: 62px;
   .fonts(18px,18px,700);
   border-radius: 10px;
   border: none;
@@ -47,7 +52,6 @@
 .help__form-button {
   position: relative;
   margin-left: -60px;
-  margin-top: 2px;
   width: 60px;
   height: 62px;
   font-size: 0;
@@ -79,8 +83,13 @@
 
 .help__answer {
   .discard;
-  margin-bottom: 50px;
+  margin-bottom: 26px;
   .fonts(16px,22px,400);
   text-align: center;
   color: #ffffff;
+}
+
+.help__contact {
+  .discard;
+  margin-left: 61px;
 }

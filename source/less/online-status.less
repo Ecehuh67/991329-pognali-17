@@ -1,17 +1,25 @@
 .online-status {
   display: flex;
-  justify-content: center;
   flex-direction: row;
+  justify-content: center;
 }
 
 .online-status__item {
-  margin-top: 25px;
-  margin-right: 12px;
+  margin-top: 19px;
+  margin-right: 11px;
   width: 5px;
   height: 5px;
-
   border-radius: 50%;
   background-color: #f97676;
+}
+
+.online-status__name {
+  position: relative;
+  display: block;
+  margin-top: 12px;
+  margin-right: 17px;
+  .fonts(21px,21px,700);
+  color: @base-color;
 }
 
 .online-status__item--active {

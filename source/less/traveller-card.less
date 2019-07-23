@@ -1,29 +1,32 @@
 .traveller-card__note {
-  height: 270px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   text-decoration: none;
 }
 
-.traveller-card__note-caption {
-  width: 270px;
-  height: 157px;
-  background-color: #ffffff;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+.traveller-card__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.traveller-card__name {
-  position: relative;
-  display: block;
-  margin-top: 20px;
-  .fonts(21px,21px,700);
-  color: @base-color;
-  text-align: center;
+.traveller-card__note-caption {
+  width: 270px;
+  padding-bottom: 22px;
+  /*min-height: 157px;*/
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .traveller-card__hobbies {
   margin-bottom: 10px;
+}
+.traveller-card:last-child .traveller-card__hobbies {
+  margin-left: 12px;
+}
+
+.traveller-card__moving {
+  margin-top: 70px;
 }
 /*
 @media (min-width: @tablet-width) {

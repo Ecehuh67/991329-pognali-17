@@ -1,12 +1,19 @@
 .travellers {
+  position: relative;
+  z-index: 8;
+  margin-top: -30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   background-color: @base-color;
-  .border-radius(20px);
+  .border-radius(30px);
 }
 
 .travellers__top-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  padding-top: 72px;
+  padding-left: 25px;
 }
 
 .travellers ul {
@@ -14,18 +21,22 @@
 }
 
 .travellers__caption {
-  .fonts(24px,24px,700);
   .discard;
+  .fonts(24px,24px,700);
   color: @caption-font-color;
 }
 
 .travellers__slogan {
+  margin-top: 20px;
+  padding-right: 30px;
   .fonts(16px,22px,400);
   color: #ffffff;
 }
 
 .travellers__text {
   .discard;
+  margin-top: 4px;
+  margin-bottom: 6px;
   .fonts(16px,22px,700);
   color: #ffffff;
 }
@@ -34,10 +45,11 @@
   display: flex;
   flex-direction: column;
   .discard;
+  margin-bottom: 20px;
 }
 
 .travellers__list > li:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {
