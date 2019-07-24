@@ -3,7 +3,7 @@
   z-index: 10;
   padding-top: 31px;
   padding-bottom: 65px;
-  background-image: url("../img/about-mobile@1x.png");
+  /*background-image: url("../img/about-mobile@1x.png");*/
   background-color: #141b3b;
   background-repeat: no-repeat;
   .border-radius(30px);
@@ -24,6 +24,10 @@
   color: #ffffff;
 }
 
+.info__slogan br:nth-child(2) {
+  display: none;
+}
+
 .info__text {
   padding-left: 25px;
   padding-top: 3px;
@@ -32,11 +36,64 @@
   color: #ffffff;
 }
 
+.info__text-hidden {
+  display: none;
+}
+
 .info__link {
   display: none;
 }
+
 @media (min-width: @tablet-width) {
+  .info {
+    padding-bottom: 87px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .info__caption {
+    .discard;
+    margin-top: 66px;
+    margin-left: 34px;
+    .fonts(45px,45px,600);
+  }
+
+  .info__slogan {
+    .discard;
+    margin-top: 40px;
+    margin-left: 35px;
+    padding-right: 353px;
+    .fonts(28px,33px,400);
+  }
+
+  .info__slogan br:first-child {
+    display: none;
+  }
+
+  .info__slogan br:nth-child(2) {
+    display: block;
+  }
+
+  .info__text {
+    .discard;
+    margin-top: 30px;
+    margin-left: 35px;
+    padding-right: 360px;
+    .fonts(21px,25px,600);
+  }
+
+  .info__text-hidden {
+    display: inline;
+  }
+
   .info__link {
     display: flex;
+    margin-top: 53px;
+    margin-left: 35px;
+    padding-left: 31px;
+    width: 274px;
+    height: 81px;
+    .fonts(24px,24px,600);
+    border-radius: 20px;
   }
 }

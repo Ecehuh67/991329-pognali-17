@@ -52,32 +52,60 @@
 }
 
 @media (min-width: @tablet-width) {
+  .guess {
+    width: 688px;
+  }
+
   .guess__list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .guess__list .guess__item {
+    .discard;
+    padding-top: 31px;
+    padding-left: 35px;
+    padding-right: 160px;
     margin-top: 0;
-    box-sizing: border-box;
-    padding-right: 200px;
     min-height: 140px;
+    .fonts(24px,24px,600);
   }
 
-  .guess__item:nth-of-type(1),
-  .guess__item:nth-of-type(3) {
-    width: 360px;
+  .guess__item:nth-child(1) {
+    width: 383px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
   }
 
-  .guess__item:nth-of-type(2) {
-    margin-left: 290px;
-    margin-top: -140px;
-    width: 300px;
+  .guess__item:nth-child(2) {
+    margin-left: -40px;
+    width: 345px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
-  .guess__item:nth-of-type(4) {
-    margin-left: 290px;
-    margin-top: -140px;
-    width: 300px;
+  .guess__item:nth-child(3) {
+    width: 383px;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+
+  .guess__item:nth-child(4) {
+    margin-left: -40px;
+    width: 345px;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .guess__item::before {
+    .fonts(30px,120px,600);
+    left: 34px;
+    top: 43px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
   }
 }
 

@@ -38,3 +38,42 @@
   padding-left: 20px;
   border-color: @base-color;
 }
+
+@media (min-width: @tablet-width) {
+  .adress {
+    .fonts(28px,28px,700);
+    padding-bottom: 85px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .adress__street {
+    .discard;
+    padding-left: 68px;
+    margin-left: 61px;
+    margin-top: 38px;
+    margin-bottom: 61px;
+  }
+
+  .adress__street br {
+    display: none;
+  }
+
+  .adress__street::before {
+    top: -23px;
+    left: -26px;
+    width: 68px;
+    height: 68px;
+    background-size: 21px, 32px;
+    background-position: 23px 20px;
+  }
+
+  .adress__route {
+    margin-left: 35px;
+    padding-left: 33px;
+    width: 618px;
+    height: 81px;
+    .fonts(24px,24px,700);
+    border-radius: 20px;
+  }
+}

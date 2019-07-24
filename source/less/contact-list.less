@@ -43,8 +43,32 @@
   background-image: url("../img/contacts-phone.svg");
 }
 
-.contact-list__item--email a::before  {
+.contact-list__item--email a::before {
   background-image: url("../img/contacts-mail.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .contact-list__item-link {
+    .fonts(28px,28px,700);
+  }
+
+  .contact-list__item:first-child {
+    margin-bottom: 37px;
+  }
+
+  .contact-list__item a::before {
+    left: -92px;
+    top: -22px;
+    width: 68px;
+    height: 68px;
+    background-position: 22px 20px;
+    background-size: 27px 27px;
+  }
+
+  .contact-list__item:last-child a::before {
+    background-position: 22px 26px;
+    background-size: 27px 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {

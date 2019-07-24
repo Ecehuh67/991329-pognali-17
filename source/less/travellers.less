@@ -33,12 +33,20 @@
   color: #ffffff;
 }
 
+.travellers__slogan br {
+  display: none;
+}
+
 .travellers__text {
   .discard;
   margin-top: 4px;
   margin-bottom: 6px;
   .fonts(16px,22px,700);
   color: #ffffff;
+}
+
+.travellers__text br {
+  display: none;
 }
 
 .travellers__list {
@@ -53,17 +61,64 @@
 }
 
 @media (min-width: @tablet-width) {
-  .travellers__list {
-    flex-direction: row;
+  .travellers {
+    padding-bottom: 88px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
-  .travellers__list > li:first-child {
-    margin-right: 20px;
+  .travellers__top-wrapper {
+    .discard;
+    margin-top: 142px;
+    margin-left: 33px;
+    margin-bottom: 58px;
+  }
+
+  .travellers__caption {
+    margin-bottom: 37px;
+    .fonts(45px,45px,600);
+  }
+
+  .travellers__slogan {
+    margin-left: 2px;
+    padding-right: 200px;
+    .fonts(28px,33px,400);
+  }
+
+  .travellers__slogan br {
+    display: inline;
+  }
+
+  .travellers__text {
+    .discard;
+    box-sizing: border-box;
+    margin-top: 11px;
+    margin-left: 2px;
+    width: 265px;
+    .fonts(21px,25px,600);
+  }
+
+  .travellers__text br {
+    display: inline;
+  }
+
+  .travellers__list {
+    flex-direction: row;
+    margin-left: 35px;
+    margin-bottom: 70px;
   }
 
   .travellers__link {
-    width: 618px;
     margin: 0 auto;
+    padding-left: 30px;
+    width: 618px;
+    height: 81px;
+    .fonts(24px,24px,600);
+    border-radius: 20px;
+  }
+
+  .travellers__list > li:first-child {
+    margin-right: 12px;
   }
 }
 

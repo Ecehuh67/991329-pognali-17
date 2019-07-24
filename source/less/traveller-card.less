@@ -19,8 +19,9 @@
 }
 
 .traveller-card__hobbies {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
+
 .traveller-card:last-child .traveller-card__hobbies {
   margin-left: 12px;
 }
@@ -28,21 +29,28 @@
 .traveller-card__moving {
   margin-top: 70px;
 }
-/*
-@media (min-width: @tablet-width) {
-  .travellers__list {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
 
 @media (min-width: @tablet-width) {
-  .travellers__list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    width: 630px;
+  .traveller-card {
+    width: 620px;
   }
-}*/
+
+  .traveller-card__image {
+    width: 285px;
+    height: 285px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .traveller-card__note-caption {
+    width: 285px;
+    padding-bottom: 31px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .traveller-card:last-child .traveller-card__hobbies {
+    margin-left: 18px;
+    padding-right: 10px;
+  }
+}

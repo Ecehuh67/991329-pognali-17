@@ -26,6 +26,7 @@
   font-size: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .header__show-menu::after,
@@ -75,26 +76,49 @@
 }
 
 @media (min-width: @tablet-width) {
+  .header {
+    align-items: flex-start;
+    padding-top: 39px;
+    min-width: 688px;
+  }
+
+  .header__image {
+    margin-top: 5px;
+    width: 166px;
+    height: 42px;
+  }
+
+  .header__show-menu {
+    margin-top: 16px;
+    margin-left: 8px;
+  }
+
   .header__contact {
     order: 4;
+    margin-top: 0;
   }
 
   .header__caption {
     order: 5;
+    .discard;
+    margin-top: 45px;
+    margin-left: 142px;
+    margin-bottom: 87px;
     box-sizing: border-box;
-    padding-left: 175px;
-    padding-right: 175px;
-    min-height: 300px;
+    width: 400px;
+    .fonts(60px,70px,600);
   }
 
   .header-review {
     box-sizing: border-box;
+    margin-left: 8px;
+    margin-bottom: 95px;
     padding-right: 300px;
     min-height: 300px;
   }
 
   .header__guess {
-    width: 680px;
+    /*width: 680px;*/
     min-height: 280px;
   }
 }

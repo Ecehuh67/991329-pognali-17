@@ -15,7 +15,7 @@
   padding-right: 100px;
   margin-top: 30px;
   margin-bottom: 40px;
-  width: 245px;
+  /*width: 245px;*/
   .fonts(24px,24px,700);
   text-decoration: none;
   color: @caption-font-color;
@@ -85,38 +85,57 @@
   text-decoration: none;
   color: @base-color;
 }
+
 @media (min-width: @tablet-width) {
+  .payment {
+    padding-top: 104px;
+    padding-bottom: 85px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .payment__create-profile {
+    .discard;
+    margin-left: 99px;
+    margin-bottom: 75px;
+    .fonts(45px,45px,700);
+  }
+
   .payment__list {
     .discard;
+    margin-left: 40px;
     margin-bottom: 50px;
+    .fonts(28px,33px,400);
   }
 
   .payment__list::after {
-    top: 130px;
-    right: 60px;
+    top: 165px;
+    right: -2px;
   }
 
   .payment__list-item {
     justify-content: space-between;
     padding-left: 50px;
-    padding-right: 50px;
-    width: 680px;
+    padding-right: 30px;
+    width: 677px;
   }
 
   .payment__list-item span:nth-child(2) {
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     .discard;
+    box-sizing: border-box;
+    padding-right: 32px;
     width: 198px;
     min-height: 65px;
     background-color: #e2e5f2;
   }
 
   .payment__list-item::before {
-    left: -30px;
-    top: 0;
+    left: -40px;
+    top: -3px;
     width: 67px;
     height: 67px;
     .fonts(28px,28px,500);
@@ -126,27 +145,51 @@
   .payment__list-item:first-of-type span:nth-child(2)::before {
     position: absolute;
     content: " ";
-    top: -40px;
+    top: -45px;
     right: 0;
     width: 198px;
-    height: 42px;
+    height: 44px;
     background-color: #e2e5f2;
     border-top-right-radius: 20px;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 20px;
   }
 
   .payment__list-item:last-of-type span:nth-child(2)::before {
     position: absolute;
     content: " ";
-    top: 40px;
+    top: 66px;
     right: 0;
     width: 198px;
-    height: 42px;
+    height: 44px;
     background-color: #e2e5f2;
     border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .payment__link {
+    position: relative;
+    .discard;
+    margin-top: 7px;
+    margin-left: 88px;
+    .fonts(20px,20px,600);
+  }
+
+  .payment__link::before {
+    position: absolute;
+    content: " ";
+    top: -25px;
+    left: -89px;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: #e2e5f2;
+    background-image: url("../img/business.svg");
+    background-repeat: no-repeat;
+    background-position: 25px 21px;
+    background-size: 17px 21px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .payment__list::after {
     top: 0;

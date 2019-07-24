@@ -17,5 +17,14 @@
 
 .login-link--fewer {
   width: 189px;
-  height: 40px;
+  min-height: 40px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .login-link--fewer {
+    .fonts(20px,30px,500);
+    min-height: 50px;
+    border-radius: 30px;
+  }
 }

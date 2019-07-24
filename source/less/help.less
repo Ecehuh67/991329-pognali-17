@@ -93,3 +93,79 @@
   .discard;
   margin-left: 61px;
 }
+
+@media (min-width: @tablet-width) {
+  .help {
+    padding-bottom: 79px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .help__caption {
+    .discard;
+    margin-left: 149px;
+    margin-top: 5px;
+    .fonts(45px,45px,600);
+  }
+
+  .help__text {
+    .discard;
+    margin-top: 57px;
+    margin-bottom: 63px;
+    .fonts(28px,33px,400);
+    text-align: center;
+  }
+
+  .help__text br:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .help__form {
+    margin-left: 34px;
+    margin-bottom: 59px;
+  }
+
+  .help__form-email {
+    .discard;
+    padding-right: 60px;
+    padding-left: 33px;
+    width: 618px;
+    height: 81px;
+    .fonts(24px,24px,500);
+    border-radius: 20px;
+  }
+
+  .help__form-button {
+    margin-left: -82px;
+    width: 82px;
+    height: 81px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .help__form-button::before {
+    top: 34px;
+    left: 36px;
+  }
+
+  .help__question {
+    .discard;
+    margin-left: 42px;
+    margin-right: 10px;
+    .fonts(28px,33px,400);
+    text-align: left;
+    float: left;
+  }
+
+  .help__answer {
+    .discard;
+    margin-bottom: 62px;
+    .fonts(28px,33px,400);
+    text-align: left;
+  }
+
+  .help__contact {
+    margin-left: 125px;
+  }
+}
