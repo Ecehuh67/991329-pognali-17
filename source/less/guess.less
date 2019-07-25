@@ -111,12 +111,51 @@
 
 @media (min-width: @desktop-width) {
   .guess__list {
+    .discard;
     display: flex;
     width: 1320px;
   }
 
   .guess__list .guess__item {
     .discard;
-    margin-top: 100px;
+    padding-top: 29px;
+    padding-left: 34px;
+    padding-right: 155px;
+    margin-top: 14px;
+    width: 375px;
+    min-height: 107px;
+    border-radius: 20px;
+  }
+
+  .guess__item:nth-child(2) {
+    position: relative;
+    margin-left: -60px;
+    padding-left: 30px;
+  }
+
+  .guess__item:nth-child(3) {
+    position: relative;
+    margin-left: -30px;
+    padding-left: 31px;
+  }
+
+  .guess__item:nth-child(4) {
+    margin-left: -30px;
+    padding-left: 30px;
+    width: 315px;
+  }
+
+  .guess__item::before {
+    .fonts(24px,120px,600);
+    left: 268px;
+    top: -19px;
+    width: 12px;
+    height: 26px;
+    color: #ffffff;
+  }
+
+  .guess__item:nth-child(2)::before,
+  .guess__item:nth-child(3)::before {
+    left: 299px;
   }
 }

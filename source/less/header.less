@@ -126,17 +126,64 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header {
+    justify-content: flex-start;
+    padding-bottom: 43px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .header__image {
+    margin-top: 8px;
+    width: 200px;
+    height: 52px;
+  }
+
+  .header__nav {
+    .discard;
+    position: relative;
+    margin-top: 23px;
+    margin-left: 145px;
+    margin-right: 225px;
+    width: 460px;
+  }
+
+  .header__nav::before {
+    position: absolute;
+    content: " ";
+    left: -105px;
+    top: 12px;
+    width: 60px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  .header__contact {
+    margin-top: 10px;
+  }
+
   .header__show-menu {
     display: none;
   }
 
   .header__caption {
     .discard;
-    width: 630px;
+    margin-left: 67px;
+    margin-top: 83px;
+    margin-right: 567px;
+    width: 400px;
+    text-align: left;
   }
 
   .header__review {
     .discard;
-    width: 630px;
+    margin-top: 95px;
+    width: 260px;
+    min-height: 280px;
+  }
+
+  .header__guess {
+    .discard;
+    min-height: 200px;
   }
 }
