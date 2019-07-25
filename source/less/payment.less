@@ -7,6 +7,7 @@
   padding-top: 52px;
   padding-bottom: 8px;
   .border-radius(30px);
+  background-color: #edeff6;
 }
 
 .payment__create-profile {
@@ -34,12 +35,15 @@
 .payment__list::after {
   position: absolute;
   content: " ";
-  right: -49px;
-  top: -182px;
-  width: 198px;
-  height: 198px;
-  transform: scale(0.5);
+  right: 0px;
+  top: -132px;
+  width: 100px;
+  height: 100px;
+  /*width: 198px;
+  height: 198px;*/
+  /*transform: scale(0.5);*/
   background-image: url("../img/rates@1x.png");
+  background-size: 100px 100px;
 }
 
 .payment__list-item {
@@ -109,8 +113,8 @@
   }
 
   .payment__list::after {
-    top: 165px;
-    right: -2px;
+    top: 215px;
+    right: 44px;
   }
 
   .payment__list-item {
@@ -141,7 +145,7 @@
     .fonts(28px,28px,500);
     color: #ffffff;
   }
-
+/*
   .payment__list-item:first-of-type span:nth-child(2)::before {
     position: absolute;
     content: " ";
@@ -155,6 +159,30 @@
   }
 
   .payment__list-item:last-of-type span:nth-child(2)::before {
+    position: absolute;
+    content: " ";
+    top: 66px;
+    right: 0;
+    width: 198px;
+    height: 44px;
+    background-color: #e2e5f2;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }*/
+
+  .payment__list-item-top-border::before {
+    position: absolute;
+    content: " ";
+    top: -45px;
+    right: 0;
+    width: 198px;
+    height: 44px;
+    background-color: #e2e5f2;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .payment__list-item-bottom-border::before {
     position: absolute;
     content: " ";
     top: 66px;

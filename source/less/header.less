@@ -6,21 +6,18 @@
   align-items: center;
   box-sizing: border-box;
   padding-top: 27px;
-  min-height: 60px;
   background-color: #161c36;
   /*background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-position: 100px 200px, 0 0;
   background-repeat: no-repeat;*/
 }
-
+/*
 .header__logo {
   display: block;
-  order: 1;
-}
+}*/
 
 .header__show-menu {
   position: relative;
-  order: 2;
   width: 40px;
   height: 25px;
   font-size: 0;
@@ -48,30 +45,27 @@
 }
 
 .header__caption {
-  order: 4;
   .discard;
-  margin-top: 43px;
-  margin-bottom: 244px;
+  margin-top: 43px; /*43*/
+  /*margin-bottom: 244px;*/
   padding-left: 7px;
   padding-right: 5px;
+  min-height: 364px;
   .fonts(36px,40px,700);
   color: #ffffff;
   text-align: center;
 }
 
 .header__contact {
-  order: 5;
   margin-left: 1px;
   margin-bottom: 27px;
 }
 
-.header-review {
-  order: 6;
+.header__review {
   margin-bottom: 30px;
 }
 
 .header__guess {
-  order: 7;
   margin-bottom: 41px;
 }
 
@@ -82,6 +76,10 @@
     min-width: 688px;
   }
 
+  .header__logo {
+    order: 1;
+  }
+
   .header__image {
     margin-top: 5px;
     width: 166px;
@@ -89,6 +87,7 @@
   }
 
   .header__show-menu {
+    order: 2;
     margin-top: 16px;
     margin-left: 8px;
   }
@@ -103,13 +102,15 @@
     .discard;
     margin-top: 45px;
     margin-left: 142px;
-    margin-bottom: 87px;
+    /*margin-bottom: 87px;*/
     box-sizing: border-box;
     width: 400px;
+    min-height: 297px;
     .fonts(60px,70px,600);
   }
 
-  .header-review {
+  .header__review {
+    order: 6;
     box-sizing: border-box;
     margin-left: 8px;
     margin-bottom: 95px;
@@ -118,6 +119,7 @@
   }
 
   .header__guess {
+    order: 7;
     /*width: 680px;*/
     min-height: 280px;
   }
@@ -133,7 +135,7 @@
     width: 630px;
   }
 
-  .header-review {
+  .header__review {
     .discard;
     width: 630px;
   }
