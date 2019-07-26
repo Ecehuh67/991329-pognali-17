@@ -1,55 +1,110 @@
 .destinations {
-  min-height: 760px;
-
+  position: relative;
+  z-index: 9;
+  margin-top: -30px;
+  padding-top: 102px;
+  padding-bottom: 30px;
   background-color: #edeff6;
-  .border-radius(20px);
+  .border-radius(30px);
 }
 
 .destinations__caption {
-  .fonts(24px,24px,700);
   .discard;
+  padding-left: 25px;
+  margin-bottom: 19px;
+  .fonts(24px,24px,700);
   color: @caption-font-color;
 }
 
 .destinations__advert {
-  .fonts(16px,22px,400);
   .discard;
+  padding-left: 25px;
+  padding-right: 30px;
+  margin-bottom: 60px;
+  .fonts(16px,22px,400);
 }
 
 .destinations__list {
   .discard;
+  margin-bottom: 26px;
   list-style: none;
 }
 
-/*
-.destinations__link {
- display: flex;
- position: relative;
- justify-content: flex-start;
- align-items: center;
-
- box-sizing: border-box;
- padding-left: 20px;
- .fonts(18px,18px,700);
-
- width: 270px;
- height: 62px;
-
- text-decoration: none;
- background-color: #ffd74b;
- color: #1d2e5b;
- border-radius: 10px;
+.destinations__list-item {
+  margin-bottom: 10px;
 }
 
-.destinations__link::before {
-  content: " ";
-  position: absolute;
-  top: 25px;
-  right: 20px;
+.country-card__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-  width: 10px;
-  height: 10px;
+@media (min-width: @tablet-width) {
+  .destinations {
+    padding-bottom: 78px;
+    .border-radius(60px);
+  }
 
-  background-image: url("../img/triangle-arrow-right.svg");
-  background-repeat: no-repeat;
-}*/
+  .destinations__caption {
+    .discard;
+    margin-top: 2px;
+    margin-left: 33px;
+    .fonts(45px,45px,600);
+  }
+
+  .destinations__advert {
+    margin-top: 57px;
+    margin-left: 10px;
+    margin-bottom: 105px;
+    padding-right: 300px;
+    .fonts(28px,33px,400);
+  }
+
+  .destinations__link {
+    margin: 0 auto;
+    padding-left: 30px;
+    width: 618px;
+    height: 81px;
+    .fonts(24px,24px,600);
+    border-radius: 20px;
+  }
+
+  .destinations__list {
+    margin-bottom: 47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .destinations {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 92px;
+  }
+
+  .destinations__caption {
+    .discard;
+    margin-top: 95px;
+    margin-left: 43px;
+    height: 100px;
+  }
+
+  .destinations__advert {
+    .discard;
+    margin-left: -269px;
+    margin-top: 198px;
+    width: 370px;
+    height: 160px;
+  }
+
+  .destinations__list {
+    order: -1;
+    margin-top: 89px;
+    /*margin-left: -23px;*/
+  }
+
+  .destinations__link {
+    width: 275px;
+    margin-top: -128px;
+    margin-right: 241px;
+  }
+}

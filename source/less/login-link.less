@@ -2,12 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  box-sizing: border-box;
+  padding-top: 3px;
   width: 270px;
 
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 700;
+  .fonts(17px,30px,700);
 
   background-color: #ffd74b;
   text-decoration: none;
@@ -18,5 +17,20 @@
 
 .login-link--fewer {
   width: 189px;
-  height: 40px;
+  min-height: 40px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .login-link--fewer {
+    .fonts(20px,30px,500);
+    min-height: 50px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .login-link--fewer {
+    .fonts(20px,30px,600);
+  }
 }

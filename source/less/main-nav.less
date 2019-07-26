@@ -1,4 +1,5 @@
 .main-nav {
+  order: 3;
   min-height: 570px;
   background-color: #ffffff;
 }
@@ -14,9 +15,7 @@
   position: relative;
   width: 50px;
   height: 25px;
-
   font-size: 0;
-
   background-color: transparent;
   border: none;
 }
@@ -26,10 +25,8 @@
   position: absolute;
   content: " ";
   left: 10px;
-
   width: 25px;
   height: 2px;
-
   background-color: #cccccc;
 }
 
@@ -47,4 +44,38 @@
 
 .main-nav__social {
   margin-left: 80px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    /*width: 550px;*/
+    min-height: 30px;
+    background-color: transparent;
+  }
+
+  .main-nav--hidden {
+    display: block;
+    position: inherit;
+  }
+
+  .main-nav__list {
+    .discard;
+    display: flex;
+  }
+
+  .main-nav__logo {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__identification-wrapper {
+    display: none;
+  }
+
+  .main-nav__contact-wrapper {
+    margin: 0;
+  }
 }
