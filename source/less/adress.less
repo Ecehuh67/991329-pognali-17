@@ -77,3 +77,32 @@
     border-radius: 20px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .adress {
+    display: flex;
+    padding-bottom: 40px;
+  }
+
+  .adress__street {
+    .discard;
+    margin-top: 54px;
+    margin-left: 345px;
+    margin-right: 113px;
+  }
+
+  .adress__street::before {
+    top: -32px;
+    left: -122px;
+    width: 90px;
+    height: 90px;
+    background-size: 28px, 43px;
+    background-position: 31px 26px;
+  }
+
+  .adress__route {
+    margin-top: 27px;
+    margin-bottom: 20px;
+    width: 324px;
+  }
+}

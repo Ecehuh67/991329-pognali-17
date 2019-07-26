@@ -71,8 +71,35 @@
   }
 }
 
+
 @media (min-width: @desktop-width) {
   .contact-list {
     display: none;
+  }
+
+  .help {
+    .contact-list {
+    display: flex;
+    margin-left: 345px;
+    margin-top: 75px;
+    }
+
+    .contact-list__item:first-child {
+      margin-right: 231px;
+    }
+
+    .contact-list__item a::before {
+      left: -120px;
+      top: -32px;
+      width: 90px;
+      height: 90px;
+      background-position: 26px 25px;
+      background-size: 36px 36px;
+    }
+
+    .contact-list__item:last-child a::before {
+      background-position: 28px 31px;
+      background-size: 36px 26px;
+    }
   }
 }
