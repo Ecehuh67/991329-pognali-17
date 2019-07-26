@@ -1,0 +1,54 @@
+.checkbox-list {
+  .discard;
+  margin-top: 10px;
+}
+
+.checkbox-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.checkbox-list__item {
+  padding-left: 30px;
+}
+
+.checkbox-list__item-music {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-list__item-music input[type="checkbox"]+.checkbox-list__radio-indicator {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.checkbox-list__item-music input[type="checkbox"]:focus+.checkbox-list__radio-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox-list__item-music input[type="checkbox"]:checked+.checkbox-list__radio-indicator::before {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  width: 6px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.checkbox-list__item-music input[type="checkbox"]:checked+.checkbox-list__radio-indicator::after {
+  content: " ";
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 11px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(-65deg);
+}

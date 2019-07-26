@@ -187,3 +187,33 @@
     min-height: 200px;
   }
 }
+
+.header-catalog {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 23px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.header-catalog__caption {
+  .discard;
+  margin-top: 20px;
+  position: relative;
+  .fonts(36px,40px,600);
+  color: #ffffff;
+}
+
+.header-catalog__caption::before {
+  position: absolute;
+  content: " ";
+  bottom: -25px;
+  width: 173px;
+  height: 5px;
+  background-color: #ff8d30;
+  border-radius: 10px;
+}
+
+.header-catalog__contact {
+  display: none;
+}

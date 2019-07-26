@@ -3,18 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <header class="header html-wrapper">
-    <a class="header__logo logo">
-      <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
+  <header class="header  header-catalog html-wrapper">
+    <a class="header__logo">
+      <picture>
+        <source srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)" width="200" height="52">
+        <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)" width="166" height="42">
+        <img class="header__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
+      </picture>
     </a>
     <button class="header__show-menu" type="button">Показать меню</button>
-    <nav class="main-nav main-nav--hidden html-wrapper">
-      <a class="logo logo--white">
+    <nav class="header__nav main-nav main-nav--hidden html-wrapper">
+      <a class="main-nav__logo logo logo--white">
         <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
       </a>
       <button class="main-nav__toggle" type="button">Закрыть меню</button>
@@ -62,93 +67,134 @@
         </ul>
       </div>
     </nav>
-  </header>
-  <main class="catalog html-wrapper--light">
-    <h1 class="catalog__caption">Попутчики</h1>
-    <h2 class="catalog__filter">фильтрация по странам</h2>
-    <form class="catalog__form travellers-form" action=" https://echo.htmlacademy.ru." method="post">
-      <h3 class="travellers-form__caption">Подберите идеального попутчика</h3>
-      <ul class="travellers-form__list">
-        <li class="travellers-form__list-item">
-          <h4 class="filter-caption">Хобби</h4>
-          <ul class="travellers-form__list-hobbies checkbox-list">
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#ЗОЖ</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#ПП</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#Фитнес</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#пляж</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#авокадо</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#смузи</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#бургер</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#бар</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#Футбол</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#концерт</li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">#крафт</li>
-          </ul>
+    <section class="header-catalog__contact">
+      <ul class="header__list contact-panel">
+        <li class="contact-panel__item">
+          <a class="contact-panel__item-link contact-panel__item-link--phone" href="tel:+78005558628"><span class="visually-hidden">Телефон</span></a>
         </li>
-        <li class="travellers-form__list-item">
-          <h4 class="filter-caption">Музыка</h4>
-          <ul class="checkbox-list">
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">Тяжелый рок
-            </li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">Русский рэр
-            </li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">Евроденс
-            </li>
-          </ul>
+        <li class="contact-panel__item">
+          <a class="contact-panel__item-link contact-panel__item-link--email" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">Емаил</span></a>
         </li>
-        <li class="travellers-form__list-item">
-          <h4 class="filter-caption">Еда</h4>
-          <ul class="checkbox-list">
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">
-            </li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">
-            </li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__item-input" type="checkbox">
-            </li>
-          </ul>
-        </li>
-        <li class="travellers-form__list-item">
-          <h4 class="filter-caption">Транспорт</h4>
-          <ul class="moving-list">
-            <li class="moving-list__item moving-list__item--plane"><span class="visually-hidden">На самолете</span></li>
-            <li class="moving-list__item moving-list__item--bus"><span class="visually-hidden">На автобусе</span></li>
-            <li class="moving-list__item moving-list__item--cycle"><span class="visually-hidden">На велосипеде</span></li>
-            <li class="moving-list__item moving-list__item--walking"><span class="visually-hidden">Пешком</span></li>
-          </ul>
-        </li>
-        <li class="travellers-form__list-item">
-          <h4 class="filter-caption">Левел</h4>
-          <div class="filter-level-range-container">
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="range-toggle range-toggle--min"></div>
-              <div class="range-toggle range-toggle--max"></div>
-            </div>
-          </div>
+        <li class="contact-panel__item">
+          <a class="login-link login-link--fewer" href="#">Авторизация</a>
         </li>
       </ul>
-      <button class="travellers-form__button" type="submit">Показать</button>
-    </form>
-    <section class="catalog__travellers html-wrapper--light">
+    </section>
+    <h1 class="header-catalog__caption">Попутчики</h1>
+  </header>
+  <main class="catalog">
+    <section class="catalog__filter html-wrapper">
+      <h2 class="catalog__filter-country">фильтрация по странам</h2>
+      <button class="catalog__filter-button" type="button">
+        <div></div>
+      </button>
+    </section>
+    <section class="catalog__form-wrapper  html-wrapper">
+      <form class="catalog__form travellers-form" action=" https://echo.htmlacademy.ru." method="post">
+        <h3 class="travellers-form__caption">Подберите идеального попутчика</h3>
+        <ul class="travellers-form__list">
+          <li class="travellers-form__list-item">
+            <h4 class="travellers-form__filter-caption">Хобби</h4>
+            <button class="travellers-form__list-button" type="button">Развернуть</button>
+            <!--
+            <ul class="travellers-form__list-hobbies checkbox-list">
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#ЗОЖ</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#ПП</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#Фитнес</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#пляж</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#авокадо</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#смузи</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#бургер</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#бар</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#Футбол</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#концерт</li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">#крафт</li>
+            </ul>
+          -->
+          </li>
+          <li class="travellers-form__list-item">
+            <h4 class="travellers-form__filter-caption">Музыка</h4>
+            <button class="travellers-form__list-button" type="button">Развернуть</button>
+            <ul class="checkbox-list">
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Тяжелый рок
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Русский рэп
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Евроденс
+                </label>
+              </li>
+            </ul>
+          </li>
+          <li class="travellers-form__list-item">
+            <h4 class="travellers-form__filter-caption">Еда</h4>
+            <button class="travellers-form__list-button" type="button">Развернуть</button>
+            <!--
+            <ul class="checkbox-list">
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">
+              </li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">
+              </li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__item-input" type="checkbox">
+              </li>
+            </ul>
+          -->
+          </li>
+          <li class="travellers-form__list-item">
+            <h4 class="travellers-form__filter-caption">Транспорт</h4>
+            <button class="travellers-form__list-button" type="button">Развернуть</button>
+            <ul class="moving-list-catalog">
+              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--plane" aria-label="На самолете"></span></li>
+              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--bus" aria-label="На автобусе"></span></li>
+              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--cycle" aria-label="На велосипеде"></span></li>
+              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--running" aria-label="Пешком"></span></li>
+            </ul>
+          </li>
+          <li class="travellers-form__list-item">
+            <h4 class="travellers-form__filter-caption">Левел</h4>
+            <button class="travellers-form__list-button" type="button">Развернуть</button>
+            <div class="filter-level-range-container">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle--min"></div>
+                <div class="range-toggle range-toggle--max"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="travellers-form__button" type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="catalog__travellers html-wrapper">
       <ul class="catalog__travellers-list">
         <li class="card-travellers">
           <h3 class="card-travellers__name">Таня Фирсова</h3>
@@ -171,20 +217,20 @@
             <li class="visited-contries-list__item visited-contries-list__item--seych"><span>Сейшелы</span></li>
           </ul>
           <div class="card-travellers__wrapper-transport">
-          <h4 class="card-travellers__transport">транспорт:</h4>
-          <ul class="card-travellers__transport-list moving-list">
-            <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
-            <li class="moving-list__item moving-list__item--bus moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
-            <li class="moving-list__item moving-list__item--cycle moving-list__item--active"><span class="visually-hidden">На велосипеде</span></li>
-            <li class="moving-list__item moving-list__item--running moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
-          </ul>
-        </div>
-        <div class="card-travellers__wrapper-level">
-          <h4 class="card-travellers__level">левел:</h4>
-          <ul class="card-travellers__level-list level-list">
-            <li class="level-list__item">99</li>
-          </ul>
-        </div>
+            <h4 class="card-travellers__transport">транспорт:</h4>
+            <ul class="card-travellers__transport-list moving-list">
+              <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
+              <li class="moving-list__item moving-list__item--bus moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
+              <li class="moving-list__item moving-list__item--cycle moving-list__item--active"><span class="visually-hidden">На велосипеде</span></li>
+              <li class="moving-list__item moving-list__item--running moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
+            </ul>
+          </div>
+          <div class="card-travellers__wrapper-level">
+            <h4 class="card-travellers__level">левел:</h4>
+            <ul class="card-travellers__level-list level-list">
+              <li class="level-list__item">99</li>
+            </ul>
+          </div>
           <a class="card-travellers__invite" href="#">Позвать!</a>
         </li>
       </ul>
@@ -195,35 +241,37 @@
       </div>
     </section>
   </main>
-  <footer class="footer html-wrapper--light">
+  <footer class="footer html-wrapper">
     <a class="footer__logo logo">
-      <img class="logo__image" src="/img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
-    </a>
-    <div class="footer__social-wrapper">
-      <ul class="footer__social social-list">
-        <li class="social-list__item social-list__item--footer">
-          <a class="social-list__item-link social-list__item-link--fb" href="#">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social-list__item social-list__item--footer">
-          <a class="social-list__item-link social-list__item-link--vk" href="#">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-list__item social-list__item--footer">
-          <a class="social-list__item-link social-list__item-link--inst" href="#">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__wrapper-developer">
-      <span class="footer__developer-text">Разработано</span>
-      <a class="footer__developer-link">
-        <img class="footer__developer-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика - htmlacademy">
-      </a>
-    </div>
+      <picture>
+        <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)" width="200" height="200">
+        <img class="header__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
+      </picture>
+      <div class="footer__social-wrapper">
+        <ul class="footer__social social-list">
+          <li class="social-list__item social-list__item--footer">
+            <a class="social-list__item-link social-list__item-link--fb" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--footer">
+            <a class="social-list__item-link social-list__item-link--vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--footer">
+            <a class="social-list__item-link social-list__item-link--inst" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper-developer">
+        <span class="footer__developer-text">Разработано</span>
+        <a class="footer__developer-link">
+          <img class="footer__developer-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика - htmlacademy">
+        </a>
+      </div>
   </footer>
 </body>
 
