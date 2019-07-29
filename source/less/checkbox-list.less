@@ -4,11 +4,13 @@
 }
 
 .checkbox-list__item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .checkbox-list__item {
-  padding-left: 30px;
+  padding-top: 7px;
+  padding-left: 26px;
+  .fonts(15PX,15PX,300)
 }
 
 .checkbox-list__item-music {
@@ -18,8 +20,8 @@
 
 .checkbox-list__item-music input[type="checkbox"]+.checkbox-list__radio-indicator {
   position: absolute;
-  top: 0;
-  left: -30px;
+  top: -5px;
+  left: -28px;
   width: 18px;
   height: 18px;
   background-color: #ffffff;
@@ -34,9 +36,9 @@
 .checkbox-list__item-music input[type="checkbox"]:checked+.checkbox-list__radio-indicator::before {
   content: " ";
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 3px;
-  width: 6px;
+  width: 5px;
   height: 2px;
   background-color: #000000;
   transform: rotate(45deg);
@@ -45,10 +47,10 @@
 .checkbox-list__item-music input[type="checkbox"]:checked+.checkbox-list__radio-indicator::after {
   content: " ";
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 5px;
-  width: 11px;
+  width: 10px;
   height: 2px;
   background-color: #000000;
-  transform: rotate(-65deg);
+  transform: rotate(-45deg);
 }

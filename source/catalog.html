@@ -180,6 +180,10 @@
           <li class="travellers-form__list-item">
             <h4 class="travellers-form__filter-caption">Левел</h4>
             <button class="travellers-form__list-button" type="button">Развернуть</button>
+            <div class="filter-level-container">
+              <div class="filter-level-item">30</div>
+              <div class="filter-level-item">100</div>
+            </div>
             <div class="filter-level-range-container">
               <div class="range-controls">
                 <div class="scale">
@@ -191,14 +195,14 @@
             </div>
           </li>
         </ul>
-        <button class="travellers-form__button" type="submit">Показать</button>
+        <button class="travellers-form__button login-link" type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog__travellers html-wrapper">
       <ul class="catalog__travellers-list">
-        <li class="card-travellers">
+        <li class="card-travellers card-travellers-off">
           <h3 class="card-travellers__name">Таня Фирсова</h3>
-          <div class="card-travellers__wrapper-photo">
+          <div class="card-travellers__wrapper-photo card-travellers__wrapper-photo--like">
             <img class="card-travellers__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
           </div>
           <span class="card-travellers__like">1,5 M</span>
@@ -211,18 +215,18 @@
             <li class="hashtag-list__item">#смузи</li>
           </ul>
           <h4 class="card-travellers__wanna">хочет посетить:</h4>
-          <ul class="card-travellers__wanna-list visited-contries-list">
-            <li class="visited-contries-list__item visited-contries-list__item--shri">Шри ланка</li>
-            <li class="visited-contries-list__item visited-contries-list__item--tai"><span>Тайланд</span></li>
-            <li class="visited-contries-list__item visited-contries-list__item--seych"><span>Сейшелы</span></li>
+          <ul class="card-travellers__wanna-list flag-list">
+            <li class="flag-list__item flag-list__item--shri">Шри ланка</li>
+            <li class="flag-list__item flag-list__item--tai"><span>Тайланд</span></li>
+            <li class="flag-list__item flag-list__item--seych"><span>Сейшелы</span></li>
           </ul>
           <div class="card-travellers__wrapper-transport">
             <h4 class="card-travellers__transport">транспорт:</h4>
-            <ul class="card-travellers__transport-list moving-list">
-              <li class="moving-list__item moving-list__item--plane moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
-              <li class="moving-list__item moving-list__item--bus moving-list__item--active"><span class="visually-hidden">На автобусе</span></li>
-              <li class="moving-list__item moving-list__item--cycle moving-list__item--active"><span class="visually-hidden">На велосипеде</span></li>
-              <li class="moving-list__item moving-list__item--running moving-list__item--active"><span class="visually-hidden">Пешком</span></li>
+            <ul class="card-travellers__moving-list moving-list-catalog">
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active" aria-label="На самолете"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--bus" aria-label="На автобусе"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--cycle" aria-label="На велосипеде"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--running" aria-label="Пешком"></span></li>
             </ul>
           </div>
           <div class="card-travellers__wrapper-level">
@@ -233,19 +237,124 @@
           </div>
           <a class="card-travellers__invite" href="#">Позвать!</a>
         </li>
+        <li class="card-travellers card-travellers-demin card-travellers-off">
+          <h3 class="card-travellers__name">Петя Демин</h3>
+          <div class="card-travellers__wrapper-photo">
+            <img class="card-travellers__photo" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
+          </div>
+          <span class="card-travellers__like">150</span>
+          <ul class="card-travellers__hobbies hashtag-list">
+            <li class="hashtag-list__item">#бургер</li>
+            <li class="hashtag-list__item">#бар</li>
+            <li class="hashtag-list__item">#футбол</li>
+            <li class="hashtag-list__item">#концерт</li>
+            <li class="hashtag-list__item">#крафт</li>
+          </ul>
+          <h4 class="card-travellers__wanna">хочет посетить:</h4>
+          <ul class="card-travellers__wanna-list flag-list">
+            <li class="flag-list__item flag-list__item--shri">Бельгия</li>
+            <li class="flag-list__item flag-list__item--tai"><span>Чехия</span></li>
+          </ul>
+          <div class="card-travellers__wrapper-transport">
+            <h4 class="card-travellers__transport">транспорт:</h4>
+            <ul class="card-travellers__moving-list moving-list-catalog">
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active" aria-label="На самолете"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--bus moving-list__item-type--active" aria-label="На автобусе"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--cycle" aria-label="На велосипеде"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--running moving-list__item-type--active" aria-label="Пешком"></span></li>
+            </ul>
+          </div>
+          <div class="card-travellers__wrapper-level">
+            <h4 class="card-travellers__level">левел:</h4>
+            <ul class="card-travellers__level-list level-list">
+              <li class="level-list__item">80</li>
+            </ul>
+          </div>
+          <a class="card-travellers__invite" href="#">Позвать!</a>
+        </li>
+        <li class="card-travellers card-travellers-smolov card-travellers-off">
+          <h3 class="card-travellers__name">Марк Смолов</h3>
+          <div class="card-travellers__wrapper-photo">
+            <img class="card-travellers__photo" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
+          </div>
+          <span class="card-travellers__like">1700</span>
+          <ul class="card-travellers__hobbies hashtag-list">
+            <li class="hashtag-list__item">#рэп</li>
+            <li class="hashtag-list__item">#тату</li>
+            <li class="hashtag-list__item">#хайпбист</li>
+            <li class="hashtag-list__item">#кроссовки</li>
+            <li class="hashtag-list__item">#суприм</li>
+          </ul>
+          <h4 class="card-travellers__wanna">хочет посетить:</h4>
+          <ul class="card-travellers__wanna-list flag-list">
+            <li class="flag-list__item flag-list__item--shri">США</li>
+            <li class="flag-list__item flag-list__item--tai"><span>Австралия</span></li>
+            <li class="flag-list__item flag-list__item--tai"><span>Доминикана</span></li>
+          </ul>
+          <div class="card-travellers__wrapper-transport">
+            <h4 class="card-travellers__transport">транспорт:</h4>
+            <ul class="card-travellers__moving-list moving-list-catalog">
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active" aria-label="На самолете"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--bus" aria-label="На автобусе"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--cycle" aria-label="На велосипеде"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--running moving-list__item-type--active" aria-label="Пешком"></span></li>
+            </ul>
+          </div>
+          <div class="card-travellers__wrapper-level">
+            <h4 class="card-travellers__level">левел:</h4>
+            <ul class="card-travellers__level-list level-list">
+              <li class="level-list__item">25</li>
+            </ul>
+          </div>
+          <a class="card-travellers__invite" href="#">Позвать!</a>
+        </li>
+        <li class="card-travellers card-travellers-rogovaya card-travellers-on">
+          <h3 class="card-travellers__name">Лариса Роговая</h3>
+          <div class="card-travellers__wrapper-photo">
+            <img class="card-travellers__photo" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
+          </div>
+          <span class="card-travellers__like">23</span>
+          <ul class="card-travellers__hobbies hashtag-list">
+            <li class="hashtag-list__item">#образование</li>
+            <li class="hashtag-list__item">#карьера</li>
+            <li class="hashtag-list__item">#учеба</li>
+            <li class="hashtag-list__item">#линкедин</li>
+          </ul>
+          <h4 class="card-travellers__wanna">хочет посетить:</h4>
+          <ul class="card-travellers__wanna-list flag-list">
+            <li class="flag-list__item flag-list__item--shri">Великобритания</li>
+            <li class="flag-list__item flag-list__item--tai"><span>Германия</span></li>
+          </ul>
+          <div class="card-travellers__wrapper-transport">
+            <h4 class="card-travellers__transport">транспорт:</h4>
+            <ul class="card-travellers__moving-list moving-list-catalog">
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active" aria-label="На самолете"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--bus" aria-label="На автобусе"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--cycle" aria-label="На велосипеде"></span></li>
+              <li class="moving-list__item-catalog moving-list__item-type--card"><span class="moving-list__item-type moving-list__item-type--running" aria-label="Пешком"></span></li>
+            </ul>
+          </div>
+          <div class="card-travellers__wrapper-level">
+            <h4 class="card-travellers__level">левел:</h4>
+            <ul class="card-travellers__level-list level-list">
+              <li class="level-list__item">25</li>
+            </ul>
+          </div>
+          <a class="card-travellers__invite" href="#">Позвать!</a>
+        </li>
       </ul>
-      <a class="catalog__show-all-travellers" href="#">показать еще</a>
+      <a class="catalog__show-all-travellers login-link" href="#">показать еще</a>
       <div class="catalog__switcher">
-        <span class="visually-hidden">Назад</span>
-        <span class="visually-hidden">Вперед</span>
+        <span class="catalog__switcher-item">Назад</span>
+        <span class="catalog__switcher-item">Вперед</span>
       </div>
     </section>
   </main>
-  <footer class="footer html-wrapper">
+  <footer class="footer footer-catalog html-wrapper">
     <a class="footer__logo logo">
       <picture>
         <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)" width="200" height="200">
-        <img class="header__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
+        <img class="header__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
       </picture>
       <div class="footer__social-wrapper">
         <ul class="footer__social social-list">

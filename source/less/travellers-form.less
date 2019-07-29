@@ -1,6 +1,7 @@
 .travellers-form {
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 26px;
+  padding-bottom: 22px;
 }
 
 .travellers-form ul {
@@ -9,20 +10,23 @@
 
 .travellers-form__caption {
   .discard;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin-left: 25px;
+  margin-bottom: 22px;
   width: 120px;
-  .fonts(22.49px,22.49px,400);
+  .fonts(22.5px,22.5px,600);
 }
 
 .travellers-form__filter-caption {
   .discard;
+  margin-bottom: 1px;
 }
 
 .travellers-form__list {
   display: flex;
   flex-direction: column;
   .discard;
+  margin-left: 3px;
+  margin-bottom: 6px;
 }
 
 .travellers-form__list-item {
@@ -47,20 +51,25 @@
 }
 
 .travellers-form__list-item:nth-child(2) {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
 .travellers-form__list-item:nth-child(4) {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.travellers-form__list-item:nth-child(5) {
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
 .travellers-form__list-button {
   position: absolute;
   display: flex;
-  top: 5px;
-  right: 0;
+  top: 8px;
+  right: -10px;
   width: 30px;
   height: 30px;
   .fonts(0,0,0);
@@ -70,4 +79,14 @@
   background-repeat: no-repeat;
   background-position: 9px 10px;
   background-size: 8px 4px;
+}
+
+.travellers-form__button {
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-left: 5px;
+  width: 230px;
+  min-height: 40px;
+  border: none;
+  background-color: #ffffff;
 }

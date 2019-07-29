@@ -4,27 +4,43 @@
   flex-wrap: wrap;
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 20px;
+  padding-top: 15px;
+  padding-left: 18px;
+  padding-bottom: 22px;
   min-width: 270px;
   background-color: #ffffff;
   border-radius: 20px;
-  border: 1px solid red;
 }
 
-.card-travellers::before {
+.card-travellers:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.card-travellers-off::before {
   content: "";
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 23px;
+  right: 22px;
   width: 6px;
   height: 6px;
   background-color: #f97676;
   border-radius: 50%;
 }
 
+.card-travellers-on::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 22px;
+  width: 6px;
+  height: 6px;
+  background-color: #81e31e;
+  border-radius: 50%;
+}
+
 .card-travellers__name {
   .discard;
-  margin-left: 20px;
+  margin-left: 16px;
   margin-right: 30px;
   width: 80px;
   .fonts(20px,20px,700);
@@ -32,8 +48,8 @@
 }
 
 .card-travellers__like {
-  margin-left: 90px;
-  margin-top: -20px;
+  margin-left: 86px;
+  margin-top: -29px;
   .fonts(14px,21px,700);
   color: @base-color;
 }
@@ -47,10 +63,21 @@
   content: " ";
   position: absolute;
   top: 50px;
-  right: -2px;
+  right: -1px;
   width: 13px;
   height: 11px;
   background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+}
+
+.card-travellers__wrapper-photo--like::after {
+  content: " ";
+  position: absolute;
+  top: 50px;
+  right: -1px;
+  width: 13px;
+  height: 11px;
+  background-image: url("../img/heart-active.svg");
   background-repeat: no-repeat;
 }
 
@@ -58,7 +85,7 @@
   content: " ";
   position: absolute;
   top: 40px;
-  right: -10px;
+  right: -9px;
   width: 30px;
   height: 30px;
   background-color: #f9eaea;
@@ -74,20 +101,71 @@
   flex-wrap: wrap;
   .discard;
   margin-top: 10px;
-  width: 170px;
+  margin-left: 8px;
+  width: 175px;
   list-style: none;
 }
 
 .card-travellers__wanna {
+  position: relative;
+  .discard;
+  margin-top: 13px;
+  margin-left: 9px;
   width: 245px;
+  .fonts(15px,18px,300);
+}
+
+.card-travellers__wanna::before {
+  position: absolute;
+  content: " ";
+  left: -27px;
+  top: 8px;
+  width: 18px;
+  height: 1px;
+  background-color: #edeff6;
+}
+
+.card-travellers__wanna::after {
+  position: absolute;
+  content: " ";
+  top: 8px;
+  right: 0;
+  width: 138px;
+  height: 1px;
+  background-color: #edeff6;
 }
 
 .card-travellers__wanna-list {
   .discard;
+  margin-top: 17px;
+  margin-left: 2px;
+}
+
+.card-travellers__wrapper-transport {
+  margin-left: 9px;
+  margin-top: 1px;
 }
 
 .card-travellers__transport {
+  .discard;
   width: 160px;
+  .fonts(15px,18px,400);
+}
+
+.card-travellers-demin .card-travellers__transport {
+  margin-top: 6px;
+}
+
+.card-travellers-smolov .card-travellers__transport {
+  margin-top: 3px;
+}
+
+.card-travellers-rogovaya .card-travellers__transport {
+  margin-top: 6px;
+}
+
+.card-travellers__moving-list {
+  margin-top: 15px;
 }
 
 .card-travellers__transport-list {
@@ -99,18 +177,66 @@
 }
 
 .card-travellers__wrapper-level {
-  margin-bottom: 30px;
+  position: relative;
+  .discard;
+  margin-left: 21px;
+  margin-top: 1px;
+  margin-bottom: 48px;
+}
+
+.card-travellers-demin .card-travellers__wrapper-level {
+  margin-top: 7px;
+}
+
+.card-travellers-smolov .card-travellers__wrapper-level {
+  margin-top: 4px;
+}
+
+.card-travellers-rogovaya .card-travellers__wrapper-level {
+  margin-top: 7px;
+}
+
+.card-travellers__wrapper-level::before {
+  position: absolute;
+  content: " ";
+  top: 8px;
+  right: 50px;
+  width: 90px;
+  height: 1px;
+  background-color: #edeff6;
+}
+
+.card-travellers__wrapper-level::after {
+  position: absolute;
+  content: " ";
+  top: 8px;
+  right: -24px;
+  width: 13px;
+  height: 1px;
+  background-color: #edeff6;
+}
+
+.card-travellers__level {
+  .discard;
+  .fonts(15px,18px,400);
+}
+
+.card-travellers__level-list {
+  .discard;
 }
 
 .card-travellers__invite {
   display: block;
   box-sizing: border-box;
-  padding: 12px 80px;
+  margin-left: 2px;
+  padding-left: 78px;
+  padding-top: 7px;
+  padding-bottom: 3px;
   width: 230px;
   .fonts(17px,30px,700);
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 25px;
   background-color: #ffd74b;
   color: @base-color;
 }
