@@ -1,10 +1,10 @@
-.catalog__switcher {
+.switcher {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 73px;
+  /*padding-bottom: 73px;*/
 }
 
-.catalog__switcher-item {
+.switcher__item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -13,15 +13,17 @@
   height: 50px;
   .fonts(0,0,0);
   background-color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
-.catalog__switcher-item:nth-child(1) {
+.switcher__item:nth-child(1) {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-.catalog__switcher-item:nth-child(1)::before,
-.catalog__switcher-item:nth-child(2)::before {
+.switcher__item:nth-child(1)::before,
+.switcher__item:nth-child(2)::before {
   position: absolute;
   content: " ";
   top: 10px;
@@ -32,15 +34,15 @@
   background-repeat: no-repeat;
 }
 
-.catalog__switcher-item:nth-child(1)::before {
+.switcher__item:nth-child(1)::before {
   background-image: url("../img/triangle-arrow-left.svg");
 }
 
-.catalog__switcher-item:nth-child(2)::before {
+.switcher__item:nth-child(2)::before {
   background-image: url("../img/triangle-arrow-right.svg");
 }
 
-.catalog__switcher-item:nth-child(2) {
+.switcher__item:nth-child(2) {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }

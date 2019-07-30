@@ -30,7 +30,7 @@
 }
 
 .travellers-form__list-item {
-  position:relative;
+  position: relative;
   .discard;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,11 @@
 
 .travellers-form__list-hobbies {
   .discard;
+  display: none;
+}
+
+.travellers-form__list-foods {
+  display: none;
 }
 
 .travellers-form__filter-caption {
@@ -89,4 +94,53 @@
   min-height: 40px;
   border: none;
   background-color: #ffffff;
+}
+@media (min-width: @tablet-width) {
+  .travellers-form__caption {
+    width: 600px;
+  }
+
+  .travellers-form__list-button {
+    display: none;
+  }
+
+  .travellers-form__list {
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-top: 1px solid #f3c72b;
+    border-bottom: 1px solid #f3c72b;
+  }
+
+  .travellers-form__list-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    .discard;
+    margin-left: 35px;
+    width: 555px;
+    border: none;
+  }
+
+  .travellers-form__list-item:nth-child(1) .travellers-form__filter-caption{
+    margin-right: 65px;
+  }
+
+  .travellers-form__list-item:nth-child(2) .travellers-form__filter-caption{
+    margin-right: 52px;
+  }
+
+  .travellers-form__list-item:nth-child(3) .travellers-form__filter-caption{
+    margin-right: 84px;
+  }
+
+  .travellers-form__list-item:nth-child(4) .travellers-form__filter-caption{
+    margin-right: 22px;
+  }
+
+  .travellers-form__list-item:nth-child(5) .travellers-form__filter-caption{
+    margin-right: 60px;
+  }
+
+  .travellers-form__button {
+    width: 618px;
+  }
 }

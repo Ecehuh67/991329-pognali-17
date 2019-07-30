@@ -81,11 +81,19 @@
       </ul>
     </section>
     <h1 class="header-catalog__caption">Попутчики</h1>
+    <a class="header-catalog__link" href="index.html">На главную</a>
   </header>
   <main class="catalog">
     <section class="catalog__filter html-wrapper">
       <h2 class="catalog__filter-country">фильтрация по странам</h2>
+      <p class="catalog__filter-country-list">
+        <span class="catalog__filter-country-item">Европа</span>
+        <span>Азия</span>
+        <span>Америка</span>
+        <span>Острова</span>
+      </p>
       <button class="catalog__filter-button" type="button">
+        <span>Показать все</span>
         <div></div>
       </button>
     </section>
@@ -96,32 +104,29 @@
           <li class="travellers-form__list-item">
             <h4 class="travellers-form__filter-caption">Хобби</h4>
             <button class="travellers-form__list-button" type="button">Развернуть</button>
-            <!--
             <ul class="travellers-form__list-hobbies checkbox-list">
               <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#ЗОЖ</li>
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Спортзал">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Спортзал
+                </label>
+              </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#ПП</li>
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Кальян">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Кальян
+                </label>
+              </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#Фитнес</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#пляж</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#авокадо</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#смузи</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#бургер</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#бар</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#Футбол</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#концерт</li>
-              <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">#крафт</li>
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Диван">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Диван
+                </label>
+              </li>
             </ul>
-          -->
           </li>
           <li class="travellers-form__list-item">
             <h4 class="travellers-form__filter-caption">Музыка</h4>
@@ -129,21 +134,21 @@
             <ul class="checkbox-list">
               <li class="checkbox-list__item">
                 <label class="checkbox-list__item-music">
-                  <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Тяжелый рок">
                   <span class="checkbox-list__radio-indicator"></span>
                   Тяжелый рок
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__item-music">
-                  <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Русский рэп">
                   <span class="checkbox-list__radio-indicator"></span>
                   Русский рэп
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__item-music">
-                  <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Евроденс">
                   <span class="checkbox-list__radio-indicator"></span>
                   Евроденс
                 </label>
@@ -153,28 +158,38 @@
           <li class="travellers-form__list-item">
             <h4 class="travellers-form__filter-caption">Еда</h4>
             <button class="travellers-form__list-button" type="button">Развернуть</button>
-            <!--
-            <ul class="checkbox-list">
+            <ul class="travellers-form__list-foods checkbox-list">
               <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Мясоед">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Мясоед
+                </label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Сидит на ПП">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Сидит на ПП
+                </label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__item-input" type="checkbox">
+                <label class="checkbox-list__item-music">
+                  <input class="visually-hidden" type="checkbox" name="universal" value="Веган-сыроед">
+                  <span class="checkbox-list__radio-indicator"></span>
+                  Веган-сыроед
+                </label>
               </li>
             </ul>
-          -->
           </li>
           <li class="travellers-form__list-item">
             <h4 class="travellers-form__filter-caption">Транспорт</h4>
             <button class="travellers-form__list-button" type="button">Развернуть</button>
             <ul class="moving-list-catalog">
-              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--plane" aria-label="На самолете"></span></li>
-              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--bus" aria-label="На автобусе"></span></li>
+              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active" aria-label="На самолете"></span></li>
+              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--bus moving-list__item-type--active" aria-label="На автобусе"></span></li>
               <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--cycle" aria-label="На велосипеде"></span></li>
-              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--running" aria-label="Пешком"></span></li>
+              <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--running moving-list__item-type--active" aria-label="Пешком"></span></li>
             </ul>
           </li>
           <li class="travellers-form__list-item">
@@ -200,10 +215,13 @@
     </section>
     <section class="catalog__travellers html-wrapper">
       <ul class="catalog__travellers-list">
-        <li class="card-travellers card-travellers-off">
-          <h3 class="card-travellers__name">Таня Фирсова</h3>
+        <li class="card-travellers card-travellers--off">
+          <h3 class="card-travellers__name card-travellers-name--off">Таня Фирсова</h3>
           <div class="card-travellers__wrapper-photo card-travellers__wrapper-photo--like">
-            <img class="card-travellers__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
+            <picture>
+              <source srcset="img/firsova-tablet@1x.jpg" media="(min-width: 768px)" width="190" height="190">
+              <img class="card-travellers__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
+            </picture>
           </div>
           <span class="card-travellers__like">1,5 M</span>
           <ul class="card-travellers__hobbies hashtag-list">
@@ -235,10 +253,10 @@
               <li class="level-list__item">99</li>
             </ul>
           </div>
-          <a class="card-travellers__invite" href="#">Позвать!</a>
+          <a class="card-travellers__invite card-travellers__invite-heart card-travellers__invite-heart--like" href="#">Позвать!</a>
         </li>
-        <li class="card-travellers card-travellers-demin card-travellers-off">
-          <h3 class="card-travellers__name">Петя Демин</h3>
+        <li class="card-travellers card-travellers-demin card-travellers--off">
+          <h3 class="card-travellers__name card-travellers-name--off">Петя Демин</h3>
           <div class="card-travellers__wrapper-photo">
             <img class="card-travellers__photo" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
           </div>
@@ -270,10 +288,10 @@
               <li class="level-list__item">80</li>
             </ul>
           </div>
-          <a class="card-travellers__invite" href="#">Позвать!</a>
+          <a class="card-travellers__invite card-travellers__invite-heart" href="#">Позвать!</a>
         </li>
-        <li class="card-travellers card-travellers-smolov card-travellers-off">
-          <h3 class="card-travellers__name">Марк Смолов</h3>
+        <li class="card-travellers card-travellers-smolov card-travellers--off">
+          <h3 class="card-travellers__name card-travellers-name--off">Марк Смолов</h3>
           <div class="card-travellers__wrapper-photo">
             <img class="card-travellers__photo" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
           </div>
@@ -306,10 +324,10 @@
               <li class="level-list__item">25</li>
             </ul>
           </div>
-          <a class="card-travellers__invite" href="#">Позвать!</a>
+          <a class="card-travellers__invite card-travellers__invite-heart" href="#">Позвать!</a>
         </li>
-        <li class="card-travellers card-travellers-rogovaya card-travellers-on">
-          <h3 class="card-travellers__name">Лариса Роговая</h3>
+        <li class="card-travellers card-travellers-rogovaya card-travellers--on">
+          <h3 class="card-travellers__name card-travellers-name--on">Лариса Роговая</h3>
           <div class="card-travellers__wrapper-photo">
             <img class="card-travellers__photo" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
           </div>
@@ -340,14 +358,26 @@
               <li class="level-list__item">25</li>
             </ul>
           </div>
-          <a class="card-travellers__invite" href="#">Позвать!</a>
+          <a class="card-travellers__invite card-travellers__invite-heart" href="#">Позвать!</a>
         </li>
       </ul>
       <a class="catalog__show-all-travellers login-link" href="#">показать еще</a>
-      <div class="catalog__switcher">
-        <span class="catalog__switcher-item">Назад</span>
-        <span class="catalog__switcher-item">Вперед</span>
+      <div class="catalog__switcher switcher">
+        <button class="switcher__item" type="button">Назад</button>
+        <button class="switcher__item" type="button">Вперед</button>
       </div>
+      <div class="catalog__pagination-container">
+        <ul class="pagination-list">
+          <li class="pagination-list__item pagination-list__item--current"><a href="#">1</a></li>
+          <li class="pagination-list__item"><a href="#">2</a></li>
+          <li class="pagination-list__item"><a href="#">3</a></li>
+          <li class="pagination-list__item"><a href="#">4</a></li>
+        </ul>
+        <div class="catalog__button-container">
+          <button class="pagination-button pagination-button--left" type="button">Назад</button>
+          <button class="pagination-button pagination-button--right" type="button">Вперед</button>
+          <div>
+          </div>
     </section>
   </main>
   <footer class="footer footer-catalog html-wrapper">

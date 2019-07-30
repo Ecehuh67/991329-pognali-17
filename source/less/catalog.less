@@ -33,6 +33,10 @@
   }
 }
 
+.catalog__filter-country-list {
+  display: none;
+}
+
 .catalog__filter-button {
   display: flex;
   justify-content: center;
@@ -41,6 +45,11 @@
   height: 25px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  & span {
+    display: none;
+  }
 
   & div {
     position: relative;
@@ -83,7 +92,9 @@
 }
 
 .catalog__travellers {
-  margin-bottom: 0px;      /* ВРЕМЕМННО*/
+  padding-bottom: 60px;
+  /*margin-bottom: 0px;*/
+  /* ВРЕМЕМННО*/
   background-color: #edeff6;
 }
 
@@ -102,8 +113,8 @@
   background-color: transparent;
 }
 
-.catalog__show-all-travellers::before,
-.catalog__show-all-travellers::after {
+.catalog__show-all-travellers::after,
+.catalog__show-all-travellers::before {
   position: absolute;
   content: " ";
   width: 18px;
@@ -120,4 +131,76 @@
   top: 15px;
   left: -5px;
   transform: rotate(90deg);
+}
+
+.catalog__pagination-container {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__filter-country {
+    display: none;
+  }
+
+  .catalog__filter-country-list {
+    .discard;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 365px;
+    .fonts(20px,24px,600);
+    text-transform: uppercase;
+    color: #a5aabd;
+
+    .catalog__filter-country-item {
+      color: @base-color;
+    }
+  }
+
+  .catalog__filter-button {
+    display: flex;
+    justify-content: space-between;
+    min-width: 180px;
+    .fonts(20px,24px,600);
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+
+    div {
+      margin-top: 6px;
+      border-radius: 50%;
+
+      &::before,
+      &::after {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .catalog__show-all-travellers {
+    margin: 0 auto;
+    margin-top: 46px;
+    margin-bottom: 50px;
+  }
+
+  .catalog__switcher {
+    display: none;
+  }
+
+  .catalog__pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 688px;
+    height: 100px;
+    .fonts(20px,30px,600);
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .catalog__button-container {
+    margin-right: 40px;
+  }
 }

@@ -54,3 +54,20 @@
   background-color: #000000;
   transform: rotate(-45deg);
 }
+
+@media (min-width: @tablet-width) {
+  .checkbox-list {
+    .discard;
+    margin-left: 40px;
+    display: flex;
+  }
+
+  .checkbox-list__item {
+    .discard;
+    width: 160px;
+  }
+
+  .checkbox-list__item:not(:last-child) {
+    margin-right: 0px;
+  }
+}

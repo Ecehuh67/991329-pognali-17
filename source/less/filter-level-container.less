@@ -13,7 +13,7 @@
   align-items: center;
   box-sizing: border-box;
   width: 110px;
-  min-height: 35px;
+  height: 35px;
   .fonts(15px,15px,500);
   background-color: #ffffff;
   border-top: 1px solid #cbced9;
@@ -59,4 +59,16 @@
   width: 24px;
   height: 1px;
   background-color: #cbced9;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-level-container {
+    order: 3;
+    .discard;
+    margin-top: -10px;
+  }
+
+  .filter-level-item  {
+    width: 74px;
+  }
 }
