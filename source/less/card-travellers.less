@@ -240,7 +240,6 @@
   background-color: #ffd74b;
   color: @base-color;
 }
-
 @media (min-width: @tablet-width) {
   .card-travellers--off::before,
   .card-travellers--on::before {
@@ -320,9 +319,9 @@
     flex-direction: column;
   }
 
-  .card-travellers__wrapper-photo::after,
   .card-travellers__wrapper-photo--like::after,
-  .card-travellers__wrapper-photo::before  {
+  .card-travellers__wrapper-photo::after,
+  .card-travellers__wrapper-photo::before {
     display: none;
   }
 
@@ -334,55 +333,55 @@
   }
 
   .card-travellers__invite-heart::before {
-      content: " ";
-      position: absolute;
-      top: -5px;
-      right: -51px;
-      width: 50px;
-      height: 50px;
-      background-image: url("../img/heart.svg");
-      background-color: #edeff6;
-      background-size: 20px 17px;
-      background-position: 15px 18px;
-      background-repeat: no-repeat;
-      border-radius: 50%;
+    content: " ";
+    position: absolute;
+    top: -5px;
+    right: -51px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/heart.svg");
+    background-color: #edeff6;
+    background-size: 20px 17px;
+    background-position: 15px 18px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
   }
 
   .card-travellers__invite-heart--like::before {
-      background-image: url("../img/heart-active.svg");
-      background-color: #f9eaea;
+    background-image: url("../img/heart-active.svg");
+    background-color: #f9eaea;
   }
 
   .card-travellers:nth-child(1) .card-travellers__invite::after {
-      content: "1,5M";
-      position: absolute;
-      top: 5px;
-      right: -160px;
-      width: 100px;
+    content: "1,5M";
+    position: absolute;
+    top: 5px;
+    right: -160px;
+    width: 100px;
   }
 
   .card-travellers:nth-child(2) .card-travellers__invite::after {
-      content: "150";
-      position: absolute;
-      top: 5px;
-      right: -160px;
-      width: 100px;
+    content: "150";
+    position: absolute;
+    top: 5px;
+    right: -160px;
+    width: 100px;
   }
 
   .card-travellers:nth-child(3) .card-travellers__invite::after {
-      content: "150";
-      position: absolute;
-      top: 5px;
-      right: -160px;
-      width: 100px;
+    content: "150";
+    position: absolute;
+    top: 5px;
+    right: -160px;
+    width: 100px;
   }
 
   .card-travellers:nth-child(4) .card-travellers__invite::after {
-      content: "23";
-      position: absolute;
-      top: 5px;
-      right: -160px;
-      width: 100px;
+    content: "23";
+    position: absolute;
+    top: 5px;
+    right: -160px;
+    width: 100px;
   }
 
   .card-travellers__wanna {
@@ -394,4 +393,104 @@
   .card-travellers__wanna-list {
     order: 4;
   }
+}
+@media (min-width: @desktop-width) {
+  .card-travellers {
+    padding: 0;
+    height: 285px;
+  }
+
+  .card-travellers:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .card-travellers__name {
+    order: 0;
+    .discard;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 285px;
+  }
+
+  .card-travellers__wrapper-photo {
+  }
+
+  .card-travellers__photo {
+    width: 285px;
+    height: 285px;
+    margin-right: 60px;
+  }
+
+  .card-travellers:nth-child(1) .card-travellers__hobbies,
+  .card-travellers:nth-child(2) .card-travellers__hobbies,
+  .card-travellers:nth-child(3) .card-travellers__hobbies,
+  .card-travellers:nth-child(4) .card-travellers__hobbies {
+    margin-left: 350px;
+    margin-top: -200px;
+  }
+
+  .card-travellers__hobbies {
+    order: 2;
+    .discard;
+  }
+
+  .card-travellers-name--off::before,
+  .card-travellers-name--on::before {
+    top: 12px;
+    left: -15px;
+  }
+
+  .card-travellers__wanna {
+    display: none;
+  }
+
+  .card-travellers__wanna-list {
+    order: 1;
+    .discard;
+    margin-top: 30px;
+  }
+
+  .card-travellers__wrapper-transport {
+    position: static;
+    order: 5;
+    margin-left: 150px;
+    margin-top: -110px;
+  }
+
+  .card-travellers__moving-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-travellers__invite {
+    .discard;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -170px;
+    margin-top: -100px;
+    width: 150px;
+    height: 50px;
+  }
+
+  .card-travellers-demin .card-travellers__wrapper-level {
+    margin-top: -100px;
+  }
+
+  .card-travellers-smolov .card-travellers__wrapper-level {
+    margin-top: -100px;
+  }
+
+  .card-travellers-rogovaya .card-travellers__wrapper-level {
+    margin-top: -100px;
+  }
+
+  .card-travellers__wrapper-level {
+    position: static;
+    .discard;
+    order: 6;
+    margin-left: 110px;
+    margin-top: -100px;
+  }
+
 }
