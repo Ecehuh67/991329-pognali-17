@@ -90,7 +90,6 @@
   display: none;
 }
 
-
 .catalog__form-wrapper {
   box-sizing: border-box;
   margin-top: -60px;
@@ -149,6 +148,7 @@
 .catalog__pagination-container {
   display: none;
 }
+
 @media (min-width: @tablet-width) {
   .catalog__filter-country {
     display: none;
@@ -214,6 +214,7 @@
     margin-right: 40px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .catalog {
     display: flex;
@@ -225,9 +226,8 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    margin: 0 auto;
-    margin-top: -30px;
-    padding: 70px 60px 90px 60px;
+    margin: -30px auto 0;
+    padding: 70px 60px 90px;
     width: 1440px;
     background-color: #edeff6;
   }
@@ -447,8 +447,8 @@
     border-radius: 20px;
   }
 
-  .catalog_filter-alphabet-close::before,
-  .catalog_filter-alphabet-close::after {
+  .catalog_filter-alphabet-close::after,
+  .catalog_filter-alphabet-close::before {
     position: absolute;
     content: " ";
     top: 45px;

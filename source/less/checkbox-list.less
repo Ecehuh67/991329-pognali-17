@@ -10,7 +10,7 @@
 .checkbox-list__item {
   padding-top: 7px;
   padding-left: 26px;
-  .fonts(15PX,15PX,300)
+  .fonts(15PX,15PX,300);
 }
 
 .checkbox-list__item-music {
@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-.checkbox-list__item-music input[type="checkbox"]+.checkbox-list__radio-indicator {
+.checkbox-list__item-music input[type="checkbox"] + .checkbox-list__radio-indicator {
   position: absolute;
   top: -5px;
   left: -28px;
@@ -28,12 +28,12 @@
   border-radius: 5px;
 }
 
-.checkbox-list__item-music input[type="checkbox"]:focus+.checkbox-list__radio-indicator {
+.checkbox-list__item-music input[type="checkbox"]:focus + .checkbox-list__radio-indicator {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  /*outline: 5px auto -webkit-focus-ring-color;*/
 }
 
-.checkbox-list__item-music input[type="checkbox"]:checked+.checkbox-list__radio-indicator::before {
+.checkbox-list__item-music input[type="checkbox"]:checked + .checkbox-list__radio-indicator::before {
   content: " ";
   position: absolute;
   top: 10px;
@@ -44,7 +44,7 @@
   transform: rotate(45deg);
 }
 
-.checkbox-list__item-music input[type="checkbox"]:checked+.checkbox-list__radio-indicator::after {
+.checkbox-list__item-music input[type="checkbox"]:checked + .checkbox-list__radio-indicator::after {
   content: " ";
   position: absolute;
   top: 9px;
@@ -68,6 +68,6 @@
   }
 
   .checkbox-list__item:not(:last-child) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }

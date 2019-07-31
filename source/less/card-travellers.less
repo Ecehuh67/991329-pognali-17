@@ -172,10 +172,6 @@
   list-style: none;
 }
 
-.card-travellers__level-list {
-  list-style: none;
-}
-
 .card-travellers__wrapper-level {
   position: relative;
   .discard;
@@ -223,6 +219,7 @@
 
 .card-travellers__level-list {
   .discard;
+  list-style: none;
 }
 
 .card-travellers__invite {
@@ -240,6 +237,7 @@
   background-color: #ffd74b;
   color: @base-color;
 }
+
 @media (min-width: @tablet-width) {
   .card-travellers--off::before,
   .card-travellers--on::before {
@@ -394,6 +392,7 @@
     order: 4;
   }
 }
+
 @media (min-width: @desktop-width) {
   .card-travellers {
     padding: 0;
@@ -410,9 +409,6 @@
     margin-top: 30px;
     margin-right: 50px;
     width: 285px;
-  }
-
-  .card-travellers__wrapper-photo {
   }
 
   .card-travellers__photo {
@@ -492,5 +488,4 @@
     margin-left: 110px;
     margin-top: -100px;
   }
-
 }
