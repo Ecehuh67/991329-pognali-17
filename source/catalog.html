@@ -12,8 +12,8 @@
   <header class="header  header-catalog html-wrapper">
     <a class="header__logo">
       <picture>
-        <source srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)" width="200" height="52">
-        <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)" width="166" height="42">
+        <source srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
+        <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
         <img class="header__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
       </picture>
     </a>
@@ -93,9 +93,9 @@
         <span>Острова</span>
       </p>
       <button class="catalog__filter-button" type="button">
-        <span class="catalog__filter-button-tablet">Показать все</span>
-        <span class="catalog__filter-button-desktop">Свернуть</span>
-        <div></div>
+        <span class="catalog__filter-button-none catalog__filter-button-tablet">Показать все</span>
+        <span class="catalog__filter-button-none catalog__filter-button-desktop">Свернуть</span>
+        <span class="catalog__filter-button-container"></span>
       </button>
       <button class="catalog__filter-close" type="button"></button>
       <div class="catalog_filter-alphabet">
@@ -495,10 +495,10 @@
               <h4 class="travellers-form__filter-caption">Транспорт</h4>
               <button class="travellers-form__list-button" type="button">Развернуть</button>
               <ul class="moving-list-catalog">
-                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active" aria-label="На самолете"></span></li>
-                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--bus moving-list__item-type--active" aria-label="На автобусе"></span></li>
-                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--cycle" aria-label="На велосипеде"></span></li>
-                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--running moving-list__item-type--active" aria-label="Пешком"></span></li>
+                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active">На самолете</span></li>
+                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--bus moving-list__item-type--active">На автобусе</span></li>
+                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--cycle">На велосипеде</span></li>
+                <li class="moving-list__item-catalog"><span class="moving-list__item-type moving-list__item-type--running moving-list__item-type--active">Пешком</span></li>
               </ul>
             </li>
             <li class="travellers-form__list-item">
@@ -528,8 +528,8 @@
             <h3 class="card-travellers__name card-travellers-name--off">Таня Фирсова</h3>
             <div class="card-travellers__wrapper-photo card-travellers__wrapper-photo--like">
               <picture>
-                <source srcset="img/firsova-desktop@1x.jpg" media="(min-width: 1440px)" width="285" height="285">
-                <source srcset="img/firsova-tablet@1x.jpg" media="(min-width: 768px)" width="190" height="190">
+                <source srcset="img/firsova-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/firsova-tablet@1x.jpg" media="(min-width: 768px)">
                 <img class="card-travellers__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
               </picture>
             </div>
@@ -569,8 +569,8 @@
             <h3 class="card-travellers__name card-travellers-name--off">Петя Демин</h3>
             <div class="card-travellers__wrapper-photo">
               <picture>
-                <source srcset="img/demin-desktop@1x.jpg" media="(min-width: 1440px)" width="285" height="285">
-                <source srcset="img/demin-tablet@1x.jpg" media="(min-width: 768px)" width="190" height="190">
+                <source srcset="img/demin-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/demin-tablet@1x.jpg" media="(min-width: 768px)">
                 <img class="card-travellers__photo" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
               </picture>
             </div>
@@ -608,8 +608,8 @@
             <h3 class="card-travellers__name card-travellers-name--off">Марк Смолов</h3>
             <div class="card-travellers__wrapper-photo">
               <picture>
-                <source srcset="img/smolov-desktop@1x.jpg" media="(min-width: 1440px)" width="285" height="285">
-                <source srcset="img/smolov-tablet@1x.jpg" media="(min-width: 768px)" width="190" height="190">
+                <source srcset="img/smolov-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/smolov-tablet@1x.jpg" media="(min-width: 768px)">
                 <img class="card-travellers__photo" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
               </picture>
             </div>
@@ -648,8 +648,8 @@
             <h3 class="card-travellers__name card-travellers-name--on">Лариса Роговая</h3>
             <div class="card-travellers__wrapper-photo">
               <picture>
-                <source srcset="img/rogovaya-desktop@1x.jpg" media="(min-width: 1440px)" width="285" height="285">
-                <source srcset="img/rogovaya-tablet@1x.jpg" media="(min-width: 768px)" width="190" height="190">
+                <source srcset="img/rogovaya-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/rogovaya-tablet@1x.jpg" media="(min-width: 768px)">
                 <img class="card-travellers__photo" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="аватарка попутчика">
               </picture>
             </div>
@@ -706,9 +706,10 @@
   <footer class="footer footer-catalog html-wrapper">
     <a class="footer__logo logo">
       <picture>
-        <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)" width="200" height="200">
+        <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
         <img class="header__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
       </picture>
+    </a>
       <div class="footer__social-wrapper">
         <ul class="footer__social social-list">
           <li class="social-list__item social-list__item--footer">

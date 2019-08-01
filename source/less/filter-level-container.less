@@ -66,9 +66,36 @@
     order: 3;
     .discard;
     margin-top: -10px;
+    margin-left: 33px;
   }
 
   .filter-level-item {
-    width: 74px;
+    box-sizing: border-box;
+    .fonts(20px,18px,600);
+    width: 74.5px;
+    height: 46px;
+  }
+
+  .filter-level-item:nth-child(2) {
+    padding-right: 4px;
+  }
+
+  .filter-level-item:nth-child(1)::before {
+    right: 0;
+  }
+
+  .filter-level-item::before {
+    height: 14px;
+  }
+
+  .filter-level-item:nth-child(2)::before {
+    bottom: 0;
+    left: -1px;
+  }
+
+  .filter-level-item:nth-child(1)::after {
+    top: 21px;
+    right: -11px;
+    width: 22px;
   }
 }

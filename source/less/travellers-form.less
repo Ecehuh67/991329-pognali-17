@@ -94,7 +94,14 @@
 }
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .travellers-form {
+    padding-bottom: 38px;
+  }
+
   .travellers-form__caption {
+    margin-top: 10px;
+    margin-left: 34px;
+    .fonts(30px,30px,600);
     width: 600px;
   }
 
@@ -102,9 +109,30 @@
     display: none;
   }
 
+  .travellers-form__filter-caption {
+    position: relative;
+    .fonts(20px,30px,500);
+  }
+
+  .travellers-form__filter-caption::before {
+    position: absolute;
+    content: ":";
+    top: 0;
+    right: -5px;
+    color: @base-color;
+  }
+
+  .travellers-form__list-item:nth-child(4) .travellers-form__filter-caption::before {
+    right: -3px;
+  }
+
   .travellers-form__list {
     box-sizing: border-box;
-    padding-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-bottom: 11px;
+    padding-top: 45px;
+    margin-bottom: 36px;
     border-top: 1px solid #f3c72b;
     border-bottom: 1px solid #f3c72b;
   }
@@ -113,33 +141,49 @@
     flex-direction: row;
     justify-content: flex-start;
     .discard;
-    margin-left: 35px;
     width: 555px;
     border: none;
   }
 
+  .travellers-form__list-item:nth-child(1) {
+    margin-top: 3px;
+  }
+
+  .travellers-form__list-item:nth-child(2) {
+    padding-bottom: 8px;
+  }
+
+  .travellers-form__list-item:nth-child(4) {
+    margin-top: 7px;
+    padding-bottom: 7px;
+  }
+
   .travellers-form__list-item:nth-child(1) .travellers-form__filter-caption {
-    margin-right: 65px;
+    margin-right: 58px;
   }
 
   .travellers-form__list-item:nth-child(2) .travellers-form__filter-caption {
-    margin-right: 52px;
+    margin-right: 43px;
   }
 
   .travellers-form__list-item:nth-child(3) .travellers-form__filter-caption {
-    margin-right: 84px;
+    margin-right: 81px;
   }
 
   .travellers-form__list-item:nth-child(4) .travellers-form__filter-caption {
-    margin-right: 22px;
+    margin-right: 23px;
   }
 
   .travellers-form__list-item:nth-child(5) .travellers-form__filter-caption {
-    margin-right: 60px;
+    margin-right: 71px;
   }
 
   .travellers-form__button {
+    padding-right: 10px;
     width: 618px;
+    .fonts(20px,30px,600);
+    min-height: 50px;
+    border-radius: 25px;
   }
 }
 

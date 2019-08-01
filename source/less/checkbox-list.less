@@ -58,16 +58,39 @@
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .checkbox-list {
     .discard;
-    margin-left: 40px;
+    margin-top: 1px;
+    margin-left: 47px;
     display: flex;
   }
 
   .checkbox-list__item {
     .discard;
     width: 160px;
+    .fonts(20px,30px,400);
   }
 
   .checkbox-list__item:not(:last-child) {
-    margin-right: 0;
+    margin-right: 11px;
+  }
+
+  .checkbox-list__item-music input[type="checkbox"] + .checkbox-list__radio-indicator {
+    left: -35px;
+    top: -4px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .checkbox-list__item-music input[type="checkbox"]:checked + .checkbox-list__radio-indicator::before  {
+    top: 13px;
+    left: 4px;
+    width: 8px;
+    height: 3px;
+  }
+
+  .checkbox-list__item-music input[type="checkbox"]:checked + .checkbox-list__radio-indicator::after {
+    top: 10px;
+    left: 9px;
+    width: 11px;
+    height: 3px;
   }
 }

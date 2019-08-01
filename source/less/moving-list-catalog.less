@@ -19,6 +19,7 @@
   display: block;
   width: 32.25px;
   height: 32.25px;
+  font-size: 0;
   opacity: 0.2;
 }
 
@@ -61,11 +62,34 @@
 @media (min-width: @tablet-width) {
   .moving-list-catalog {
     .discard;
-    margin-top: -10px;
+    margin-top: -9px;
+    width: 172px;
   }
 
   .moving-list__item-catalog {
+    width: 43px;
+    height: 43px;
     background-color: #ffffff;
+  }
+
+  .moving-list__item-type--plane {
+    background-size: 19px 21px;
+    background-position: 10px 11px;
+  }
+
+  .moving-list__item-type--bus {
+    background-size: 17px 21px;
+    background-position: 13px 11px;
+  }
+
+  .moving-list__item-type--cycle {
+    background-size: 24px 21px;
+    background-position: 9px 10px;
+  }
+
+  .moving-list__item-type--running {
+    background-size: 20px 21px;
+    background-position: 11px 11px;
   }
 }
 
