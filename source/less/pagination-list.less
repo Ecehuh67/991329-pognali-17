@@ -1,6 +1,9 @@
 .pagination-list {
   display: flex;
   justify-content: space-between;
+  .discard;
+  margin-left: 28px;
+  margin-top: 2px;
   width: 200px;
   list-style: none;
 
@@ -20,5 +23,11 @@
     &--current {
       background-color: #ffd74b;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pagination-list {
+    margin-top: 4px;
   }
 }

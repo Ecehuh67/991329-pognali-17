@@ -239,6 +239,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .card-travellers {
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+
+  .card-travellers:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
   .card-travellers--off::before,
   .card-travellers--on::before {
     display: none;
@@ -247,6 +257,8 @@
   .card-travellers__name {
     order: 0;
     position: relative;
+    margin-left: 33px;
+    margin-top: -2px;
     width: auto;
     .fonts(30px,30px,600);
   }
@@ -255,10 +267,10 @@
   .card-travellers-name--on::before {
     content: "";
     position: absolute;
-    top: 12px;
-    right: -20px;
-    width: 6px;
-    height: 6px;
+    top: 11px;
+    right: -29px;
+    width: 7px;
+    height: 7px;
     background-color: #f97676;
     border-radius: 50%;
   }
@@ -271,30 +283,31 @@
     order: -1;
     width: 190px;
     height: 190px;
-    border-radius: 10px;
+    border-radius: 18px;
   }
 
   .card-travellers__hobbies {
     order: 1;
-    margin-left: -220px;
-    margin-top: 50px;
+    margin-left: -215px;
+    margin-top: 46px;
   }
 
   .card-travellers:nth-child(2) .card-travellers__hobbies {
-    margin-left: -190px;
+    margin-left: -188px;
   }
 
   .card-travellers:nth-child(3) .card-travellers__hobbies {
-    margin-left: -210px;
+    margin-left: -205px;
   }
 
   .card-travellers:nth-child(4) .card-travellers__hobbies {
-    margin-left: -250px;
+    margin-left: -242px;
   }
 
   .card-travellers__wrapper-transport {
     position: absolute;
-    right: 20px;
+    right: 47px;
+    top: 11px;
     width: 30px;
   }
 
@@ -309,12 +322,17 @@
     width: 30px;
   }
 
+  .card-travellers__wrapper-level::before {
+    display: none;
+  }
+
   .card-travellers__like {
     display: none;
   }
 
   .card-travellers__moving-list {
     flex-direction: column;
+    width: 50px;
   }
 
   .card-travellers__wrapper-photo--like::after,
@@ -326,15 +344,20 @@
   .card-travellers__invite {
     position: relative;
     order: 2;
-    margin-left: 200px;
-    margin-top: -50px;
+    margin-left: 220px;
+    margin-top: -56px;
+    padding-left: 31px;
+    padding-top: 12px;
+    .fonts(20px,30px,600);
+    width: 148px;
+    min-height: 50px;
   }
 
   .card-travellers__invite-heart::before {
     content: " ";
     position: absolute;
-    top: -5px;
-    right: -51px;
+    top: 0px;
+    right: -50px;
     width: 50px;
     height: 50px;
     background-image: url("../img/heart.svg");
@@ -351,41 +374,57 @@
   }
 
   .card-travellers:nth-child(1) .card-travellers__invite::after {
-    content: "1,5M";
+    content: "1,5 M";
     position: absolute;
-    top: 5px;
-    right: -160px;
+    top: 12px;
+    right: -157px;
+    .fonts(20px,30px,600);
     width: 100px;
   }
 
   .card-travellers:nth-child(2) .card-travellers__invite::after {
     content: "150";
     position: absolute;
-    top: 5px;
-    right: -160px;
+    top: 12px;
+    right: -157px;
     width: 100px;
   }
 
   .card-travellers:nth-child(3) .card-travellers__invite::after {
     content: "150";
     position: absolute;
-    top: 5px;
-    right: -160px;
+    top: 12px;
+    right: -157px;
     width: 100px;
   }
 
   .card-travellers:nth-child(4) .card-travellers__invite::after {
     content: "23";
     position: absolute;
-    top: 5px;
-    right: -160px;
+    top: 12px;
+    right: -157px;
     width: 100px;
   }
 
   .card-travellers__wanna {
     order: 3;
-    margin-top: 20px;
+    margin-top: 17px;
+    margin-left: 48px;
     width: 600px;
+  }
+
+  .card-travellers__wanna::before {
+    left: -83px;
+    top: 8px;
+    width: 72px;
+    height: 1px;
+  }
+
+  .card-travellers__wanna::after {
+    top: 8px;
+    right: -5px;
+    width: 500px;
+    height: 1px;
   }
 
   .card-travellers__wanna-list {
@@ -400,14 +439,14 @@
   }
 
   .card-travellers:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .card-travellers__name {
     order: 0;
     .discard;
-    margin-top: 30px;
-    margin-right: 50px;
+    margin-top: 48px;
+    margin-right: 47px;
     width: 285px;
   }
 
@@ -415,14 +454,16 @@
     width: 285px;
     height: 285px;
     margin-right: 60px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .card-travellers:nth-child(1) .card-travellers__hobbies,
   .card-travellers:nth-child(2) .card-travellers__hobbies,
   .card-travellers:nth-child(3) .card-travellers__hobbies,
   .card-travellers:nth-child(4) .card-travellers__hobbies {
-    margin-left: 350px;
-    margin-top: -200px;
+    margin-left: 348px;
+    margin-top: -195px;
   }
 
   .card-travellers__hobbies {
@@ -432,8 +473,8 @@
 
   .card-travellers-name--off::before,
   .card-travellers-name--on::before {
-    top: 12px;
-    left: -15px;
+    top: 10px;
+    left: -26px;
   }
 
   .card-travellers__wanna {
@@ -443,14 +484,15 @@
   .card-travellers__wanna-list {
     order: 1;
     .discard;
-    margin-top: 30px;
+    margin-top: 49px;
+    margin-left: 7px;
   }
 
   .card-travellers__wrapper-transport {
     position: static;
     order: 5;
-    margin-left: 150px;
-    margin-top: -110px;
+    margin-left: 175px;
+    margin-top: -113px;
   }
 
   .card-travellers__moving-list {
@@ -463,9 +505,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -170px;
-    margin-top: -100px;
-    width: 150px;
+    padding-top: 4px;
+    margin-left: -247px;
+    margin-top: -102px;
+    width: 148px;
     height: 50px;
   }
 
@@ -485,7 +528,7 @@
     position: static;
     .discard;
     order: 6;
-    margin-left: 110px;
+    margin-left: 170px;
     margin-top: -100px;
   }
 }

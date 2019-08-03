@@ -99,3 +99,38 @@
     width: 22px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .filter-level-container {
+    margin-left: 13px;
+    margin-bottom: 12px;
+  }
+
+  .filter-level-item {
+    box-sizing: border-box;
+    .fonts(20px,18px,600);
+    width: 95.5px;
+    height: 46px;
+  }
+
+  .filter-level-item:nth-child(2) {
+    padding-right: 6px;
+  }
+
+  .filter-level-item:nth-child(1)::before {
+    right: 0;
+    height: 14px;
+  }
+
+  .filter-level-item:nth-child(2)::before {
+    bottom: 0;
+    left: -1px;
+    height: 15px;
+  }
+
+  .filter-level-item:nth-child(1)::after {
+    top: 21px;
+    right: -10px;
+    width: 21px;
+  }
+}

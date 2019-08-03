@@ -188,11 +188,74 @@
 }
 
 @media (min-width: @desktop-width) {
+  .travellers-form {
+    padding-bottom: 47px;
+  }
+
+  .travellers-form__caption {
+    margin-top: 21px;
+    margin-left: 47px;
+    .fonts(30px,30px,600);
+    color: @base-color;
+  }
+
+  .travellers-form__filter-caption {
+    .discard;
+    margin-top: 8px;
+    margin-left: 12px;
+    margin-bottom: 1px;
+    .fonts(20px,30px,500);
+  }
+
+  .travellers-form__list-button {
+    right: 4px;
+  }
+
+  .travellers-form__list-item:nth-child(2) {
+    .discard;
+    margin-left: 31px;
+  }
+
+  .travellers-form__list-item:nth-child(3) {
+    .discard;
+    margin-top: 19px;
+    margin-left: 31px;
+  }
+
+  .travellers-form__list-item:nth-child(4) {
+    .discard;
+    margin-top: 0px;
+    margin-left: 31px;
+
+    .moving-list-catalog {
+      margin-top: 14px;
+      margin-left: 11px;
+    }
+  }
+
+  .travellers-form__list-item:nth-child(5) {
+    .discard;
+    margin-top: 22px;
+    margin-left: 31px;
+
+    .filter-level-container {
+      margin-top: 12px;
+    }
+  }
+
   .travellers-form__list-item {
     border: none;
   }
 
-  .travellers-form__filter-caption {
-    margin-bottom: 15px;
+  .travellers-form__list {
+    margin-bottom: 43px;
+  }
+
+  .travellers-form__button {
+    margin-left: 48px;
+    width: 196px;
+    height: 50px;
+    .fonts(20px,30px,600);
+    border-radius: 30px;
   }
 }

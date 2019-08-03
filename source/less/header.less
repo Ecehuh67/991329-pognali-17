@@ -11,10 +11,7 @@
   background-position: 100px 200px, 0 0;
   background-repeat: no-repeat;*/
 }
-/*
-.header__logo {
-  display: block;
-}*/
+
 .header__show-menu {
   position: relative;
   width: 40px;
@@ -128,7 +125,7 @@
 @media (min-width: @desktop-width) {
   .header {
     justify-content: flex-start;
-    padding-bottom: 43px;
+    padding-bottom: 41px;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
   }
@@ -278,7 +275,28 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header-catalog {
+    padding-bottom: 8px;
+  }
+
+  .header-catalog__contact {
+      margin-top: 9px;
+    }
+
+  .header-catalog__caption {
+    margin-left: 67px;
+    margin-top: 113px;
+  }
+
   .header-catalog__link {
-    margin-left: 730px;
+    margin-top: 139px;
+    margin-left: 714px;
+  }
+
+  .header-catalog__caption::before {
+    bottom: -12px;
+    left: -1px;
+    width: 287px;
+    height: 8px;
   }
 }
