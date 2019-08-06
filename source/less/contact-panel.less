@@ -13,6 +13,22 @@
   height: 40px;
   background-color: #ff8d30;
   border-radius: 50%;
+
+  &:hover {
+    background-color: #f26926;
+  }
+}
+
+.contact-panel__item:nth-last-of-type(2) {
+  background-color: #ffbd30;
+
+  &:hover {
+    background-color: #ff8d30;
+  }
+}
+
+.contact-panel__item:not(:last-of-type):active .contact-panel__item-link {
+  opacity: 0.2;
 }
 
 .contact-panel__item-link {

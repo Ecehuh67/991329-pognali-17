@@ -2,10 +2,24 @@
   position: relative;
   z-index: 4;
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -35px;
   width: 320px;
   height: 330px;
-  background-color: @base-color;
+}
+
+.map__wrapper::before {
+  position: absolute;
+  content: " ";
+  top: 141px;
+  left: 140px;
+  width: 41px;
+  height: 41px;
+  background-image: url("../img/map-marker.svg");
+}
+
+#map {
+    height: 546px;
+    width: 320px;
 }
 
 @media (min-width: @tablet-width) {

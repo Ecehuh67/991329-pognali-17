@@ -1,0 +1,61 @@
+.transport-list {
+  display: flex;
+  width :132px;
+
+  list-style: none;
+}
+
+.transport-list__item {
+  width: 32.25px;
+  height: 32.25px;
+  font-size: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  button {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    opacity: 0.2;
+  }
+
+}
+
+.transport-list__item--active {
+  opacity: 1;
+}
+
+.transport-list__item--off {
+  opacity: 0.2;
+}
+
+.transport-list__item-plane {
+  background-image: url("../img/plane.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 16px;
+  background-position: 7px 8px;
+}
+
+.transport-list__item-bus {
+  background-image: url("../img/bus.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 16px;
+  background-position: 10px 8px;
+}
+
+.transport-list__item-cycle {
+  background-image: url("../img/bike.svg");
+  background-repeat: no-repeat;
+  background-size: 19px 17px;
+  background-position: 6px 6px;
+}
+
+.transport-list__item-running {
+  background-image: url("../img/run.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 17px;
+  background-position: 9px 7px;
+}

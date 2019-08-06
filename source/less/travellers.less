@@ -2,10 +2,18 @@
   position: relative;
   z-index: 8;
   margin-top: -30px;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
   padding-top: 30px;
-  background-color: @base-color;
+  background-color: #192144;
   .border-radius(30px);
+  background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 132px 132px, 143px 143px, 61px 71px;
+  background-position: -19px 69px, 152px 69px, 0px 341px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-mobile@2x.png");
+  }
 }
 
 .travellers__top-wrapper {

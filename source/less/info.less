@@ -3,10 +3,16 @@
   z-index: 10;
   padding-top: 31px;
   padding-bottom: 65px;
-  /*background-image: url("../img/about-mobile@1x.png");*/
-  background-color: #141b3b;
-  background-repeat: no-repeat;
+  background-image: url("../img/about-mobile@1x.png"), url("../img/blue-back-mobile.svg");
+  background-position: 18px -2px, -20px 0;
+  background-color: #192144;
+  background-repeat: no-repeat, no-repeat;
   .border-radius(30px);
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/about-mobile@2x.png"), url("../img/blue-back-mobile.svg");
+    background-size: 292px 352px, 132px 132px;
+  }
 }
 
 .info__caption {
@@ -49,6 +55,13 @@
     padding-bottom: 87px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    background-image: url("../img/about-tablet@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/about-tablet@2x.png"), url("../img/blue-back-desktop.svg");
+      background-size: 376px 548px, 688px 213px;
+      background-position: 370px 70px, 50px 50px;
+    }
   }
 
   .info__caption {

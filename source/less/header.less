@@ -6,10 +6,15 @@
   align-items: center;
   box-sizing: border-box;
   padding-top: 18px;
-  background-color: #161c36;
-  /*background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
-  background-position: 100px 200px, 0 0;
-  background-repeat: no-repeat;*/
+  background-color: #161c35;
+  background-image:url("../img/blue-mobile.svg"), url("../img/blue-back.png"), url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-position: -80px 755px,0 470px,79px 215px, 0 -8px;
+  background-size: 480px 631px,320px 285px,192px 255px, 320px 569px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image:url("../img/blue-mobile.svg"), url("../img/blue-back.png"), url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
+  }
 }
 
 .header__show-menu {
@@ -60,6 +65,7 @@
 
 .header__review {
   margin-bottom: 30px;
+  background-color: inherit;
 }
 
 .header__guess {
@@ -298,4 +304,23 @@
     width: 287px;
     height: 8px;
   }
+}
+
+.header-form__caption {
+  .discard;
+  margin-top: 51px;
+  position: relative;
+  min-width: 300px;
+  .fonts(36px,40px,700);
+  color: #ffffff;
+}
+
+.header-form__caption::before {
+  position: absolute;
+  content: " ";
+  bottom: -11px;
+  width: 214px;
+  height: 5px;
+  background-color: #ff8d30;
+  border-radius: 10px;
 }
