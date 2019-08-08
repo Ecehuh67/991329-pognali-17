@@ -12,6 +12,35 @@
 .moving-list__item {
   position: relative;
   height: 21px;
+
+  &:hover::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    right: -58px;
+    width: 171px;
+    height: 57px;
+    .fonts(16px,20px,400);
+    background-color: @base-color;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: " ";
+    display: flex;
+    top: 27px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid @base-color;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
 }
 
 .moving-list__item--plane {
@@ -19,9 +48,12 @@
   width: 19px;
   height: 21px;
 
-  background-image: url("../img/plane.svg");
+  path {
+    fill: rgba(16, 29, 65, 0.2);
+  }
+  /*background-image: url("../img/plane.svg");
   background-repeat: no-repeat;
-  opacity: 0.2;
+  opacity: 0.2;*/
 }
 
 .moving-list__item--bus {
@@ -29,31 +61,47 @@
   width: 17px;
   height: 21px;
 
-  background-image: url("../img/bus.svg");
-  background-repeat: no-repeat;
-  opacity: 0.2;
+  path {
+    fill: rgba(16, 29, 65, 0.2);
+  }
 }
 
 .moving-list__item--cycle {
   width: 24px;
   height: 21px;
 
-  background-image: url("../img/bike.svg");
+  path {
+    fill: rgba(16, 29, 65, 0.2);
+  }
+  /*background-image: url("../img/bike.svg");
   background-repeat: no-repeat;
-  opacity: 0.2;
+  opacity: 0.2;*/
 }
 
 .moving-list__item--running {
   width: 20px;
   height: 21px;
 
-  background-image: url("../img/run.svg");
+  path {
+    fill: rgba(16, 29, 65, 0.2);
+  }
+
+  ellipse {
+    fill: rgba(16, 29, 65, 0.2);
+  }
+  /*background-image: url("../img/run.svg");
   background-repeat: no-repeat;
-  opacity: 0.2;
+  opacity: 0.2;*/
 }
 
 .moving-list__item--active {
-  opacity: 1;
+  path {
+    fill: rgba(16, 29, 65, 1);
+  }
+
+  ellipse {
+    fill: rgba(16, 29, 65, 1);
+  }
 }
 
 @media (min-width: @tablet-width) {

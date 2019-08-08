@@ -1,0 +1,625 @@
+.trip-step {
+  box-sizing: border-box;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  h3 {
+    .discard;
+    margin-bottom: 14px;
+    .fonts(20px,20px,600);
+  }
+
+  .trip-step__guess {
+    .discard;
+    margin-bottom: 21px;
+    .fonts(16px,22px,400);
+  }
+
+  .trip-step__field {
+    position: relative;
+    .discard;
+    margin-bottom: 8px;
+    .fonts(16px,16px,600);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:first-of-type::before {
+      position: absolute;
+      content: "ЧЕЛ.";
+      top: 0;
+      right: 3px;
+      .fonts(16px,16px,500);
+      color: #bbc0cd;
+    }
+
+    &:last-of-type::before {
+      position: absolute;
+      content: "ДН.";
+      top: 0;
+      right: 2px;
+      .fonts(16px,16px,500);
+      color: #bbc0cd;
+    }
+  }
+}
+
+.trip-step:nth-of-type(1) {
+  padding-bottom: 22px;
+  margin-bottom: 10px;
+}
+
+.trip-step:nth-of-type(2) {
+  padding: 24px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    .discard;
+    margin-left: 1px;
+    margin-bottom: 21px;
+    .fonts(16px,22px,400);
+  }
+}
+
+.trip-step:nth-of-type(3) {
+  padding: 24px;
+  padding-bottom: 6px;
+}
+
+.trip-step__look-for {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+  padding-top: 3px;
+  box-sizing: border-box;
+  width: 220px;
+  height: 43px;
+  .fonts(14.86px,13.37px,500);
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: " ";
+    top: 12px;
+    width: 14px;
+    height: 14px;
+  }
+
+  &::after {
+    right: 13px;
+    top: 13px;
+    background-image: url("../img/qty-plus-mobile.svg");
+  }
+
+  &::before {
+    top: 20px;
+    left: 13px;
+    height: 2px;
+    background-image: url("../img/qty-minus-mobile.svg");
+  }
+
+}
+
+.trip-step__look-for:first-of-type {
+  margin-bottom: 21px;
+}
+
+.trip-step__check {
+  padding-left: 39px;
+  margin-bottom: 25px;
+  .fonts(15px,15px,400);
+}
+
+.trip-step__check-item {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.trip-step__check-item input[type="checkbox"] + .trip-step__check-indicator {
+  position: absolute;
+  box-sizing: border-box;
+  top: -7px;
+  left: -39px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+}
+
+.trip-step__check-item input[type="checkbox"]:focus + .trip-step__check-indicator {
+  outline: thin dotted;
+  /*outline: 5px auto -webkit-focus-ring-color;*/
+}
+
+.trip-step__check-item input[type="checkbox"]:checked + .trip-step__check-indicator::before {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  width: 5px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.trip-step__check-item input[type="checkbox"]:checked + .trip-step__check-indicator::after {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  width: 10px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(-45deg);
+}
+
+.trip-step__month {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 2px;
+  margin-bottom: 16px;
+  width: 221px;
+  height: 44px;
+  .fonts(20px,20px,700);
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: " ";
+    top: 14px;
+    width: 11px;
+    height: 11px;
+    border-right: 2px solid #b2b2b2;
+    border-bottom: 2px solid #b2b2b2;
+  }
+
+  &::before {
+    right: 3px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    left: 2px;
+    transform: rotate(135deg);
+  }
+}
+
+.trip-step__calendar {
+  margin-bottom: 22px;
+}
+
+.trip-step__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: -5px;
+  padding-top: 4px;
+  padding-right: 2px;
+  width: 230px;
+  height: 40px;
+  .fonts(17px,30px,700);
+  background-color: #ffd74b;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @base-color;
+}
+
+.trip-step__link--back {
+  background-color: transparent;
+  margin-left: -3px;
+}
+
+.trip-step__link--step2 {
+  margin-bottom: 6px;
+  margin-left: -4px;
+}
+
+.trip-step__choose {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  margin-left: 1px;
+  width: 220px;
+  height: 42px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: " ";
+    bottom: -15px;
+    right: 50px;
+  }
+}
+
+.trip-step__choose:nth-of-type(3) .trip-step__choose-list {
+  padding-top: 12px;
+}
+
+.trip-step__choose:nth-of-type(4) .trip-step__choose-list {
+  padding-top: 13px;
+  padding-left: 12px;
+}
+
+.trip-step__choose:last-of-type {
+  margin-bottom: 25px;
+}
+
+.trip-step__choose::before {
+  box-sizing: border-box;
+  width: 4px;
+  height: 4px;
+  border-right: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  transform: rotate(45deg);
+}
+
+.trip-step__choose::after {
+  box-sizing: border-box;
+  right: 48px;
+  bottom: -11px;
+  width: 8px;
+  height: 1px;
+  border-bottom: 1px solid #b2b2b2;
+  transform: rotate(90deg);
+}
+
+.trip-step__choose:last-of-type::before,
+.trip-step__choose:last-of-type::after {
+  display: none;
+}
+
+.trip-step__choose-country {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-left: 10px;
+  width: 168px;
+  .fonts(14px,18px,600);
+  text-transform: uppercase;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.trip-step__choose-button {
+  position: absolute;
+  top: 2px;
+  right: 56px;
+  width: 43px;
+  height: 38px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(to right, transparent);
+  border-radius: 5px;
+}
+
+.trip-step__choose-button::after {
+  position: absolute;
+  content: " ";
+  top: 13px;
+  right: 12px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #b2b2b2;
+  border-bottom: 2px solid #b2b2b2;
+  transform: rotate(45deg);
+}
+
+.trip-step__choose-flag {
+  position: relative;
+  box-sizing: border-box;
+  width: 52px;
+  font-size: 0;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  background-size: 35px 24px;
+  background-repeat: no-repeat;
+  background-position: 7px 8px;
+}
+
+.trip-step__choose-flag--bosn {
+  background-image: url("../img/flag-bosnia.svg");
+}
+
+.trip-step__choose-flag--czech {
+  background-image: url("../img/flag-czech.svg");
+}
+
+.trip-step__choose-flag::before {
+  position: absolute;
+  content: " ";
+  top: 16px;
+  left: -6px;
+  width: 8px;
+  height: 8px;
+  background-color: @base-color;
+  border-radius: 50%;
+}
+
+.trip-step__flag-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: #edeff6;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.trip-step__flag-button::before,
+.trip-step__flag-button::after {
+  position: absolute;
+  content: " ";
+  top: 10px;
+  left: 5px;
+  width: 11px;
+  height: 1px;
+  background-color: #b2b2b2;
+}
+
+.trip-step__flag-button::after  {
+  transform: rotate(-45deg);
+}
+
+.trip-step__flag-button::before  {
+  transform: rotate(45deg);
+}
+
+.trip-step__choose-list {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 220px;
+  .fonts(14px,18px,600);
+  text-transform: uppercase;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.trip-step__choose-list--dark {
+  background-color: #edeff6;
+  border: none;
+}
+
+.trip-step__choose-list-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: #edeff6;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.trip-step__choose-list-button::before,
+.trip-step__choose-list-button::after {
+  position: absolute;
+  content: " ";
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 1px;
+  background-color: #b2b2b2;
+}
+
+.trip-step__choose-list-button::after  {
+  transform: rotate(-45deg);
+}
+
+.trip-step__choose-list-button::before  {
+  transform: rotate(45deg);
+}
+
+.trip-step__choose-list-add {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  width: 43px;
+  height: 38px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(to right, transparent);
+  border-radius: 5px;
+}
+
+.trip-step__choose-list-add::after {
+  position: absolute;
+  content: " ";
+  top: 12px;
+  right: 11px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #b2b2b2;
+  border-bottom: 2px solid #b2b2b2;
+  transform: rotate(45deg);
+}
+
+.trip-step__choose-list-add::before {
+  position: absolute;
+  content: " ";
+  top: 14px;
+  right: 43px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #b2b2b2;
+  border-radius: 50%;
+}
+
+.trip-step__choose-list-delete {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  width: 43px;
+  height: 38px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: " ";
+    top: 18px;
+    right: 9px;
+    width: 14px;
+    height: 2px;
+    background-color: #b2b2b2;
+  }
+}
+
+.trip-step__choose-list-delete::before {
+  transform: rotate(90deg);
+}
+
+.trip-step__choose-list--dark::before {
+  position: absolute;
+  content: " ";
+  top: 16px;
+  right: 49px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #b2b2b2;
+  border-radius: 50%;
+}
+
+.trip-step__destination {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background-color: @base-color;
+  }
+
+  &::before {
+    top: 6px;
+    left: -14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    top: 8px;
+    left: -23px;
+    width: 10px;
+    height: 2px;
+  }
+}
+
+.trip-step__paragraph {
+  .discard;
+  margin-left: 1px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  .fonts(16px,22px,400);
+}
+
+.trip-step__text-wrapper {
+  position: relative;
+  margin-left: 1px;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    top: -26px;
+    left: -14px;
+    width: 2px;
+    height: 283px;
+    background-color: @base-color;
+  }
+}
+
+.trip-step__destination {
+  .discard;
+  margin-left: 12px;
+  .fonts(18px,18px,500);
+}
+
+.trip-step__destination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.trip-step__destination-flag {
+  width: 35px;
+  height: 24px;
+  background-size: 35px 24px;
+}
+
+.trip-step__destination-flag--bosn {
+  background-image: url("../img/flag-bosnia.svg");
+}
+
+.trip-step__destination-flag--czech {
+  background-image: url("../img/flag-czech.svg");
+}
+
+.trip-step__destination-text {
+  .discard;
+  width: 220px;
+  min-height: 220px;
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-left: 14px;
+  padding-right: 16px;
+  .fonts(16px,22px,400);
+  resize: none;
+  border-radius: 5px;
+  border-color: #b2b2b2;
+}
+
+.trip-step__destination-text:first-child {
+  margin-bottom: 19px;
+}
+
+/*
+.trip-step__destination-text:last-of-type  {
+  margin-bottom: 19px;
+}*/
+
+.trip-step__button {
+  margin-top: 17px;
+  margin-left: -4px;
+  margin-bottom: 6px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border: none;
+  cursor: pointer;
+}

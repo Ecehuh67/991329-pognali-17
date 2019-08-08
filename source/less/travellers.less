@@ -2,10 +2,18 @@
   position: relative;
   z-index: 8;
   margin-top: -30px;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
   padding-top: 30px;
-  background-color: @base-color;
+  background-color: #192144;
   .border-radius(30px);
+  background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 132px 132px, 143px 143px, 61px 71px;
+  background-position: -19px 69px, 152px 69px, 0px 341px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-mobile@2x.png");
+  }
 }
 
 .travellers__top-wrapper {
@@ -62,9 +70,21 @@
 
 @media (min-width: @tablet-width) {
   .travellers {
-    padding-bottom: 88px;
+    z-index: 7;
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 69px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+
+    background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 213px 213px, 143px 143px, 285px 285px;
+    background-position: 39px 179px, 39px 526px, 407px 180px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-desktop@2x.png");
+    }
   }
 
   .travellers__top-wrapper {
@@ -127,7 +147,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-bottom: 124px;
+    padding-bottom: 106px;
+
+    background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 213px 213px, 143px 143px, 285px 285px;
+    background-position: 58px 168px, 546px 233px, 190px 485px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/blue-back-mobile.svg"), url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-desktop@2x.png");
+    }
   }
 
   .travellers__top-wrapper {

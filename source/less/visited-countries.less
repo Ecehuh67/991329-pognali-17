@@ -10,31 +10,58 @@
 }
 
 .visited-countries__item {
+  position: relative;
   width: 35px;
   height: 24px;
+  background-repeat: no-repeat;
+  background-size: 35px 24px;
+
+  &:hover::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    right: -58px;
+    width: 171px;
+    height: 57px;
+    .fonts(16px,20px,400);
+    background-color: @base-color;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: " ";
+    display: flex;
+    top: 27px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid @base-color;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
 }
 
 .visited-countries__item--shri {
-  background-image: url("../img/flags-back@1x.png");
-  background-position: 100px 10px;
+  background-image: url("../img/flag-sri-lanka.svg");
 }
 
 .visited-countries__item--tai {
-  background-image: url("../img/flags-back@1x.png");
-  background-position: 100px 10px;
+  background-image: url("../img/flag-thailand.svg");
 }
 
 .visited-countries__item--seych {
-  background-image: url("../img/flags-back@1x.png");
-  background-position: 100px 10px;
+  background-image: url("../img/flag-seychelles.svg");
 }
 
-.visited-countries__item--germ {
-  background-image: url("../img/flags-back@1x.png");
-  background-position: 100px 10px;
+.visited-countries__item--belg {
+  background-image: url("../img/flag-belgium.svg");
 }
 
 .visited-countries__item--cze {
-  background-image: url("../img/flags-back@1x.png");
-  background-position: 100px 10px;
+  background-image: url("../img/flag-czech.svg");
 }

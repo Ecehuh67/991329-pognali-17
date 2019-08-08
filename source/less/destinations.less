@@ -41,8 +41,20 @@
 
 @media (min-width: @tablet-width) {
   .destinations {
-    padding-bottom: 78px;
+    z-index: 8;
+    margin-top: -100px;
+    padding-top: 171px;
+    padding-bottom: 80px;
     .border-radius(60px);
+
+    /*background-image: url("../img/bright-back.svg"), url("../img/flags-back@1x.png");
+    background-position: 39px 506px, 438px 180px;
+    background-size: 141px 141px, 289px 575px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bright-back.svg"), url("../img/flags-back@2x.png");
+    }*/
   }
 
   .destinations__caption {
@@ -70,7 +82,11 @@
   }
 
   .destinations__list {
-    margin-bottom: 47px;
+    margin-bottom: 42px;
+  }
+
+  .destinations__list-item {
+    margin-bottom: 5px;
   }
 }
 
@@ -78,7 +94,16 @@
   .destinations {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 92px;
+    padding-bottom: 98px;
+
+    background-image: url("../img/bright-back.svg"), url("../img/flags-back@1x.png");
+    background-position: 59px 189px, 1090px 188px;
+    background-size: 141px 141px, 289px 575px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bright-back.svg"), url("../img/flags-back@2x.png");
+    }
   }
 
   .destinations__caption {
@@ -104,7 +129,7 @@
 
   .destinations__link {
     width: 275px;
-    margin-top: -128px;
-    margin-right: 241px;
+    margin-top: -122px;
+    margin-right: 243px;
   }
 }

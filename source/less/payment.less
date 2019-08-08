@@ -39,11 +39,12 @@
   top: -132px;
   width: 100px;
   height: 100px;
-  /*width: 198px;
-  height: 198px;*/
-  /*transform: scale(0.5);*/
   background-image: url("../img/rates@1x.png");
   background-size: 100px 100px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/rates@2x.png");
+  }
 }
 
 .payment__list-item {
@@ -88,12 +89,21 @@
   .fonts(16px,16px,700);
   text-decoration: none;
   color: @base-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .payment {
+    z-index: 6;
     padding-top: 104px;
-    padding-bottom: 85px;
+    padding-bottom: 86px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -227,5 +237,105 @@
   .payment__link {
     margin-left: 160px;
     margin-top: 8px;
+  }
+}
+
+.payment__popup {
+  display: none;
+  position: absolute;
+  bottom: -433px;
+  left: 25px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 33px;
+  width: 270px;
+  height: 443px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.payment__popup--on {
+  display: block;
+}
+
+.payment__popup-caption {
+  .discard;
+  margin-bottom: 28px;
+  margin-left: 25px;
+  .fonts(24px,24px,600);
+  color: #ff8d30;
+}
+
+.payment__popup-close {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-left: 4px;
+  width: 270px;
+  height: 59px;
+  .fonts(16px,22px,700);
+  background-color: #f3f4f8;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .payment__popup {
+    bottom: -1148px;
+    left: 40px;
+    padding-left: 90px;
+    padding-right: 91px;
+    padding-top: 51px;
+    width: 688px;
+    height: 526px;
+    border-radius: 30px;
+  }
+
+  .payment__popup-caption {
+    margin-left: 100px;
+    margin-bottom: 46px;
+    .fonts(45px,45px,700);
+  }
+
+  .payment__popup-close {
+    .discard;
+    width: 688px;
+    height: 108px;
+    .fonts(24px,24px,600);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .payment__popup {
+    bottom: -635px;
+    left: 345px;
+    padding-left: 57px;
+    padding-right: 60px;
+    width: 750px;
+  }
+
+  .payment__popup-caption {
+    margin-left: 164px;
+    margin-bottom: 46px;
+    .fonts(45px,45px,700);
+  }
+
+  .payment__popup-close {
+    width: 760px;
+    padding-right: 10px;
   }
 }
