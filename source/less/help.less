@@ -32,6 +32,14 @@
 .help__link {
   text-decoration: none;
   color: #c2a649;
+
+  &:hover {
+    color: #ff8d30;
+  }
+
+  &:active {
+    color: #5e423e;
+  }
 }
 
 .help__form {
@@ -48,6 +56,36 @@
   .fonts(18px,18px,700);
   border-radius: 10px;
   border: none;
+  outline: none;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #edeff6;
+  }
+
+  &:focus {
+    background-color: #192144;
+    border: 4px solid #ffffff;
+  }
+
+  &::placeholder {
+    color: #c7c7c7;
+  }
+
+  &:hover::placeholder {
+    color: #98999d;
+  }
+
+  &:focus::placeholder {
+    color: #ffffff;
+  }
+}
+
+.help__form-email--err {
+  background-color: #ffefef;
+  &::placeholder {
+    color: #ff0000;
+  }
 }
 
 .help__form-button {
@@ -101,6 +139,9 @@
 
 @media (min-width: @tablet-width) {
   .help {
+    z-index: 5;
+    margin-top: -100px;
+    padding-top: 171px;
     padding-bottom: 79px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -177,7 +218,7 @@
 
 @media (min-width: @desktop-width) {
   .help {
-    padding-bottom: 95px;
+    padding-bottom: 96px;
   }
 
   .help__caption {

@@ -12,16 +12,107 @@
   margin-bottom: 10px;
   .fonts(15px,18px,500);
   text-transform: uppercase;
+
+  &:hover::before {
+    z-index: 10;
+    position: absolute;
+    content: attr(data-tooltip);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 98px;
+    width: 171px;
+    height: 57px;
+    .fonts(16px,20px,400);
+    background-color: @base-color;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  &:hover::after {
+    z-index: 10;
+    position: absolute;
+    content: " ";
+    display: flex;
+    top: 13px;
+    right: 205px;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid @base-color;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+
+  span::before {
+    position: absolute;
+    content: " ";
+    top: -3px;
+    left: 5px;
+    width: 26px;
+    height: 18px;
+    background-size: 26px 18px;
+  }
 }
 
-.flag-list__item::before {
-  position: absolute;
-  content: " ";
-  top: -5px;
-  left: 5px;
-  width: 26px;
-  height: 18px;
-  border: 1px solid red;
+.flag-list__item--shri {
+  span::before {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+}
+
+.flag-list__item--tai {
+  span::before {
+    background-image: url("../img/flag-thailand.svg");
+  }
+}
+
+.flag-list__item--seych {
+  span::before {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+}
+
+.flag-list__item--belg {
+  span::before {
+    background-image: url("../img/flag-belgium.svg");
+  }
+}
+
+.flag-list__item--cze {
+  span::before {
+    background-image: url("../img/flag-czech.svg");
+  }
+}
+
+.flag-list__item--usa {
+  span::before {
+    background-image: url("../img/flag-usa.svg");
+  }
+}
+
+.flag-list__item--aust {
+  span::before {
+    background-image: url("../img/flag-australia.svg");
+  }
+}
+
+.flag-list__item--dom {
+  span::before {
+    background-image: url("../img/flag-dominica.svg");
+  }
+}
+
+.flag-list__item--uk {
+  span::before {
+    background-image: url("../img/flag-united-kingdom.svg");
+  }
+}
+
+.flag-list__item--germ {
+  span::before {
+    background-image: url("../img/flag-belgium.svg");
+  }
 }
 
 @media (min-width: @tablet-width) {

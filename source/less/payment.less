@@ -89,12 +89,21 @@
   .fonts(16px,16px,700);
   text-decoration: none;
   color: @base-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .payment {
+    z-index: 6;
     padding-top: 104px;
-    padding-bottom: 85px;
+    padding-bottom: 86px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -243,7 +252,7 @@
   width: 270px;
   height: 443px;
   background-color: #ffffff;
-  border-radius: 20px
+  border-radius: 20px;
 }
 
 .payment__popup--on {
@@ -274,4 +283,59 @@
   border: none;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .payment__popup {
+    bottom: -1148px;
+    left: 40px;
+    padding-left: 90px;
+    padding-right: 91px;
+    padding-top: 51px;
+    width: 688px;
+    height: 526px;
+    border-radius: 30px;
+  }
+
+  .payment__popup-caption {
+    margin-left: 100px;
+    margin-bottom: 46px;
+    .fonts(45px,45px,700);
+  }
+
+  .payment__popup-close {
+    .discard;
+    width: 688px;
+    height: 108px;
+    .fonts(24px,24px,600);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .payment__popup {
+    bottom: -635px;
+    left: 345px;
+    padding-left: 57px;
+    padding-right: 60px;
+    width: 750px;
+  }
+
+  .payment__popup-caption {
+    margin-left: 164px;
+    margin-bottom: 46px;
+    .fonts(45px,45px,700);
+  }
+
+  .payment__popup-close {
+    width: 760px;
+    padding-right: 10px;
+  }
 }

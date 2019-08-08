@@ -26,20 +26,23 @@
 .switcher__item:nth-child(2)::before {
   position: absolute;
   content: " ";
-  top: 10px;
-  right: 41px;
-  width: 30px;
-  height: 30px;
-  background-size: 10px 30px;
-  background-repeat: no-repeat;
+  top: 15px;
+  right: 61px;
+  width: 0;
+  height: 0;
 }
 
 .switcher__item:nth-child(1)::before {
-  background-image: url("../img/triangle-arrow-left.svg");
+  border-right: 10px solid @base-color;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 
 .switcher__item:nth-child(2)::before {
-  background-image: url("../img/triangle-arrow-right.svg");
+  right: 62px;
+  border-left: 10px solid @base-color;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 
 .switcher__item:nth-child(2) {

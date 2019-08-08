@@ -40,13 +40,51 @@
   border-radius: 50%;
 }
 
-.contact-list__item--call a::before {
-  background-image: url("../img/contacts-phone.svg");
+.contact-list__item--call svg {
+  position: absolute;
+  z-index: 10;
+  left: -47px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
 }
 
-.contact-list__item--email a::before {
-  background-image: url("../img/contacts-mail.svg");
+.contact-list__item--email svg {
+  position: absolute;
+  z-index: 10;
+  left: -47px;
+  top: 8px;
+  width: 18px;
+  height: 13px;
 }
+
+.contact-list__item--call:hover path,
+.contact-list__item--email:hover path {
+  fill: #ffbd30;
+}
+
+.contact-list__item--call:hover a,
+.contact-list__item--email:hover a{
+  color: #ffbd30;
+}
+
+.contact-list__item--call:active path,
+.contact-list__item--email:active path {
+  fill: #5a4b34;
+}
+
+.contact-list__item--call:active a,
+.contact-list__item--email:active a{
+  color: #5a4b34;
+}
+
+/*.contact-list__item--call a::before {
+  background-image: url("../img/contacts-phone.svg");
+}*/
+
+/*.contact-list__item--email a::before {
+  background-image: url("../img/contacts-mail.svg");
+}*/
 
 @media (min-width: @tablet-width) {
   .contact-list__item-link {
@@ -69,6 +107,29 @@
   .contact-list__item:last-child a::before {
     background-position: 22px 26px;
     background-size: 27px 20px;
+  }
+
+  .contact-list__item--call svg {
+    left: -69px;
+    top: -4px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .contact-list__item--email svg {
+    left: -69px;
+    top: 3px;
+    width: 27px;
+    height: 20px;
+  }
+
+  .contact-list__item--tablet-call a::before {
+    top: -26px;
+    left: -89px;
+  }
+
+  .contact-list__item--tablet-email a::before {
+    left: -89px;
   }
 }
 
@@ -100,6 +161,20 @@
     .contact-list__item:last-child a::before {
       background-position: 28px 31px;
       background-size: 36px 26px;
+    }
+
+    .contact-list__item--call svg {
+      left: -95px;
+      top: -5px;
+      width: 36px;
+      height: 36px;
+    }
+
+    .contact-list__item--email svg {
+      left: -95px;
+      top: 0px;
+      width: 36px;
+      height: 26px;
     }
   }
 }
