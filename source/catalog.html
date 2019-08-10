@@ -527,10 +527,11 @@
                 </li>
               </ul>
             </li>
-            <li class="travellers-form__list-item">
+            <li class="travellers-form__list-item travellers-form__list-item--music travellers-form__list-item--hidden">
               <h4 class="travellers-form__filter-caption">Музыка</h4>
-              <button class="travellers-form__list-button" type="button">Развернуть</button>
-              <ul class="checkbox-list">
+              <button class="travellers-form__list-button travellers-form__list-button--music" type="button">Развернуть</button>
+              <button class="travellers-form__list-button travellers-form__list-button--close travellers-form__list-button--music" type="button">Развернуть</button>
+              <ul class="checkbox-list checkbox-list--music checkbox-list--hidden">
                 <li class="checkbox-list__item">
                   <label class="checkbox-list__item-music">
                     <input class="visually-hidden" type="checkbox" name="universal" value="Тяжелый рок">
@@ -639,8 +640,8 @@
             <h4 class="card-travellers__wanna">хочет посетить:</h4>
             <ul class="card-travellers__wanna-list flag-list">
               <li class="flag-list__item flag-list__item--shri" data-tooltip="Шри-Ланка"><span>Шри ланка</span></li>
-              <li class="flag-list__item flag-list__item--tai"><span>Тайланд</span></li>
-              <li class="flag-list__item flag-list__item--seych"><span>Сейшелы</span></li>
+              <li class="flag-list__item flag-list__item--tai" data-tooltip="Тайланд"><span>Тайланд</span></li>
+              <li class="flag-list__item flag-list__item--seych" data-tooltip="Сейшелы"><span>Сейшелы</span></li>
             </ul>
             <div class="card-travellers__wrapper-transport">
               <h4 class="card-travellers__transport">транспорт:</h4>
@@ -876,7 +877,7 @@
     </div>
   </footer>
 </body>
-<script src="js/menu-catalog.js"></script>
 <script src="js/menu.js"></script>
-
+<script src="js/menu-catalog.js"></script>
+<script src="js/filter.js"></script>
 </html>

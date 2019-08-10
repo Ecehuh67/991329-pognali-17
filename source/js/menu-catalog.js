@@ -6,16 +6,19 @@ var filterCloseBottom = filter.querySelector(".catalog__filter-alphabet-link");
 buttonFilter.addEventListener("click", function(evt) {
   evt.preventDefault();
   filter.classList.add("catalog__filter-alphabet--show");
+  buttonFilter.classList.add("catalog__filter-button--hidden");
 });
 
 filterClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   filter.classList.remove("catalog__filter-alphabet--show");
+  buttonFilter.classList.remove("catalog__filter-button--hidden");
 });
 
 filterCloseBottom.addEventListener("click", function(evt) {
   evt.preventDefault();
   filter.classList.remove("catalog__filter-alphabet--show");
+  buttonFilter.classList.remove("catalog__filter-button--hidden");
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -23,6 +26,7 @@ window.addEventListener("keydown", function(evt) {
         evt.preventDefault();
         if (filter.classList.contains("catalog__filter-alphabet--show")) {
             filter.classList.remove("catalog__filter-alphabet--show");
+            buttonFilter.classList.remove("catalog__filter-button--hidden");
         }
     }
 });

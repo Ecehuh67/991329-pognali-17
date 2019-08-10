@@ -114,7 +114,6 @@
     background-image: url("../img/flag-belgium.svg");
   }
 }
-
 @media (min-width: @tablet-width) {
   .flag-list {
     flex-direction: row;
@@ -124,6 +123,16 @@
   .flag-list__item {
     margin-right: 30px;
     .fonts(20px,30px,500);
+
+    &:hover::before {
+      top: 37px;
+      left: -30px;
+    }
+
+    &:hover::after {
+      top: 27px;
+      left: 5px;
+    }
   }
 
   .flag-list__item--usa {
@@ -144,8 +153,19 @@
     width: 35px;
     height: 24px;
   }
-}
 
+  .flag-list__item {
+    span::before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 24px;
+      background-size: 35px 24px;
+    }
+  }
+}
 @media (min-width: @desktop-width) {
   .flag-list {
     flex-direction: column;
@@ -154,9 +174,19 @@
 
   .flag-list__item {
     margin-bottom: 7px;
+
+    &:hover::after {
+      left: -5px;
+    }
   }
 
   .flag-list__item::before {
     left: -10px;
+  }
+
+  .flag-list__item {
+    span::before {
+      left: -10px;
+    }
   }
 }

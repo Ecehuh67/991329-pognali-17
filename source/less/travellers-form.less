@@ -52,7 +52,7 @@
   display: none;
 }
 
-.travellers-form__list-item:nth-child(2) {
+.travellers-form__list-item--music {
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -66,6 +66,13 @@
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
+/////////////////*
+.travellers-form__list-item--hidden {
+  padding: 0;
+}
+
+*/////////////////////
 
 .travellers-form__list-button {
   position: absolute;
@@ -81,6 +88,21 @@
   background-repeat: no-repeat;
   background-position: 9px 10px;
   background-size: 8px 4px;
+}
+
+.travellers-form__list-button--close {
+  display: none;
+  top: 0;
+  right: -8px;
+  transform: rotate(180deg);
+}
+
+.travellers-form__list-button-close--show {
+  display: block;
+}
+
+.travellers-form__list-button--music--hide {
+  display: none;
 }
 
 .travellers-form__button {

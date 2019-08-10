@@ -48,6 +48,14 @@
   cursor: pointer;
   outline: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   & .catalog__filter-button-none {
     display: none;
   }
@@ -79,6 +87,10 @@
       background-color: @base-color;
     }
   }
+}
+
+.catalog__filter-button--hidden {
+  display: none;
 }
 
 .catalog__filter-close {
@@ -202,6 +214,14 @@
 
     &::after {
       transform: rotate(45deg);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -648,6 +668,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
   }
 
   .catalog__filter-close::after,
@@ -708,6 +729,9 @@
   }
 
   .catalog__filter-alphabet-container {
+    width: 207px;
+    margin-bottom: 8px;
+
     a {
       display: block;
       .fonts(20px,30px,400);
@@ -729,107 +753,6 @@
   .catalog__filter-alphabet-container:nth-child(7),
   .catalog__filter-alphabet-container:nth-child(8) {
     display: none;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(1) {
-    margin-right: 54px;
-    margin-bottom: 8px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(2) {
-    margin-right: 30px;
-    margin-bottom: 8px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(3) {
-    margin-right: 56px;
-    margin-bottom: 8px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(4) {
-    margin-right: 103px;
-    margin-bottom: 8px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(5) {
-    margin-right: 110px;
-    margin-bottom: 8px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(6) {
-    margin-right: 147px;
-    margin-bottom: 8px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(9) {
-    margin-right: 129px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(10) {
-    margin-right: 122px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(12) {
-    margin-right: 55px;
-    margin-bottom: 12px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(13) {
-    margin-right: 102px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(14) {
-    margin-right: 33px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(15) {
-    margin-right: 65px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(16) {
-    margin-right: 163px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(17) {
-    margin-right: 34px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(19) {
-    margin-right: 22px;
-    margin-bottom: 8px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(20) {
-    margin-right: 57px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(21) {
-    margin-right: 121px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(22) {
-    margin-right: 105px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(23) {
-    margin-right: 131px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(25) {
-    margin-right: 119px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(26) {
-    margin-right: 105px;
-    margin-bottom: 146px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(28) {
-    margin-right: 139px;
-  }
-
-  .catalog__filter-alphabet-container:nth-child(29) {
-    margin-right: 100px;
   }
 
   .catalog__filter-alphabet-close {
@@ -870,6 +793,8 @@
     width: 950px;
   }
 
+
+
   .catalog__show-all-travellers {
     margin-left: 352px;
     margin-bottom: 66px;
@@ -891,24 +816,30 @@
   .catalog__filter-alphabet-link {
     box-sizing: border-box;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    margin-left: -40px;
+    margin-left: -65px;
     padding-top: 3px;
-    padding-left: 34px;
+    padding-left: 32px;
     width: 1320px;
     height: 100px;
     border-radius: 20px;
     .fonts(20px,30px,700);
     text-decoration: none;
+    text-transform: uppercase;
     color: @base-color;
     background-color: #d6daed;
 
     &::after,
     &::before {
+      content: " ";
+      position: absolute;
       top: 49px;
-      left: 240px;
-      width: 24px;
+      left: 580px;
+      width: 22px;
+      height: 2px;
+      background-color: @base-color;
     }
 
     &::after {
@@ -918,5 +849,9 @@
     &::before {
       transform: rotate(-45deg);
     }
+  }
+
+  .catalog__button-container {
+    margin-right: 29px;
   }
 }
