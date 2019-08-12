@@ -12,14 +12,16 @@
   margin-bottom: 10px;
   .fonts(15px,18px,500);
   text-transform: uppercase;
-
-  &:hover::before {
+  /*&:hover::before {
     z-index: 10;
     position: absolute;
     content: attr(data-tooltip);
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 1.4em;
+    left: -100%;
+    white-space: nowrap;
     top: 20px;
     right: 98px;
     width: 171px;
@@ -28,22 +30,22 @@
     background-color: @base-color;
     border-radius: 5px;
     color: #ffffff;
-  }
-
-  &:hover::after {
+  }*/
+  /*&:hover::after {
     z-index: 10;
     position: absolute;
     content: " ";
     display: flex;
     top: 13px;
     right: 205px;
+    top: 0.3em;
+    left: -5%;
     width: 0;
     height: 0;
     border-bottom: 15px solid @base-color;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-  }
-
+  }*/
   span::before {
     position: absolute;
     content: " ";
@@ -114,6 +116,7 @@
     background-image: url("../img/flag-belgium.svg");
   }
 }
+
 @media (min-width: @tablet-width) {
   .flag-list {
     flex-direction: row;
@@ -123,6 +126,16 @@
   .flag-list__item {
     margin-right: 30px;
     .fonts(20px,30px,500);
+
+    span::before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 24px;
+      background-size: 35px 24px;
+    }
 
     &:hover::before {
       top: 37px;
@@ -154,7 +167,7 @@
     height: 24px;
   }
 
-  .flag-list__item {
+  /*.flag-list__item {
     span::before {
       position: absolute;
       content: " ";
@@ -164,8 +177,9 @@
       height: 24px;
       background-size: 35px 24px;
     }
-  }
+  }*/
 }
+
 @media (min-width: @desktop-width) {
   .flag-list {
     flex-direction: column;
@@ -174,6 +188,10 @@
 
   .flag-list__item {
     margin-bottom: 7px;
+
+    span::before {
+      left: -10px;
+    }
 
     &:hover::after {
       left: -5px;
@@ -184,9 +202,9 @@
     left: -10px;
   }
 
-  .flag-list__item {
+  /*.flag-list__item {
     span::before {
       left: -10px;
     }
-  }
+  }*/
 }

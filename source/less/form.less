@@ -2,10 +2,7 @@
   margin-top: -60px;
 }
 
-.form__wrapper {
-}
-
-.form__profile  {
+.form__profile {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -94,7 +91,6 @@
     margin-top: 3px;
     margin-left: 68px;
   }
-
 }
 
 .form__plans {
@@ -118,8 +114,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 24px;
-  padding-bottom: 20px;
+  padding: 24px 24px 20px;
   border-radius: 10px;
   background-color: #ffffff;
 
@@ -134,7 +129,7 @@
     &::before {
       position: absolute;
       content: counter(section) ".";
-      left: 0px;
+      left: 0;
     }
   }
 
@@ -189,8 +184,8 @@
     background-color: #1d2e5b;
     border-radius: 50%;
 
-    &::before,
-    &::after {
+    &::after,
+    &::before {
       position: absolute;
       content: " ";
       width: 5px;

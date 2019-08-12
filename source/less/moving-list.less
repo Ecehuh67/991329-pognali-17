@@ -5,7 +5,6 @@
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
-
   width: 120px;
 }
 
@@ -19,10 +18,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 40px;
-    right: -58px;
-    width: 171px;
-    height: 57px;
+    padding: 7px;
+    top: 26px;
+    left: -100%;
+    white-space: nowrap;
     .fonts(16px,20px,400);
     background-color: @base-color;
     border-radius: 5px;
@@ -33,8 +32,8 @@
     position: absolute;
     content: " ";
     display: flex;
-    top: 27px;
-    right: 5px;
+    top: 1.2em;
+    left: -25%;
     width: 0;
     height: 0;
     border-bottom: 15px solid @base-color;
@@ -43,63 +42,29 @@
   }
 }
 
-.moving-list__item--plane {
+.moving-list__item-plane {
   margin-right: 8px;
-  width: 19px;
-  height: 21px;
-
-  path {
-    fill: rgba(16, 29, 65, 0.2);
-  }
-  /*background-image: url("../img/plane.svg");
-  background-repeat: no-repeat;
-  opacity: 0.2;*/
+  fill: rgba(16, 29, 65, 0.2);
 }
 
-.moving-list__item--bus {
+.moving-list__item-bus {
   margin-right: 4px;
-  width: 17px;
-  height: 21px;
-
-  path {
-    fill: rgba(16, 29, 65, 0.2);
-  }
+  fill: rgba(16, 29, 65, 0.2);
 }
 
-.moving-list__item--cycle {
-  width: 24px;
-  height: 21px;
-
-  path {
-    fill: rgba(16, 29, 65, 0.2);
-  }
-  /*background-image: url("../img/bike.svg");
-  background-repeat: no-repeat;
-  opacity: 0.2;*/
+.moving-list__item-bike {
+  fill: rgba(16, 29, 65, 0.2);
 }
 
-.moving-list__item--running {
-  width: 20px;
-  height: 21px;
-
-  path {
-    fill: rgba(16, 29, 65, 0.2);
-  }
-
-  ellipse {
-    fill: rgba(16, 29, 65, 0.2);
-  }
-  /*background-image: url("../img/run.svg");
-  background-repeat: no-repeat;
-  opacity: 0.2;*/
+.moving-list__item-run {
+  fill: rgba(16, 29, 65, 0.2);
 }
 
 .moving-list__item--active {
-  path {
-    fill: rgba(16, 29, 65, 1);
-  }
-
-  ellipse {
+  .moving-list__item-bike--active,
+  .moving-list__item-bus--active,
+  .moving-list__item-plane--active,
+  .moving-list__item-run--active {
     fill: rgba(16, 29, 65, 1);
   }
 }

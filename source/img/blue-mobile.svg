@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="631" viewBox="0 0 320 631">
-  <defs>
-    <style>
-      .cls-1 {
-        filter: url(#filter);
-      }
-    </style>
-    <filter id="filter" x="0" y="0" width="320" height="631" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#192144"/>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-      <feBlend result="blend" in2="SourceGraphic"/>
-    </filter>
-  </defs>
-  <path id="blue_back" data-name="blue back" class="cls-1" d="M0,0H320a0,0,0,0,1,0,0V601a30,30,0,0,1-30,30H30A30,30,0,0,1,0,601V0A0,0,0,0,1,0,0Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="631"><defs><filter id="a" x="0" y="0" width="320" height="631" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#192144"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter></defs><path data-name="blue back" d="M0 0h320v601a30 30 0 01-30 30H30a30 30 0 01-30-30V0z" filter="url(#a)"/></svg>

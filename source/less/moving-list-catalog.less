@@ -22,10 +22,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 7px;
     top: 40px;
-    right: -58px;
-    width: 171px;
-    height: 57px;
+    left: -50%;
+    white-space: nowrap;
     .fonts(16px,20px,400);
     background-color: @base-color;
     border-radius: 5px;
@@ -37,8 +37,8 @@
     position: absolute;
     content: " ";
     display: flex;
-    top: 27px;
-    right: 5px;
+    top: 35px;
+    left: 0;
     width: 0;
     height: 0;
     border-bottom: 15px solid @base-color;
@@ -104,13 +104,12 @@
     background-color: #ffffff;
 
     &:hover::before {
-      top: 45px;
-      right: -58px;
+      top: 50px;
     }
 
     &:hover::after {
-      top: 37px;
-      right: -5px;
+      top: 44px;
+      left: 5px;
     }
   }
 
