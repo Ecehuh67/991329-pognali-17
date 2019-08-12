@@ -16,6 +16,14 @@
 .checkbox-list__item-music {
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .checkbox-list__item-music input[type="checkbox"] + .checkbox-list__radio-indicator {
@@ -26,6 +34,10 @@
   height: 18px;
   background-color: #ffffff;
   border-radius: 5px;
+
+  &:hover {
+    background-color: #f8f9fb;
+  }
 }
 
 .checkbox-list__item-music input[type="checkbox"]:focus + .checkbox-list__radio-indicator {

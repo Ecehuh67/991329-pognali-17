@@ -10,6 +10,11 @@
   min-width: 270px;
   background-color: #ffffff;
   border-radius: 20px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .card-travellers:not(:last-child) {
@@ -45,6 +50,14 @@
   width: 80px;
   .fonts(20px,20px,700);
   color: @base-color;
+
+  &:hover {
+    color: #707b99;
+  }
+
+  &:active {
+    color: #aeb5c7;
+  }
 }
 
 .card-travellers__name-link {
@@ -244,6 +257,14 @@
   border-radius: 25px;
   background-color: #ffd74b;
   color: @base-color;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: #b98c32;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -376,6 +397,11 @@
     border-radius: 50%;
   }
 
+
+  .card-travellers__invite-heart::before:hover {
+    background-color: #e2e5f2;
+  }
+
   .card-travellers__invite-heart--like::before {
     background-image: url("../img/heart-active.svg");
     background-color: #f9eaea;
@@ -388,6 +414,7 @@
     right: -157px;
     .fonts(20px,30px,600);
     width: 100px;
+    color: @base-color;
   }
 
   .card-travellers:nth-child(2) .card-travellers__invite::after {
@@ -396,6 +423,7 @@
     top: 12px;
     right: -157px;
     width: 100px;
+    color: @base-color;
   }
 
   .card-travellers:nth-child(3) .card-travellers__invite::after {
@@ -404,6 +432,7 @@
     top: 12px;
     right: -157px;
     width: 100px;
+    color: @base-color;
   }
 
   .card-travellers:nth-child(4) .card-travellers__invite::after {
@@ -412,6 +441,7 @@
     top: 12px;
     right: -157px;
     width: 100px;
+    color: @base-color;
   }
 
   .card-travellers__wanna {
