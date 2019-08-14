@@ -21,6 +21,14 @@
   margin-bottom: 1px;
   text-transform: uppercase;
   color: #1d2e5b;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .travellers-form__list {
@@ -52,7 +60,7 @@
   display: none;
 }
 
-.travellers-form__list-item:nth-child(2) {
+.travellers-form__list-item--music {
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -65,6 +73,10 @@
 .travellers-form__list-item:nth-child(5) {
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+.travellers-form__list-item--hidden {
+  padding: 0;
 }
 
 .travellers-form__list-button {
@@ -81,6 +93,29 @@
   background-repeat: no-repeat;
   background-position: 9px 10px;
   background-size: 8px 4px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.travellers-form__list-button--close {
+  display: none;
+  top: 0;
+  right: -8px;
+  transform: rotate(180deg);
+}
+
+.travellers-form__list-button-close--show {
+  display: block;
+}
+
+.travellers-form__list-button--music--hide {
+  display: none;
 }
 
 .travellers-form__button {
@@ -91,6 +126,17 @@
   min-height: 40px;
   border: none;
   background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+  }
+
+  &:active {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    background-color: #f3c72b;
+  }
 }
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {

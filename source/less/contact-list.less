@@ -40,51 +40,45 @@
   border-radius: 50%;
 }
 
-.contact-list__item--call svg {
+.contact-list__item-call-icon {
   position: absolute;
   z-index: 10;
   left: -47px;
   top: 5px;
   width: 18px;
   height: 18px;
+  fill: #ffd74b;
 }
 
-.contact-list__item--email svg {
+.contact-list__item-email-icon {
   position: absolute;
   z-index: 10;
   left: -47px;
   top: 8px;
   width: 18px;
   height: 13px;
+  fill: #ffd74b;
 }
 
-.contact-list__item--call:hover path,
-.contact-list__item--email:hover path {
+.contact-list__item--call:hover .contact-list__item-call-icon,
+.contact-list__item--email:hover .contact-list__item-email-icon {
   fill: #ffbd30;
 }
 
 .contact-list__item--call:hover a,
-.contact-list__item--email:hover a{
+.contact-list__item--email:hover a {
   color: #ffbd30;
 }
 
-.contact-list__item--call:active path,
-.contact-list__item--email:active path {
+.contact-list__item--call:active .contact-list__item-call-icon,
+.contact-list__item--email:active .contact-list__item-email-icon {
   fill: #5a4b34;
 }
 
 .contact-list__item--call:active a,
-.contact-list__item--email:active a{
+.contact-list__item--email:active a {
   color: #5a4b34;
 }
-
-/*.contact-list__item--call a::before {
-  background-image: url("../img/contacts-phone.svg");
-}*/
-
-/*.contact-list__item--email a::before {
-  background-image: url("../img/contacts-mail.svg");
-}*/
 
 @media (min-width: @tablet-width) {
   .contact-list__item-link {
@@ -172,7 +166,7 @@
 
     .contact-list__item--email svg {
       left: -95px;
-      top: 0px;
+      top: 0;
       width: 36px;
       height: 26px;
     }

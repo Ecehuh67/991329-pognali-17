@@ -1,4 +1,5 @@
 .filter-level-container {
+  position: relative;
   display: flex;
   margin-top: 11px;
   margin-left: -2px;
@@ -18,18 +19,30 @@
   background-color: #ffffff;
   border-top: 1px solid #cbced9;
   border-bottom: 1px solid #cbced9;
+
+  &:hover {
+    border-color: #959bb2;
+  }
 }
 
 .filter-level-item:nth-child(1) {
   border-left: 1px solid #cbced9;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+
+  &:hover {
+    border-color: #959bb2;
+  }
 }
 
 .filter-level-item:nth-child(2) {
   border-right: 1px solid #cbced9;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+
+  &:hover {
+    border-color: #959bb2;
+  }
 }
 
 .filter-level-item::before {
@@ -40,9 +53,28 @@
   background-color: #cbced9;
 }
 
+.filter-level-item::after {
+  position: absolute;
+  content: " ";
+  width: 1px;
+  height: 12px;
+  background-color: #cbced9;
+}
+
+.filter-level-item:hover::before,
+.filter-level-item:hover::after {
+  z-index: 100;
+  background-color: #959bb2;
+}
+
 .filter-level-item:nth-child(1)::before {
   top: 0;
   right: 0;
+}
+
+.filter-level-item:nth-child(1)::after {
+  right: 0;
+  bottom: 0;
 }
 
 .filter-level-item:nth-child(2)::before {
@@ -50,13 +82,18 @@
   left: -1px;
 }
 
-.filter-level-item:nth-child(1)::after {
+.filter-level-item:nth-child(2)::after {
+  top: 0;
+  left: -1px;
+}
+
+.filter-level-container::after {
   position: absolute;
   content: " ";
   z-index: 10;
-  right: -11px;
-  top: 15px;
-  width: 24px;
+  right: 101px;
+  top: 17px;
+  width: 22px;
   height: 1px;
   background-color: #cbced9;
 }
@@ -80,23 +117,9 @@
     padding-right: 4px;
   }
 
-  .filter-level-item:nth-child(1)::before {
-    right: 0;
-  }
-
-  .filter-level-item::before {
-    height: 14px;
-  }
-
-  .filter-level-item:nth-child(2)::before {
-    bottom: 0;
-    left: -1px;
-  }
-
-  .filter-level-item:nth-child(1)::after {
-    top: 21px;
-    right: -11px;
-    width: 22px;
+  .filter-level-container::after {
+    right: 64px;
+    top: 22px;
   }
 }
 
@@ -117,20 +140,8 @@
     padding-right: 6px;
   }
 
-  .filter-level-item:nth-child(1)::before {
-    right: 0;
-    height: 14px;
-  }
-
-  .filter-level-item:nth-child(2)::before {
-    bottom: 0;
-    left: -1px;
-    height: 15px;
-  }
-
-  .filter-level-item:nth-child(1)::after {
-    top: 21px;
-    right: -10px;
-    width: 21px;
+  .filter-level-container::after {
+    right: 101px;
+    top: 22px;
   }
 }

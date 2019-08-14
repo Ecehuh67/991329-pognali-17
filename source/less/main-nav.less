@@ -14,8 +14,13 @@
   left: 0;
 }
 
+.main-nav--err {
+  display: block;
+}
+
 .main-nav--show {
   display: flex;
+  z-index: 100;
 }
 
 .main-nav__image {
@@ -100,7 +105,6 @@
     height: 42px;
   }
 
-
   .main-nav__toggle {
     order: 2;
     .discard;
@@ -141,9 +145,7 @@
     width: 138px;
     height: 100px;
   }
-
 }
-
 
 @media (min-width: @desktop-width) {
   .main-nav {

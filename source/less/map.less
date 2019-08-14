@@ -16,10 +16,15 @@
   background-image: url("../img/map-marker.svg");
 }
 
-#map {
+.map__wrapper {
   height: 546px;
   width: 320px;
 }
+/*
+#map {
+  height: 546px;
+  width: 320px;
+}*/
 
 @media (min-width: @tablet-width) {
   .map {
@@ -35,10 +40,15 @@
     height: 700px;
   }
 
-  #map {
+  .map__wrapper {
     width: 768px;
     height: 700px;
   }
+
+  /*#map {
+    width: 768px;
+    height: 700px;
+  }*/
 
   .map__wrapper::before {
     top: 271px;
@@ -47,6 +57,7 @@
     height: 54px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .map {
     margin-top: -200px;
@@ -60,10 +71,15 @@
     height: 750px;
   }
 
-  #map {
+  .map__wrapper {
     width: 1440px;
     height: 750px;
   }
+
+  /*#map {
+    width: 1440px;
+    height: 750px;
+  }*/
 
   .map__wrapper::before {
     top: 345px;
