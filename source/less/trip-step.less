@@ -75,7 +75,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 28px;
-  padding-top: 3px;
+  padding-top: 5px;
+  padding-left: 105px;
   box-sizing: border-box;
   width: 220px;
   height: 43px;
@@ -109,10 +110,14 @@
   position: relative;
 }
 
+.trip-step__look-for-wrapper:nth-of-type(2) {
+  margin-bottom: 28px;
+}
+
 .trip-step__look-for-minus {
   position: absolute;
   top: 7px;
-  left: 20px;
+  left: 5px;
   width: 30px;
   height: 30px;
   border: none;
@@ -122,9 +127,10 @@
   &::before {
     position: absolute;
     content: " ";
-    left: 6px;
-    width: 17px;
-    height: 1px;
+    left: 9px;
+    top: 14px;
+    width: 14px;
+    height: 2px;
     background-color: #cccccc;
   }
 }
@@ -132,7 +138,7 @@
 .trip-step__look-for-plus {
   position: absolute;
   top: 7px;
-  right: 30px;
+  right: 5px;
   width: 30px;
   height: 30px;
   border: none;
@@ -144,8 +150,9 @@
     position: absolute;
     content: " ";
     left: 6px;
-    width: 17px;
-    height: 1px;
+    top: 14px;
+    width: 15px;
+    height: 2px;
     background-color: #cccccc;
   }
 
@@ -354,7 +361,8 @@
   font-size: 0;
   border: none;
   cursor: pointer;
-  background-image: linear-gradient(to right, transparent);
+  /*background-image: linear-gradient(to right, transparent);*/
+  background-color: transparent;
   border-radius: 5px;
 }
 
@@ -464,6 +472,10 @@
   cursor: pointer;
 }
 
+.trip-step__choose-list-button--hide {
+  display: none;
+}
+
 .trip-step__choose-list-button::after,
 .trip-step__choose-list-button::before {
   position: absolute;
@@ -492,7 +504,9 @@
   font-size: 0;
   border: none;
   cursor: pointer;
-  background-image: linear-gradient(to right, transparent);
+  outline: none;
+  /*background-image: linear-gradient(to right, transparent);*/
+  background-color: transparent;
   border-radius: 5px;
 }
 
@@ -747,6 +761,7 @@
 
   .trip-step__look-for-minus {
     top: 20px;
+    left: 20px;
 
     &::before {
       top: 14px;

@@ -3,6 +3,7 @@
 }
 
 .form__profile {
+  z-index: -1;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -205,10 +206,14 @@
     right: -42px;
   }
 }
-
 @media (min-width: @tablet-width) {
   .form__profile {
-  padding-bottom: 104px;
+    padding-bottom: 104px;
+
+    legend {
+      display: block;
+      padding-left: -100px;
+    }
   }
 
   .form__profile-wrapper {
@@ -221,30 +226,43 @@
   .form__profile-photo {
     width: 94px;
     height: 94px;
-    border-radius: 0%;
+    border-radius: 0;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
   }
 
   .form_profile-transport {
     order: 2;
-    margin-top: -123px;
+    position: relative;
+    margin-top: -113px;
     margin-left: 188px;
     margin-bottom: 51px;
     width: 306px;
-    height: 100px;
+    height: 90px;
 
     ul {
       .discard;
       margin-left: 55px;
-      margin-top: 14px;
+      margin-top: 22px;
+    }
+
+    legend {
+      position: absolute;
+      bottom: -11px;
+      left: 86px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 10px;
+      letter-spacing: 2px;
+      .fonts(20px,18px,500);
+      background-color: #edeff6;
     }
   }
 
   .form__profile-link {
     order: 3;
     margin-left: 35px;
-    margin-bottom: 42px;
+    margin-bottom: 52px;
     width: 618px;
     height: 58px;
     border-radius: 10px;
@@ -254,25 +272,35 @@
 
   .form_profile-hashtags {
     order: 4;
+    position: relative;
     box-sizing: border-box;
     margin-left: 35px;
     width: 618px;
-    height: 104px;
+    height: 94px;
 
     textarea {
       box-sizing: border-box;
       padding-right: 160px;
-      padding-top: 24px;
+      padding-top: 32px;
       width: auto;
       .fonts(20px,24px,400);
+    }
+
+    legend {
+      position: absolute;
+      bottom: -12px;
+      left: 271px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 10px;
+      letter-spacing: 2px;
+      .fonts(20px,18px,500);
+      background-color: #edeff6;
     }
   }
 
   .form__plans {
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 134px;
+    padding: 50px 75px 134px;
   }
 
   .form__plans-caption {
@@ -334,10 +362,7 @@
   }
 
   .form__trip {
-    padding-top: 48px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 180px;
+    padding: 48px 75px 180px;
 
     h2 {
       margin-bottom: 49px;
@@ -359,7 +384,5 @@
     }
   }
 
-  .form__trip-list {
-
-  }
+  .form__trip-list {}
 }
