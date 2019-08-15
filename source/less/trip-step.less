@@ -640,7 +640,7 @@
 .trip-step__destination-text {
   .discard;
   width: 220px;
-  min-height: 220px;
+  height: 220px;
   box-sizing: border-box;
   padding-top: 9px;
   padding-left: 14px;
@@ -672,7 +672,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 48px 44px 44px 44px;
+    padding: 48px 44px 44px;
     border-radius: 30px;
 
     h3 {
@@ -873,7 +873,7 @@
     padding-bottom: 47px;
     margin-bottom: 51px;
 
-    h3{
+    h3 {
       margin-bottom: 34px;
     }
 
@@ -910,8 +910,8 @@
     height: 68px;
     border: 1px solid #cccccc;
 
-    &::before,
-    &::after {
+    &::after,
+    &::before {
       display: none;
     }
   }
@@ -980,7 +980,7 @@
     font-size: 0;
     background-color: transparent;
     border: none;
-    border-radius: 0%;
+    border-radius: 0;
     cursor: pointer;
   }
 
@@ -1030,10 +1030,10 @@
     background-color: transparent;
     width: 40px;
     height: 40px;
-    border-radius: 0%;
+    border-radius: 0;
 
-    &::before,
-    &::after {
+    &::after,
+    &::before {
       top: 17px;
       left: 10px;
       width: 24px;
@@ -1086,5 +1086,87 @@
       border-left: none;
       border-right: 10px solid @base-color;
     }
+  }
+
+  .trip-step:nth-of-type(3) {
+    padding: 50px 44px;
+    padding-bottom: 46px;
+
+    h3 {
+      margin-bottom: 18px;
+    }
+
+    .trip-step__link--back {
+      bottom: 54px;
+    }
+  }
+
+  .trip-step__paragraph {
+    position: relative;
+    margin-bottom: 60px;
+    .fonts(20px,24px,400);
+
+    &::after {
+      position: absolute;
+      content: " ";
+      bottom: -33px;
+      left: 0;
+      width: 527px;
+      height: 1px;
+      background-color: #cccccc;
+    }
+  }
+
+  .trip-step__destination-wrapper {
+    margin-bottom: 29px;
+  }
+
+  .trip-step__destination {
+    .discard;
+    .fonts(30px,18px,700);
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      top: 2px;
+      left: 519px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .trip-step__destination-text {
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 50px;
+    width: 499px;
+    height: 142px;
+    .fonts(20px,24px,400);
+  }
+
+  .trip-step__text-wrapper {
+    margin-bottom: 19px;
+
+    &::before {
+      top: -45px;
+      left: 524px;
+      width: 3px;
+      height: 261px;
+    }
+  }
+
+  .trip-step__destination-flag {
+    .discard;
+    margin-right: 32px;
+    width: 70px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-size: 70px 47px;
+  }
+
+  .trip-step__button {
+    margin-top: 47px;
   }
 }
