@@ -3,7 +3,7 @@
 }
 
 .form__profile {
-  z-index: -1;
+  z-index: 1;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -96,6 +96,7 @@
 
 .form__plans {
   position: relative;
+  z-index: 2;
   margin-top: -61px;
   padding-top: 28px;
   padding-bottom: 90px;
@@ -137,6 +138,7 @@
     .fonts(14px,14px,600);
     text-transform: uppercase;
     letter-spacing: 1px;
+    white-space: pre;
   }
 
   span:first-of-type {
@@ -385,4 +387,145 @@
   }
 
   .form__trip-list {}
+}
+@media (min-width: @desktop-width) {
+  .form__profile {
+    flex-direction: row;
+    padding-bottom: 110px;
+  }
+
+  .form__profile-wrapper {
+    position: absolute;
+    .discard;
+    z-index: 0;
+    top: -10px;
+  }
+
+  .form__profile-link {
+    position: absolute;
+    right: 155px;
+    top: 60px;
+    box-sizing: border-box;
+    padding-top: 2px;
+    width: 190px;
+    height: 47px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .form__profile-link-desktop {
+    display: none;
+  }
+
+  .form_profile-hashtags {
+    order: 1;
+    margin-top: 50px;
+    margin-left: 62px;
+    margin-right: 100px;
+    padding-left: 39px;
+
+    textarea {
+      width: 690px;
+    }
+
+    legend {
+      left: 28px;
+      bottom: -13px;
+    }
+  }
+
+  .form_profile-transport {
+    position: relative;
+    .discard;
+    margin-top: 50px;
+    margin-left: 41px;
+    width: 402px;
+
+    legend {
+      position: absolute;
+      bottom: -22px;
+      left: 122px;
+      height: 30px;
+    }
+
+    ul {
+      margin-left: 105px;
+      margin-top: 23px;
+      width: 170px;
+    }
+  }
+
+  .form__plans {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding-bottom: 123px;
+  }
+
+  .form__plans-caption {
+    margin-left: 55px;
+    margin-bottom: 40px;
+  }
+
+  .form__plans-point {
+    margin-left: 49px;
+    width: 1256px;
+    height: 97px;
+
+    h3 {
+      .discard;
+      padding-left: 70px;
+      padding-top: 0;
+      margin-right: 123px;
+      width: 400px;
+
+      &::before {
+        left: 19px;
+      }
+    }
+
+    span {
+      margin-top: 17px;
+      width: 140px;
+      .fonts(20px,18px,400);
+      letter-spacing: 2px;
+    }
+
+    span:last-of-type {
+      margin-left: 35px;
+      margin-right: 10px;
+      margin-bottom: 0;
+      width: 180px;
+    }
+
+    a {
+      margin-left: 119px;
+      margin-top: 18px;
+      .fonts(20px,18px,400);
+      letter-spacing: 2px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .form__plans-point:first-of-type {
+    margin-bottom: 15px;
+  }
+
+  .form__trip {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 189px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+
+    h2 {
+      margin-left: 70px;
+    }
+  }
+
+  .form__trip-wrapper {
+    display: none;
+  }
 }

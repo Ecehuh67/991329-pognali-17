@@ -160,7 +160,7 @@
             <img class="form__profile-photo" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x" width="100" height="100" alt="аватарка попутчика">
           </picture>
         </div>
-        <a class="form__profile-link" href="#">Сменить фото</a>
+        <a class="form__profile-link" href="#"><span class="form__profile-link-desktop">Сменить</span> фото</a>
         <fieldset class="form_profile-hashtags" align="center">
           <legend>Тэги</legend>
           <textarea name="name" rows="2" cols="40">#бургер #бар #футбол #концерт #крафт
@@ -197,13 +197,13 @@
         <div class="form__plans-point">
           <h3>Франция, Италия</h3>
           <span>3 попутчика</span>
-          <span>26 МАР - 29 МАР</span>
+          <span>26 МАР -  29 МАР</span>
           <a href="#">Изменить</a>
         </div>
         <div class="form__plans-point">
           <h3>Тайланд, Индонезия</h3>
           <span>1 Попутчик</span>
-          <span>1 ИЮЛ - 15 ИЮЛ</span>
+          <span>1 ИЮЛ -  15 ИЮЛ</span>
           <a href="#">Изменить</a>
         </div>
       </section>
@@ -212,8 +212,13 @@
         <div class="form__trip-wrapper"></div>
         <ul class="form__trip-list">
           <li class="trip-step">
-            <h3>Шаг 1.<br>Даты пребывания</h3>
-            <p class="trip-step__guess">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <h3 class="trip-step__caption-desktop">Шаг 1.<br> Даты пребывания</h3>
+            <p class="trip-step__guess">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <ul class="trip-step__pointer-desktop">
+              <li class="trip-step__pointer-desktop-item trip-step__pointer-desktop-item--active"><a href="#">Даты</a></li>
+              <li class="trip-step__pointer-desktop-item"><a href="">Маршрут</a></li>
+              <li class="trip-step__pointer-desktop-item"><a href="">Развлечения</a></li>
+            </ul>
             <h4 class="trip-step__field">Ищу попутчиков:</h4>
             <!--<div class="trip-step__look-for">2</div>-->
             <div class="trip-step__look-for-wrapper">
@@ -249,9 +254,9 @@
                 <span class="calendar__days-item calendar__days-item--mobile">П</span>
                 <span class="calendar__days-item calendar__days-item--tablet">Пт</span>
                 <span class="calendar__days-item calendar__days-item--mobile">С</span>
-                <span class="calendar__days-item calendar__days-item--tablet">Сб</span>
+                <span class="calendar__days-item calendar__days-item--tablet calendar__days-item--weekend">Сб</span>
                 <span class="calendar__days-item calendar__days-item--mobile">В</span>
-                <span class="calendar__days-item calendar__days-item--tablet">Вс</span>
+                <span class="calendar__days-item calendar__days-item--tablet calendar__days-item--weekend">Вс</span>
               </div>
               <div class="calendar__numbers">
                 <span class="calendar__numbers-item">24</span>
@@ -301,8 +306,13 @@
             <a class="trip-step__link" href="#">Следующий шаг</a>
           </li>
           <li class="trip-step">
-            <h3>Шаг 2.<br>Маршрут</h3>
+            <h3 class="trip-step__caption-desktop">Шаг 2.<br> Маршрут</h3>
             <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько</p>
+            <ul class="trip-step__pointer-desktop">
+              <li class="trip-step__pointer-desktop-item"><a href="#">Даты</a></li>
+              <li class="trip-step__pointer-desktop-item"><a href="">Маршрут</a></li>
+              <li class="trip-step__pointer-desktop-item"><a href="">Развлечения</a></li>
+            </ul>
             <div class="trip-step__choose">
               <span class="trip-step__choose-country">Босния и Герцегов</span>
               <button class="trip-step__choose-button" type="button">выбрать</button>
@@ -377,8 +387,13 @@
             <a class="trip-step__link trip-step__link--back" href="#">На шаг назад</a>
           </li>
           <li class="trip-step">
-            <h3>Шаг 3.<br>Развлечения</h3>
+            <h3 class="trip-step__caption-desktop">Шаг 3.<br> Развлечения</h3>
             <p class="trip-step__paragraph">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <ul class="trip-step__pointer-desktop">
+              <li class="trip-step__pointer-desktop-item"><a href="#">Даты</a></li>
+              <li class="trip-step__pointer-desktop-item"><a href="">Маршрут</a></li>
+              <li class="trip-step__pointer-desktop-item"><a href="">Развлечения</a></li>
+            </ul>
             <div class="trip-step__destination-wrapper">
               <h4 class="trip-step__destination">Босния и герцегов</h4>
               <div class="trip-step__destination-flag trip-step__destination-flag--bosn"></div>

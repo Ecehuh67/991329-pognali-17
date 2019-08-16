@@ -44,6 +44,14 @@
   }
 }
 
+.trip-step__guess br {
+  display: none;
+}
+
+.trip-step__pointer-desktop {
+  display: none;
+}
+
 .trip-step:nth-of-type(1) {
   padding-bottom: 22px;
   margin-bottom: 10px;
@@ -683,9 +691,12 @@
 }
 @media (min-width: @tablet-width) {
   .trip-step {
-    position: relative;
     display: flex;
     flex-direction: column;
+  }
+
+  .trip-step {
+    position: relative;
     padding: 48px 44px 44px;
     border-radius: 30px;
 
@@ -749,6 +760,10 @@
   .trip-step__look-for-wrapper:nth-of-type(2) {
     order: 8;
     margin-bottom: 23px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .trip-step__look-for {
@@ -1104,8 +1119,7 @@
   }
 
   .trip-step:nth-of-type(3) {
-    padding: 50px 44px;
-    padding-bottom: 46px;
+    padding: 50px 44px 46px;
 
     h3 {
       margin-bottom: 18px;
@@ -1183,5 +1197,332 @@
 
   .trip-step__button {
     margin-top: 47px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .trip-step:first-of-type {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 105px;
+    margin-bottom: 44px;
+  }
+  .trip-step {
+    padding-left: 160px;
+    padding-top: 100px;
+    border-radius: 60px;
+
+    .trip-step__guess {
+      margin-bottom: 111px;
+    }
+
+    .trip-step__field {
+      margin-bottom: 0;
+      height: 20px;
+      &:first-of-type::before {
+        right: -290px;
+        .fonts(20px,18px,500);
+      }
+
+      &:last-of-type::before {
+        right: -308px;
+        .fonts(20px,18px,500);
+      }
+    }
+
+    .trip-step__field:nth-of-type(2) {
+      margin-top: 3px;
+    }
+  }
+
+  .trip-step__look-for-wrapper:first-of-type {
+    margin-bottom: 0px;
+  }
+
+  .trip-step__caption-desktop {
+    width: 800px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .trip-step__guess {
+    width: 1000px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .trip-step__pointer-desktop {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 206px;
+    top: 111px;
+    list-style: none;
+  }
+
+  .trip-step__pointer-desktop-item {
+    position: relative;
+    margin-bottom: 30px;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      top: 4px;
+      left: -42px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #cccccc;
+    }
+
+    a {
+      display: block;
+      .fonts(20px,14px,400);
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #cccccc;
+    }
+  }
+
+  .trip-step__pointer-desktop-item--active {
+    a {
+      color: @base-color;
+    }
+
+    &::before {
+      background-color: @base-color;
+    }
+  }
+
+  .trip-step__look-for-wrapper:first-of-type {
+    position: relative;
+    margin-right: 382px;
+    width: 181px;
+    height: 70px;
+
+    &::before {
+      top: -59px;
+      left: -193px;
+      width: 1000px;
+      background-color: #cccccc;
+    }
+  }
+
+  .trip-step__look-for-wrapper:nth-of-type(2) {
+    margin-bottom: 8px;
+    margin-right: 300px;
+    width: 181px;
+    height: 70px;
+
+    .trip-step__look-for {
+      margin-left: 52px;
+      margin-top: -24px;
+    }
+
+    .trip-step__look-for-minus {
+      top: -4px;
+      left: 68px;
+    }
+
+    .trip-step__look-for-plus {
+      top: -4px;
+      right: -36px;
+    }
+  }
+
+  .trip-step__look-for {
+    .discard;
+    padding-left: 84px;
+    padding-top: 2px;
+    margin-left: 27px;
+    margin-top: -27px;
+    width: 181px;
+    height: 70px;
+  }
+
+  .trip-step__look-for-minus {
+    top: -7px;
+    left: 44px;
+  }
+
+  .trip-step__look-for-plus {
+    top: -7px;
+    right: -11px;
+  }
+
+  .trip-step__check {
+  }
+
+  .trip-step__month {
+    .discard;
+    padding-top: 5px;
+    padding-left: 2px;
+    width: 999px;
+
+    &::after {
+      left: 4px;
+    }
+
+    &::before {
+      right: 4px;
+    }
+  }
+
+  .trip-step__calendar {
+    margin-top: 11px;
+    margin-bottom: 56px;
+  }
+
+  .trip-step:nth-of-type(2) {
+    padding-left: 160px;
+    padding-top: 100px;
+    padding-bottom: 99px;
+    margin-bottom: 45px;
+
+    p {
+      padding-right: 700px;
+      margin-bottom: 116px;
+
+      &::before {
+        top: 100px;
+        right: 361px;
+        height: 520px;
+      }
+
+      &::after {
+        top: 101px;
+        width: 997px;
+      }
+    }
+  }
+
+  .trip-step__choose {
+    width: 728px;
+  }
+
+  .trip-step__choose-flag {
+    right: -155px;
+
+    &::before {
+      left: -48px;
+    }
+  }
+
+  .trip-step__flag-button {
+    right: -272px;
+  }
+
+  .trip-step__choose-list-add {
+    top: 10px;
+    right: 12px;
+
+    &::before {
+      top: 15px;
+      right: -64px;
+      width: 11px;
+      height: 11px;
+      background-color: #ffffff;
+    }
+  }
+
+  .trip-step__choose-list-button {
+    top: 15px;
+    right: -273px;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+
+    &::after,
+    &::before {
+      top: 17px;
+      left: 10px;
+      width: 24px;
+      height: 2px;
+    }
+  }
+
+  .trip-step__choose-list--dark::before {
+    top: -2px;
+    right: -387px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #b2b2b2;
+    background-color: #edeff6;
+  }
+
+  .trip-step__choose:nth-of-type(4) {
+    margin-bottom: 57px;
+  }
+
+  .trip-step__link--back {
+    bottom: 106px;
+    right: 71px;
+  }
+
+  .trip-step:nth-of-type(3) {
+    padding-left: 160px;
+    padding-top: 100px;
+    padding-bottom: 99px;
+
+    .trip-step__link--back {
+      bottom: 106px;
+    }
+  }
+
+  .trip-step__paragraph {
+    padding-right: 600px;
+    margin-bottom: 127px;
+
+    &::after {
+      bottom: -55px;
+      left: 0;
+      width: 997px;
+    }
+  }
+
+  .trip-step__destination-text {
+    padding-top: 23px;
+    padding-left: 25px;
+    padding-right: 10px;
+    width: 729px;
+    height: 142px;
+    .fonts(20px,24px,400);
+  }
+
+  .trip-step__text-wrapper {
+    &::before {
+      top: -45px;
+      left: 772px;
+      width: 3px;
+      height: 261px;
+    }
+  }
+
+  .trip-step__destination {
+    &::before {
+      top: 1px;
+      left: 767px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .trip-step__destination-flag {
+    .discard;
+    margin-right: 232px;
+    width: 70px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-size: 70px 47px;
+  }
+
+  .trip-step__button {
+    margin-top: 55px;
+    padding-right: 112px;
   }
 }
