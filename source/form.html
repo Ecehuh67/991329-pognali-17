@@ -50,7 +50,7 @@
     </symbol>
   </svg>
   <header class="header header-catalog header-form html-wrapper">
-    <a class="header__logo">
+    <a class="header__logo" href="index.html">
       <picture>
         <source srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
         <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
@@ -58,7 +58,7 @@
       </picture>
     </a>
     <button class="header__show-menu" type="button">Показать меню</button>
-    <nav class="header__nav main-nav main-nav--hidden html-wrapper">
+    <nav class="header__nav main-nav main-nav--hidden html-wrapper main-nav--err">
       <a class="main-nav__logo logo logo--white">
         <picture>
           <source type="image/webp" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" media="(min-width: 1440px)">
@@ -69,7 +69,7 @@
           <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
         </picture>
       </a>
-      <button class="main-nav__toggle" type="button">Закрыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--err" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list nav-list">
           <li><a class="nav-list__item" href="#">О сервисе</a></li>
@@ -169,23 +169,23 @@
         <fieldset class="form_profile-transport" align="center">
           <legend>Транспорт</legend>
           <ul class="form_profile-transport-list transport-list">
-            <li class="transport-list__item"><button type="button">На самолете
-                <svg class="transport-list__item-plane transport-list__item-plane--active" width="14" height="16">
+            <li class="transport-list__item transport-list__item--plane"><button type="button">На самолете
+                <svg class="transport-list__kind transport-list__item-plane" width="14" height="16">
                   <use xLink:href="#plane-icon"></use>
                 </svg>
               </button></li>
-            <li class="transport-list__item"><button type="button">На автобусе
-                <svg class="transport-list__item-bus transport-list__item-bus--active" width="13" height="16">
+            <li class="transport-list__item transport-list__item--bus"><button type="button">На автобусе
+                <svg class="transport-list__kind transport-list__item-bus" width="13" height="16">
                   <use xLink:href="#bus-icon"></use>
                 </svg>
               </button></li>
-            <li class="transport-list__item"><button type="button">На велосипеде
-                <svg class="transport-list__item-bike" width="19" height="17">
+            <li class="transport-list__item transport-list__item--bike"><button type="button">На велосипеде
+                <svg class="transport-list__kind transport-list__item-bike" width="19" height="17">
                   <use xLink:href="#bike-icon"></use>
                 </svg>
               </button></li>
-            <li class="transport-list__item"><button type="button">Пешком
-                <svg class="transport-list__item-run transport-list__item-run--active" width="15" height="17">
+            <li class="transport-list__item transport-list__item--run"><button type="button">Пешком
+                <svg class="transport-list__kind transport-list__item-run" width="15" height="17">
                   <use xLink:href="#run-icon"></use>
                 </svg>
               </button></li>
@@ -240,7 +240,10 @@
                 Можно с детьми
               </label>
             </div>
-            <p class="trip-step__month">Март 2019</p>
+            <p class="trip-step__month">Март 2019
+              <button class="trip-step__month-button trip-step__month-button--back" type="button" name="month-back"></button>
+              <button class="trip-step__month-button trip-step__month-button--add" type="button" name="month-next"></button>
+            </p>
             <div class="trip-step__calendar calendar">
               <div class="calendar__days">
                 <span class="calendar__days-item calendar__days-item--mobile">П</span>
@@ -310,7 +313,7 @@
             <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько</p>
             <ul class="trip-step__pointer-desktop">
               <li class="trip-step__pointer-desktop-item"><a href="#">Даты</a></li>
-              <li class="trip-step__pointer-desktop-item"><a href="">Маршрут</a></li>
+              <li class="trip-step__pointer-desktop-item trip-step__pointer-desktop-item--active"><a href="">Маршрут</a></li>
               <li class="trip-step__pointer-desktop-item"><a href="">Развлечения</a></li>
             </ul>
             <div class="trip-step__choose">
@@ -392,7 +395,7 @@
             <ul class="trip-step__pointer-desktop">
               <li class="trip-step__pointer-desktop-item"><a href="#">Даты</a></li>
               <li class="trip-step__pointer-desktop-item"><a href="">Маршрут</a></li>
-              <li class="trip-step__pointer-desktop-item"><a href="">Развлечения</a></li>
+              <li class="trip-step__pointer-desktop-item trip-step__pointer-desktop-item--active"><a href="">Развлечения</a></li>
             </ul>
             <div class="trip-step__destination-wrapper">
               <h4 class="trip-step__destination">Босния и герцегов</h4>
@@ -454,13 +457,14 @@
     </div>
     <div class="footer__wrapper-developer">
       <span class="footer__developer-text">Разработано</span>
-      <a class="footer__developer-link">
+      <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="footer__developer-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика - htmlacademy">
       </a>
     </div>
   </footer>
   <script src="js/menu-err.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/transport-list.js"></script>
   <script src="js/country-list.js"></script>
 </body>
 

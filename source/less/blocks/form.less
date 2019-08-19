@@ -9,7 +9,7 @@
   flex-direction: column;
   box-sizing: border-box;
   padding-top: 83px;
-  padding-bottom: 93px;
+  padding-bottom: 94px;
   background-color: #edeff6;
 }
 
@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 2px;
-  margin-bottom: 25px;
+  margin-bottom: 43px;
   width: 270px;
   height: 38px;
   .fonts(17px,30px,600);
@@ -47,50 +47,93 @@
   text-transform: uppercase;
   background-color: #dfe3f0;
   border-radius: 30px;
+  white-space: pre;
+
+  &:hover {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    color: #9ba4be;
+  }
 }
 
 .form_profile-hashtags {
   .discard;
-  margin-bottom: 16px;
+  position: relative;
+  margin-bottom: 10px;
   height: 94px;
   .fonts(17px,18px,500);
   text-transform: uppercase;
   border-radius: 10px;
-  border-color: #cbced9;
+  border: 1px solid #cbced9;
+  border: none;
 
   legend {
+    position: absolute;
+    top: -18px;
+    left: 100px;
+    box-sizing: border-box;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 40px;
+    height: 20px;
     padding-top: 2px;
+    background-color: #edeff6;
   }
 
   textarea {
     .discard;
     box-sizing: border-box;
     padding-top: 11px;
-    width: 219px;
+    /*width: 219px;*/
+    margin-top: -10px;
+    padding-left: 24px;
+    padding-top: 22px;
+    width: 270px;
+    height: 89px;
     .fonts(16px,22px,400);
     border: none;
     resize: none;
     background-color: inherit;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+
+    &:focus {
+      border: 1px solid #161c35;
+    }
+
+    &:hover {
+      border: 1px solid #aeb4cb;
+    }
   }
 }
 
 .form_profile-transport {
   .discard;
-  height: 68px;
+  position: relative;
+  height: 61px;
   .fonts(17px,18px,500);
   text-transform: uppercase;
   border-radius: 10px;
-  border-color: #cbced9;
+  border: 1px solid #cbced9;
 
   legend {
-    padding-top: 2px;
-    padding-left: 1px;
+    position: absolute;
+    top: -7px;
+    left: 77px;
+    height: 20px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #edeff6;
   }
 
   ul {
     .discard;
-    margin-top: 3px;
-    margin-left: 68px;
+    margin-top: 14px;
+    margin-left: 70px;
   }
 }
 
@@ -154,6 +197,14 @@
     color: #b2b2b2;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      color: #5f6062;
+    }
+
+    &:active {
+      color: #d5d7dd;
+    }
   }
 }
 
@@ -210,7 +261,7 @@
 }
 @media (min-width: @tablet-width) {
   .form__profile {
-    padding-bottom: 104px;
+    padding-bottom: 97px;
 
     legend {
       display: block;
@@ -235,10 +286,9 @@
 
   .form_profile-transport {
     order: 2;
-    position: relative;
     margin-top: -113px;
     margin-left: 188px;
-    margin-bottom: 51px;
+    margin-bottom: 53px;
     width: 306px;
     height: 90px;
 
@@ -249,10 +299,8 @@
     }
 
     legend {
-      position: absolute;
-      bottom: -11px;
+      top: 84px;
       left: 86px;
-      box-sizing: border-box;
       padding-left: 10px;
       padding-right: 10px;
       letter-spacing: 2px;
@@ -264,7 +312,8 @@
   .form__profile-link {
     order: 3;
     margin-left: 35px;
-    margin-bottom: 52px;
+    margin-bottom: 61px;
+    padding-top: 2px;
     width: 618px;
     height: 58px;
     border-radius: 10px;
@@ -278,26 +327,26 @@
     box-sizing: border-box;
     margin-left: 35px;
     width: 618px;
-    height: 94px;
+    height: 98px;
 
     textarea {
       box-sizing: border-box;
-      padding-right: 160px;
-      padding-top: 32px;
-      width: auto;
+      /*padding-right: 140px;*/
+      padding-left: 38px;
+      padding-top: 35px;
+      width: 619px;
+      height: 94px;
       .fonts(20px,24px,400);
     }
 
     legend {
-      position: absolute;
-      bottom: -12px;
-      left: 271px;
-      box-sizing: border-box;
-      padding-left: 10px;
-      padding-right: 10px;
+      top: 75px;
+      left: 264px;
+      width: 90px;
+      padding-left: 18px;
+      padding-right: 18px;
       letter-spacing: 2px;
       .fonts(20px,18px,500);
-      background-color: #edeff6;
     }
   }
 
@@ -390,15 +439,51 @@
 }
 @media (min-width: @desktop-width) {
   .form__profile {
+    position: relative;
     flex-direction: row;
-    padding-bottom: 110px;
+    padding-bottom: 102px;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 1440px;
+      height: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      background-color: #182044;
+    }
+
+    &::after {
+      position: absolute;
+      content: " ";
+      top: 56px;
+      left: 126px;
+      width: 357px;
+      height: 8px;
+      background-color: #ff8d30;
+      border-radius: 10px;
+    }
+
   }
 
   .form__profile-wrapper {
     position: absolute;
     .discard;
-    z-index: 0;
-    top: -10px;
+    z-index: 10;
+    top: -130px;
+    right: 155px;
+  }
+
+  .form__profile-level {
+    margin-right: 30px;
+    margin-top: 50px;
+  }
+
+  .form__profile-photo {
+    width: 190px;
+    height: 190px;
   }
 
   .form__profile-link {
@@ -419,18 +504,19 @@
 
   .form_profile-hashtags {
     order: 1;
-    margin-top: 50px;
-    margin-left: 62px;
+    margin-top: 60px;
+    margin-left: 25px;
     margin-right: 100px;
     padding-left: 39px;
 
     textarea {
-      width: 690px;
+      width: 730px;
+
+      height: 94px;
     }
 
     legend {
-      left: 28px;
-      bottom: -13px;
+      left: 58px;
     }
   }
 
@@ -443,13 +529,12 @@
 
     legend {
       position: absolute;
-      bottom: -22px;
-      left: 122px;
+      left: 125px;
       height: 30px;
     }
 
     ul {
-      margin-left: 105px;
+      margin-left: 108px;
       margin-top: 23px;
       width: 170px;
     }
