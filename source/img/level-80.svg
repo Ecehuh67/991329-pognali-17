@@ -1,0 +1,10 @@
+<svg class="level" viewBox="0 0 120 120">
+  <text class="level__number" x="31" y="60" style="font-size: 46px; font-weight: 600; font-height: 50px;">80</text>
+  <text class="level__text" x="37" y="92" style="font-size: 22px; font-weight: 400; font-height: 22px; fill: #7e7f82;">level</text>
+  <line x1="27" y1="68" x2="85" y2="68" stroke="#7e7f82" stroke-width="2"></line>
+  <circle r="56" cx="57" cy="57" fill="rgba(6, 13, 16, 1)" fill-opacity="0.7"></circle>
+  <circle r="54" cx="57" cy="57" stroke-width="4" stroke="#ff8d30" fill="none"></circle>
+  <g transform="rotate(-150 57 57)">
+  <circle class="level__space" r="54" cx="57" cy="57" stroke-width="4" stroke="#04090c" fill="none" stroke-dasharray="55 300"></circle>
+</g>
+</svg>
