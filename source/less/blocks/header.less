@@ -11,7 +11,6 @@
   background-position: -80px 755px, 0 470px, 79px 215px, 0 -8px;
   background-size: 480px 631px, 320px 285px, 192px 255px, 320px 569px;
   background-repeat: no-repeat;
-
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/blue-mobile.svg"), url("../img/blue-back.png"), url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
   }
@@ -75,7 +74,6 @@
 .header__guess {
   margin-bottom: 41px;
 }
-
 @media (min-width: @tablet-width) {
   .header {
     z-index: 10;
@@ -87,7 +85,6 @@
     background-position: 283px 403px, -357px 375px;
     background-size: 372px 451px, 1479px 619px;
     background-repeat: no-repeat;
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/traveller-illustration-tablet@2x.png"), url("../img/globe-back-tablet@2x.jpg"),;
     }
@@ -142,7 +139,6 @@
     min-height: 280px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .header {
     justify-content: flex-start;
@@ -153,7 +149,6 @@
     background-position: 602px 110px, -180px 0;
     background-size: 431px 640px, 1800px 750px;
     background-repeat: no-repeat;
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/traveller-illustration-desktop@2x.png"), url("../img/globe-back-desktop@2x.jpg");
     }
@@ -248,7 +243,6 @@
 .header-catalog__link {
   display: none;
 }
-
 @media (min-width: @tablet-width) {
   .header {
     border-bottom-left-radius: 60px;
@@ -309,7 +303,6 @@
     background-repeat: no-repeat;
   }
 }
-
 @media (min-width: @desktop-width) {
   .header-catalog {
     padding-bottom: 8px;
@@ -356,7 +349,6 @@
   background-color: #ff8d30;
   border-radius: 10px;
 }
-
 @media (min-width: @tablet-width) {
   .header-form {
     padding-bottom: 63px;
@@ -376,8 +368,6 @@
     }
   }
 }
-
-
 @media (max-width: @tablet-width) {
   .scroll-menu::before {
     content: "";
@@ -406,7 +396,6 @@
     display: none;
   }
 }
-
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .scroll-menu::before {
     content: "";
@@ -434,5 +423,16 @@
 
   .scroll-menu .header__picture {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-form__caption {
+    margin-top: 113px;
+    margin-left: 66px;
+  }
+
+  .header-form {
+    z-index: 0;
   }
 }
