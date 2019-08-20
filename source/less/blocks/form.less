@@ -12,12 +12,10 @@
   padding-bottom: 94px;
   background-color: #edeff6;
 }
-
 /*.form__profile-level {
   width: 100px;
   height: 100px;
 }*/
-
 .form__profile-wrapper {
   display: flex;
   justify-content: space-between;
@@ -70,7 +68,7 @@
   .fonts(17px,18px,500);
   text-transform: uppercase;
   border-radius: 10px;
-  border: 1px solid #cbced9;
+  /*border: 1px solid #cbced9;*/
   border: none;
 
   legend {
@@ -89,15 +87,15 @@
   textarea {
     .discard;
     box-sizing: border-box;
-    padding-top: 11px;
-    /*width: 219px;*/
+    /*padding-top: 11px;
+    width: 219px;*/
     margin-top: -10px;
     padding-left: 24px;
     padding-top: 22px;
     width: 270px;
     height: 89px;
     .fonts(16px,22px,400);
-    border: none;
+    /*border: none;*/
     resize: none;
     background-color: inherit;
     outline: none;
@@ -263,6 +261,7 @@
     right: -42px;
   }
 }
+
 @media (min-width: @tablet-width) {
   .form__profile {
     padding-bottom: 97px;
@@ -274,7 +273,7 @@
   }
 
   .form__profile-level {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .form__profile-wrapper {
@@ -442,9 +441,8 @@
       right: -68px;
     }
   }
-
-  .form__trip-list {}
 }
+
 @media (min-width: @desktop-width) {
   .form__profile {
     position: relative;
