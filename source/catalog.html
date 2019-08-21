@@ -554,10 +554,10 @@
               </ul>
             </li>
             <li class="travellers-form__list-item travellers-form__list-item--music travellers-form__list-item--hidden">
-              <h4 class="travellers-form__filter-caption">Музыка</h4>
+              <h4 class="travellers-form__filter-caption travellers-form__filter-caption--tablet">Музыка</h4>
               <button class="travellers-form__list-button travellers-form__list-button--music" type="button">Развернуть</button>
               <button class="travellers-form__list-button travellers-form__list-button--close travellers-form__list-button--music" type="button">Развернуть</button>
-              <ul class="checkbox-list checkbox-list--music checkbox-list--hidden">
+              <ul class="checkbox-list checkbox-list--music checkbox-list--hidden checkbox-list--tablet">
                 <li class="checkbox-list__item">
                   <label class="checkbox-list__item-music">
                     <input class="visually-hidden" type="checkbox" name="universal" value="Тяжелый рок">
@@ -683,9 +683,24 @@
             </div>
             <div class="card-travellers__wrapper-level">
               <h4 class="card-travellers__level">левел:</h4>
-              <ul class="card-travellers__level-list level-list">
-                <li class="level-list__item">99</li>
-              </ul>
+              <svg class="card-travellers__level-svg" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">99</text>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(-100 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="10 350"></circle>
+                </g>
+              </svg>
+              <svg class="traveller-card__level-rest" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">99</text>
+                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+                <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(-100 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="10 350"></circle>
+                </g>
+              </svg>
             </div>
             <a class="card-travellers__invite card-travellers__invite-heart  card-travellers__invite-heart--like" href="feedback.html">Позвать!</a>
           </li>
@@ -729,9 +744,27 @@
             </div>
             <div class="card-travellers__wrapper-level">
               <h4 class="card-travellers__level">левел:</h4>
-              <ul class="card-travellers__level-list level-list">
+              <!--<ul class="card-travellers__level-list level-list">
                 <li class="level-list__item">80</li>
-              </ul>
+              </ul>-->
+              <svg class="card-travellers__level-svg" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">80</text>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(-150 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="55 300"></circle>
+                </g>
+              </svg>
+              <svg class="traveller-card__level-rest" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">80</text>
+                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+                <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(-150 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="55 350"></circle>
+                </g>
+              </svg>
             </div>
             <a class="card-travellers__invite card-travellers__invite-heart" href="feedback.html">Позвать!</a>
           </li>
@@ -776,9 +809,27 @@
             </div>
             <div class="card-travellers__wrapper-level">
               <h4 class="card-travellers__level">левел:</h4>
-              <ul class="card-travellers__level-list level-list">
+              <!--<ul class="card-travellers__level-list level-list">
                 <li class="level-list__item">25</li>
-              </ul>
+              </ul>-->
+              <svg class="card-travellers__level-svg" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">25</text>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(0 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="270 300"></circle>
+                </g>
+              </svg>
+              <svg class="traveller-card__level-rest" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">25</text>
+                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+                <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(0 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="270 350"></circle>
+                </g>
+              </svg>
             </div>
             <a class="card-travellers__invite card-travellers__invite-heart" href="feedback.html">Позвать!</a>
           </li>
@@ -821,9 +872,24 @@
             </div>
             <div class="card-travellers__wrapper-level">
               <h4 class="card-travellers__level">левел:</h4>
-              <ul class="card-travellers__level-list level-list">
-                <li class="level-list__item">25</li>
-              </ul>
+              <svg class="card-travellers__level-svg" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">50</text>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(90 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="180 300"></circle>
+                </g>
+              </svg>
+              <svg class="traveller-card__level-rest" viewBox="0 0 120 120">
+                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">50</text>
+                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+                <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
+                <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
+                <g transform="rotate(90 60 60)">
+                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="180 350"></circle>
+                </g>
+              </svg>
             </div>
             <a class="card-travellers__invite card-travellers__invite-heart" href="feedback.html">Позвать!</a>
           </li>
