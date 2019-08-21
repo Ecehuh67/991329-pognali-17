@@ -198,7 +198,20 @@
   .discard;
   margin-left: 21px;
   margin-top: 1px;
-  margin-bottom: 48px;
+  margin-bottom: 66px;
+}
+
+.card-travellers__level-svg {
+  position: absolute;
+  top: 25px;
+  left: -5px;
+  margin-left: 2px;
+  width: 45px;
+  height: 45px;
+}
+
+.traveller-card__level-rest {
+  display: none;
 }
 
 .card-travellers-demin .card-travellers__wrapper-level {
@@ -238,10 +251,10 @@
   .fonts(15px,18px,400);
 }
 
-.card-travellers__level-list {
+/*.card-travellers__level-list {
   .discard;
   list-style: none;
-}
+}*/
 
 .card-travellers__invite {
   display: block;
@@ -346,12 +359,27 @@
 
   .card-travellers__wrapper-level {
     position: absolute;
-    right: 20px;
-    top: 180px;
+    right: 55px;
+    top: 167px;
     width: 30px;
   }
 
-  .card-travellers__wrapper-level::before {
+  .traveller-card__level-rest {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-travellers__level {
+    display: none;
+  }
+
+  .card-travellers__level-svg {
+    display: none;
+  }
+
+  .card-travellers__wrapper-level::before,
+  .card-travellers__wrapper-level::after {
     display: none;
   }
 
@@ -565,7 +593,7 @@
     position: static;
     .discard;
     order: 6;
-    margin-left: 170px;
-    margin-top: -100px;
+    margin-left: 152px;
+    margin-top: -106px;
   }
 }
