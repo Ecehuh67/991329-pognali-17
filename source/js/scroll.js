@@ -1,5 +1,5 @@
-const nav = document.querySelector("#nav");
-const topOfNav = nav.offsetTop;
+var nav = document.querySelector("#nav");
+var topOfNav = nav.offsetTop;
 var navy = document.querySelector(".header");
 
 function fixNav() {
