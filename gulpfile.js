@@ -14,6 +14,7 @@ var webp = require("gulp-webp");
 var del = require("del");
 var posthtml = require("gulp-posthtml");
 var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-html-minify");
 
 gulp.task("css", function() {
   return gulp.src("source/less/style.less")
@@ -32,6 +33,7 @@ gulp.task("css", function() {
 gulp.task("html", function() {
   return gulp.src("source/*.html")
   .pipe(posthtml())
+  .pipe(htmlmin())
   .pipe(gulp.dest("build"));
 });
 
@@ -103,6 +105,7 @@ gulp.task("build", gulp.series(
   "webp",
   "images",
   "css",
+  "html",
   "js"
 ));
 gulp.task("start", gulp.series("build", "server"));
