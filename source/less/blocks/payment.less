@@ -50,21 +50,19 @@
 .payment__list-item {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   position: relative;
   /*align-items: center;*/
   box-sizing: border-box;
   padding-right: 10px;
+  padding-top: 11px;
   width: 200px;
   min-height: 66px;
   border-top: 1px solid #e1e3e9;
 }
 
 /* Исправил для IE11*/
-.payment__list-item {
-  padding-top: 11px;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
 .payment__list-item span:nth-child(1) {
   margin-bottom: 4px;
@@ -140,16 +138,12 @@
 
   .payment__list-item {
     .discard;
-    justify-content: space-between;
-    margin-left: 50px;
-    width: 564px;
-  }
-
-/*для IE11*/
-  .payment__list-item {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 50px;
+    width: 564px;
 
     span {
       width: 100%;
