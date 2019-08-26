@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
-  <link rel="stylesheet" href="../css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -620,10 +620,10 @@
               <h4 class="travellers-form__filter-caption">Транспорт</h4>
               <button class="travellers-form__list-button" type="button">Развернуть</button>
               <ul class="moving-list-catalog">
-                <li class="moving-list__item-catalog" data-tooltip="Авиаперелет"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active">На самолете</span></li>
-                <li class="moving-list__item-catalog" data-tooltip="Автотранспорт"><span class="moving-list__item-type moving-list__item-type--bus moving-list__item-type--active">На автобусе</span></li>
-                <li class="moving-list__item-catalog" data-tooltip="Велосипед"><span class="moving-list__item-type moving-list__item-type--cycle">На велосипеде</span></li>
-                <li class="moving-list__item-catalog" data-tooltip="Пешком"><span class="moving-list__item-type moving-list__item-type--running moving-list__item-type--active">Пешком</span></li>
+                <li class="moving-list-catalog__item-catalog" data-tooltip="Авиаперелет"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--plane moving-list-catalog__item-type--active">На самолете</span></li>
+                <li class="moving-list-catalog__item-catalog" data-tooltip="Автотранспорт"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--bus moving-list-catalog__item-type--active">На автобусе</span></li>
+                <li class="moving-list-catalog__item-catalog" data-tooltip="Велосипед"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--cycle">На велосипеде</span></li>
+                <li class="moving-list-catalog__item-catalog" data-tooltip="Пешком"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--running moving-list-catalog__item-type--active">Пешком</span></li>
               </ul>
             </li>
             <li class="travellers-form__list-item">
@@ -651,7 +651,7 @@
         <ul class="catalog__travellers-list">
           <li class="card-travellers card-travellers--off">
             <a class="card-travellers__name-link" href="firsova.html">
-              <h3 class="card-travellers__name card-travellers-name--off">Таня Фирсова</h3>
+              <h3 class="card-travellers__name card-travellers__name--off">Таня Фирсова</h3>
             </a>
             <div class="card-travellers__wrapper-photo card-travellers__wrapper-photo--like">
               <a href="firsova.html">
@@ -683,30 +683,31 @@
             <div class="card-travellers__wrapper-transport">
               <h4 class="card-travellers__transport">транспорт:</h4>
               <ul class="card-travellers__moving-list moving-list-catalog">
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Авиаперелет"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Автотранспорт"><span class="moving-list__item-type moving-list__item-type--bus"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Велосипед"><span class="moving-list__item-type moving-list__item-type--cycle"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Пешком"><span class="moving-list__item-type moving-list__item-type--running"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Авиаперелет"><span
+                      class="moving-list-catalog__item-type moving-list-catalog__item-type--plane moving-list-catalog__item-type--active"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Автотранспорт"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--bus"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Велосипед"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--cycle"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Пешком"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--running"></span></li>
               </ul>
             </div>
             <div class="card-travellers__wrapper-level">
               <h4 class="card-travellers__level">левел:</h4>
               <svg class="card-travellers__level-svg" viewBox="0 0 120 120" width="45px" height="45">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
-                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">99</text>
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">99</text>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(-100 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="10 350"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="10 350"></circle>
                 </g>
               </svg>
-              <svg class="traveller-card__level-rest" viewBox="0 0 120 120" width="60" height="60">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
-                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">99</text>
-                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+              <svg class="card-travellers__level-rest" viewBox="0 0 120 120" width="60" height="60">
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">99</text>
+                <text x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
                 <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(-100 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="10 350"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="10 350"></circle>
                 </g>
               </svg>
             </div>
@@ -714,7 +715,7 @@
           </li>
           <li class="card-travellers card-travellers-demin card-travellers--off">
             <a class="card-travellers__name-link" href="demin.html">
-              <h3 class="card-travellers__name card-travellers-name--off">Петя Демин</h3>
+              <h3 class="card-travellers__name card-travellers__name--off">Петя Демин</h3>
             </a>
             <div class="card-travellers__wrapper-photo">
               <a href="demin.html">
@@ -744,10 +745,11 @@
             <div class="card-travellers__wrapper-transport">
               <h4 class="card-travellers__transport">транспорт:</h4>
               <ul class="card-travellers__moving-list moving-list-catalog">
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Авиаперелет"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Автотранспорт"><span class="moving-list__item-type moving-list__item-type--bus"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Велосипед"><span class="moving-list__item-type moving-list__item-type--cycle"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Пешком"><span class="moving-list__item-type moving-list__item-type--running"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Авиаперелет"><span
+                      class="moving-list-catalog__item-type moving-list-catalog__item-type--plane moving-list-catalog__item-type--active"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Автотранспорт"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--bus"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Велосипед"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--cycle"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Пешком"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--running"></span></li>
               </ul>
             </div>
             <div class="card-travellers__wrapper-level">
@@ -756,21 +758,21 @@
                 <li class="level-list__item">80</li>
               </ul>-->
               <svg class="card-travellers__level-svg" viewBox="0 0 120 120" width="45px" height="45">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
-                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">80</text>
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">80</text>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(-150 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="55 300"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="55 300"></circle>
                 </g>
               </svg>
-              <svg class="traveller-card__level-rest" viewBox="0 0 120 120" width="60" height="60">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
-                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">80</text>
-                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+              <svg class="card-travellers__level-rest" viewBox="0 0 120 120" width="60" height="60">
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">80</text>
+                <text x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
                 <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(-150 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="55 350"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="55 350"></circle>
                 </g>
               </svg>
             </div>
@@ -778,7 +780,7 @@
           </li>
           <li class="card-travellers card-travellers-smolov card-travellers--off">
             <a class="card-travellers__name-link" href="smolov.html">
-              <h3 class="card-travellers__name card-travellers-name--off">Марк Смолов</h3>
+              <h3 class="card-travellers__name card-travellers__name--off">Марк Смолов</h3>
             </a>
             <div class="card-travellers__wrapper-photo">
               <a href="smolov.html">
@@ -797,7 +799,7 @@
               <li class="hashtag-list__item">#рэп</li>
               <li class="hashtag-list__item">#тату</li>
               <li class="hashtag-list__item">#хайпбист</li>
-              <li class="hashtag-list__item"><span class="hashtag-list__item--opened">#кроссовки</span><span class="hashtag-list__item--hidden">#сникеры</span></li>
+              <li class="hashtag-list__item"><span class="hashtag-list__item-opened">#кроссовки</span><span class="hashtag-list__item-hidden">#сникеры</span></li>
               <li class="hashtag-list__item">#суприм</li>
             </ul>
             <h4 class="card-travellers__wanna">хочет посетить:</h4>
@@ -809,10 +811,11 @@
             <div class="card-travellers__wrapper-transport">
               <h4 class="card-travellers__transport">транспорт:</h4>
               <ul class="card-travellers__moving-list moving-list-catalog">
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Авиаперелет"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Автотранспорт"><span class="moving-list__item-type moving-list__item-type--bus"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Велосипед"><span class="moving-list__item-type moving-list__item-type--cycle"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Пешком"><span class="moving-list__item-type moving-list__item-type--running"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Авиаперелет"><span
+                      class="moving-list-catalog__item-type moving-list-catalog__item-type--plane moving-list-catalog__item-type--active"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Автотранспорт"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--bus"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Велосипед"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--cycle"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Пешком"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--running"></span></li>
               </ul>
             </div>
             <div class="card-travellers__wrapper-level">
@@ -821,21 +824,21 @@
                 <li class="level-list__item">25</li>
               </ul>-->
               <svg class="card-travellers__level-svg" viewBox="0 0 120 120" width="45px" height="45">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
-                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">25</text>
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">25</text>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(0 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="270 300"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="270 300"></circle>
                 </g>
               </svg>
-              <svg class="traveller-card__level-rest" viewBox="0 0 120 120" width="60" height="60">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
-                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">25</text>
-                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+              <svg class="card-travellers__level-rest" viewBox="0 0 120 120" width="60" height="60">
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">25</text>
+                <text x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
                 <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(0 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="270 350"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="270 350"></circle>
                 </g>
               </svg>
             </div>
@@ -843,7 +846,7 @@
           </li>
           <li class="card-travellers card-travellers-rogovaya card-travellers--on">
             <a class="card-travellers__name-link" href="rogovaya.html">
-              <h3 class="card-travellers__name card-travellers-name--on">Лариса Роговая</h3>
+              <h3 class="card-travellers__name card-travellers__name--on">Лариса Роговая</h3>
             </a>
             <div class="card-travellers__wrapper-photo">
               <a href="rogovaya.html">
@@ -872,30 +875,31 @@
             <div class="card-travellers__wrapper-transport">
               <h4 class="card-travellers__transport">транспорт:</h4>
               <ul class="card-travellers__moving-list moving-list-catalog">
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Авиаперелет"><span class="moving-list__item-type moving-list__item-type--plane moving-list__item-type--active"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Автотранспорт"><span class="moving-list__item-type moving-list__item-type--bus"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Велосипед"><span class="moving-list__item-type moving-list__item-type--cycle"></span></li>
-                <li class="moving-list__item-catalog moving-list__item-type--card" data-tooltip="Пешком"><span class="moving-list__item-type moving-list__item-type--running"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Авиаперелет"><span
+                      class="moving-list-catalog__item-type moving-list-catalog__item-type--plane moving-list-catalog__item-type--active"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Автотранспорт"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--bus"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Велосипед"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--cycle"></span></li>
+                <li class="moving-list-catalog__item-catalog moving-list-catalog__item-type-card" data-tooltip="Пешком"><span class="moving-list-catalog__item-type moving-list-catalog__item-type--running"></span></li>
               </ul>
             </div>
             <div class="card-travellers__wrapper-level">
               <h4 class="card-travellers__level">левел:</h4>
               <svg class="card-travellers__level-svg" viewBox="0 0 120 120" width="45px" height="45">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
-                <text class="level__number" x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">50</text>
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="#ffffff"></circle>
+                <text x="25" y="83" style="font-size: 66px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">50</text>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(90 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="180 300"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="180 300"></circle>
                 </g>
               </svg>
-              <svg class="traveller-card__level-rest" viewBox="0 0 120 120" width="60" height="60">
-                <circle class="level__circle-inner" r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
-                <text class="level__number" x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">50</text>
-                <text class="level__text" x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
+              <svg class="card-travellers__level-rest" viewBox="0 0 120 120" width="60" height="60">
+                <circle r="57" cx="60" cy="60" fill-opacity="0.6" fill="transparent"></circle>
+                <text x="34" y="63" style="font-size: 47px; font-weight: 600; font-height: 50px; fill:#1d2e5b;">50</text>
+                <text x="33" y="99" style="font-size: 30px; font-weight: 400; font-height: 22px; fill:#7a8083;">level</text>
                 <line x1="27" y1="71" x2="85" y2="71" stroke="#7e7f82" stroke-width="2"></line>
                 <circle r="57" cx="60" cy="60" stroke-width="6" stroke="#ff8d30" fill="none"></circle>
                 <g transform="rotate(90 60 60)">
-                  <circle class="level__circle-dash" r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="180 350"></circle>
+                  <circle r="57" cx="60" cy="60" stroke-width="7" stroke="#ffffff" fill="none" stroke-dasharray="180 350"></circle>
                 </g>
               </svg>
             </div>
@@ -930,7 +934,7 @@
         <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
         <source srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x" media="(min-width: 1440px)">
         <source srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x" media="(min-width: 768px)">
-        <img class="header__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
+        <img class="footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
       </picture>
     </a>
     <div class="footer__social-wrapper">
