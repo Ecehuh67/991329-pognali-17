@@ -257,7 +257,7 @@
   }
 }
 
-.payment__popup {
+.payment-popup {
   display: none;
   position: absolute;
   bottom: -433px;
@@ -272,11 +272,11 @@
   border-radius: 20px;
 }
 
-.payment__popup--on {
+.payment-popup--on {
   display: block;
 }
 
-.payment__popup-caption {
+.payment-popup__caption {
   .discard;
   margin-bottom: 28px;
   margin-left: 25px;
@@ -284,7 +284,7 @@
   color: #ff8d30;
 }
 
-.payment__popup-close {
+.payment-popup__close {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -308,7 +308,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .payment__popup {
+  .payment-popup {
     bottom: -1148px;
     left: 40px;
     padding-left: 90px;
@@ -319,13 +319,13 @@
     border-radius: 30px;
   }
 
-  .payment__popup-caption {
+  .payment-popup__caption {
     margin-left: 100px;
     margin-bottom: 46px;
     .fonts(45px,45px,700);
   }
 
-  .payment__popup-close {
+  .payment-popup__close {
     .discard;
     width: 688px;
     height: 108px;
@@ -337,7 +337,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .payment__popup {
+  .payment-popup {
     bottom: -635px;
     left: 345px;
     padding-left: 57px;
@@ -345,13 +345,13 @@
     width: 750px;
   }
 
-  .payment__popup-caption {
+  .payment-popup__caption {
     margin-left: 164px;
     margin-bottom: 46px;
     .fonts(45px,45px,700);
   }
 
-  .payment__popup-close {
+  .payment-popup__close {
     width: 760px;
     padding-right: 10px;
   }
